@@ -1,5 +1,6 @@
 import L from 'leaflet';
-import { DEFAULT_CENTER, DEFAULT_ZOOM } from './mapUtils.js';
+import { DEFAULT_CENTER, DEFAULT_ZOOM, createTileLayer } from './mapUtils.js';
+import { languageManager } from '../i18n/LanguageManager.js';
 
 // Phase timings (in milliseconds)
 const PHASE_0_END = 4000;   // 0-4s: Show world map
@@ -43,6 +44,8 @@ export class ClueMap {
     this.animationId = null;
     this.progress = 0;
     this.currentPhase = 0;
+    this.zoomControl = null;
+    this.tileLayer = null;
   }
 
   setGeoJSON(geojson, countriesData) {
@@ -253,6 +256,61 @@ export class ClueMap {
         color: '#15803d',
         weight: 3
       });
+    }
+  }
+
+  focusOnTarget() {
+    // Zoom and focus on the target country (with generous padding for context)
+    const layer = this.countryLayers[this.targetCode];
+    if (layer && layer.getBounds) {
+      this.map.fitBounds(layer.getBounds(), {
+        padding: [80, 80],
+        maxZoom: 6,
+        animate: true,
+        duration: 0.5
+      });
+    }
+  }
+
+  enableInteraction() {
+    this.map.dragging.enable();
+    this.map.touchZoom.enable();
+    this.map.scrollWheelZoom.enable();
+    this.map.doubleClickZoom.enable();
+    this.map.boxZoom.enable();
+
+    // Add tile layer with country names
+    if (!this.tileLayer) {
+      this.tileLayer = createTileLayer(languageManager.lang);
+      this.tileLayer.addTo(this.map);
+      // Move tile layer below the country shapes
+      this.tileLayer.bringToBack();
+    }
+
+    // Add zoom control if not already present
+    if (!this.zoomControl) {
+      this.zoomControl = L.control.zoom({ position: 'bottomleft' });
+      this.zoomControl.addTo(this.map);
+    }
+  }
+
+  disableInteraction() {
+    this.map.dragging.disable();
+    this.map.touchZoom.disable();
+    this.map.scrollWheelZoom.disable();
+    this.map.doubleClickZoom.disable();
+    this.map.boxZoom.disable();
+
+    // Remove tile layer
+    if (this.tileLayer) {
+      this.map.removeLayer(this.tileLayer);
+      this.tileLayer = null;
+    }
+
+    // Remove zoom control
+    if (this.zoomControl) {
+      this.map.removeControl(this.zoomControl);
+      this.zoomControl = null;
     }
   }
 

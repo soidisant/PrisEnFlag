@@ -26,7 +26,20 @@ export class UIController {
       nextRoundBtn: document.getElementById('next-round-btn'),
       finalScore: document.getElementById('final-score'),
       correctCount: document.getElementById('correct-count'),
-      recapList: document.getElementById('recap-list')
+      recapList: document.getElementById('recap-list'),
+      // Country card elements
+      countryCard: document.getElementById('country-card'),
+      cardResultTitle: document.getElementById('card-result-title'),
+      cardFlag: document.getElementById('card-flag'),
+      cardCountryName: document.getElementById('card-country-name'),
+      cardCapital: document.getElementById('card-capital'),
+      cardContinent: document.getElementById('card-continent'),
+      cardRegion: document.getElementById('card-region'),
+      cardTimeBonus: document.getElementById('card-time-bonus'),
+      cardClueBonus: document.getElementById('card-clue-bonus'),
+      cardCapitalBonus: document.getElementById('card-capital-bonus'),
+      cardRoundScore: document.getElementById('card-round-score'),
+      cardNextBtn: document.getElementById('card-next-btn')
     };
 
     // Apply initial translations and language selector state
@@ -99,6 +112,37 @@ export class UIController {
 
   hideResult() {
     this.resultOverlay.classList.add('hidden');
+  }
+
+  showCountryCard(countryData, isCorrect, score, isLastRound) {
+    // Result title
+    const title = this.elements.cardResultTitle;
+    title.textContent = isCorrect ? languageManager.t('correct') : languageManager.t('wrong');
+    title.className = 'card-result-title ' + (isCorrect ? 'correct' : 'incorrect');
+
+    // Country info
+    this.elements.cardFlag.src = countryData.flag;
+    this.elements.cardCountryName.textContent = countryData.name;
+    this.elements.cardCapital.textContent = countryData.capital || '-';
+    this.elements.cardContinent.textContent = countryData.continent;
+    this.elements.cardRegion.textContent = countryData.subregion || '-';
+
+    // Score breakdown
+    this.elements.cardTimeBonus.textContent = `+${score.timeBonus}`;
+    this.elements.cardClueBonus.textContent = `+${score.zoomBonus}`;
+    this.elements.cardCapitalBonus.textContent = `+${score.capitalBonus}`;
+    this.elements.cardRoundScore.textContent = score.total;
+
+    // Next button text
+    this.elements.cardNextBtn.textContent = isLastRound
+      ? languageManager.t('seeResults')
+      : languageManager.t('nextRound');
+
+    this.elements.countryCard.classList.remove('hidden');
+  }
+
+  hideCountryCard() {
+    this.elements.countryCard.classList.add('hidden');
   }
 
   updateNextRoundButton(isLastRound) {

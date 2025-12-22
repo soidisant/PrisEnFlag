@@ -42,8 +42,13 @@ document.getElementById('submit-btn').addEventListener('click', () => {
   game.submitAnswer();
 });
 
-// Next round button
+// Next round button (in overlay - kept for backwards compatibility)
 document.getElementById('next-round-btn').addEventListener('click', () => {
+  game.nextRound();
+});
+
+// Next round button (in country card)
+document.getElementById('card-next-btn').addEventListener('click', () => {
   game.nextRound();
 });
 

@@ -46,7 +46,12 @@ export const translations = {
     oceania: 'Oceania',
 
     // Language
-    language: 'Language'
+    language: 'Language',
+
+    // Country card
+    capital: 'Capital',
+    continent: 'Continent',
+    region: 'Region'
   },
 
   fr: {
@@ -96,7 +101,12 @@ export const translations = {
     oceania: 'Océanie',
 
     // Language
-    language: 'Langue'
+    language: 'Langue',
+
+    // Country card
+    capital: 'Capitale',
+    continent: 'Continent',
+    region: 'Région'
   }
 };
 

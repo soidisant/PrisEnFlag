@@ -121,6 +121,44 @@
           </div>
           <div class="map-panel answer-panel">
             <div id="answer-map" class="map"></div>
+            <div id="country-card" class="country-card hidden">
+              <h2 id="card-result-title" class="card-result-title">Correct!</h2>
+              <img id="card-flag" class="card-flag" src="" alt="Country flag" />
+              <h3 id="card-country-name" class="card-country-name"></h3>
+              <div class="card-details">
+                <div class="card-detail">
+                  <span class="card-label" data-i18n="capital">Capital</span>
+                  <span id="card-capital" class="card-value"></span>
+                </div>
+                <div class="card-detail">
+                  <span class="card-label" data-i18n="continent">Continent</span>
+                  <span id="card-continent" class="card-value"></span>
+                </div>
+                <div class="card-detail">
+                  <span class="card-label" data-i18n="region">Region</span>
+                  <span id="card-region" class="card-value"></span>
+                </div>
+              </div>
+              <div class="card-score-breakdown">
+                <div class="card-score-item">
+                  <span data-i18n="timeBonus">Time Bonus</span>
+                  <span id="card-time-bonus">+0</span>
+                </div>
+                <div class="card-score-item">
+                  <span data-i18n="clueBonus">Clue Bonus</span>
+                  <span id="card-clue-bonus">+0</span>
+                </div>
+                <div class="card-score-item">
+                  <span data-i18n="capitalBonus">Capital Bonus</span>
+                  <span id="card-capital-bonus">+0</span>
+                </div>
+                <div class="card-score-item total">
+                  <span data-i18n="roundScore">Round Score</span>
+                  <span id="card-round-score">0</span>
+                </div>
+              </div>
+              <button id="card-next-btn" class="btn btn-primary" data-i18n="nextRound">Next Round</button>
+            </div>
             <div class="answer-controls">
               <p id="selected-info" data-i18n="selectCountry">Click on the map to place your guess</p>
               <button id="submit-btn" class="btn btn-primary" disabled data-i18n="submit">Submit Answer</button>

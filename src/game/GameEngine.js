@@ -96,6 +96,7 @@ export class GameEngine {
 
   nextRound() {
     this.ui.hideResult();
+    this.ui.hideCountryCard();
 
     this.currentRound++;
 
@@ -119,9 +120,9 @@ export class GameEngine {
     this.ui.updateRound(this.currentRound, this.totalRounds);
     this.ui.setFlag(this.currentCountry.flag);
     this.ui.setSelectedCountry(null);
-    this.ui.updateNextRoundButton(this.currentRound === this.totalRounds);
 
-    // Reset maps
+    // Reset maps and disable clue map interaction
+    this.clueMap.disableInteraction();
     this.clueMap.reset();
     this.answerMap.reset();
 
@@ -220,12 +221,20 @@ export class GameEngine {
     // Update UI
     this.ui.updateScore(this.scoreManager.getTotalScore());
 
-    // Show correct country on both maps
-    this.answerMap.showCorrectCountry(this.currentCountry.code);
+    // Show correct country on clue map and zoom in
     this.clueMap.showTarget();
+    this.clueMap.focusOnTarget();
+    this.clueMap.enableInteraction();
 
-    // Show result overlay
-    this.ui.showResult(isCorrect, targetName, score);
+    // Show country card with result on right panel
+    const isLastRound = this.currentRound === this.totalRounds;
+    this.ui.showCountryCard({
+      flag: this.currentCountry.flag,
+      name: targetName,
+      capital: this.currentCountry.capital,
+      continent: this.currentCountry.continent,
+      subregion: this.currentCountry.subregion
+    }, isCorrect, score, isLastRound);
   }
 
   endGame() {

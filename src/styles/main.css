@@ -426,6 +426,119 @@ html, body {
   font-size: 0.9rem;
 }
 
+/* Country Info Card */
+.country-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 1001; /* Above Leaflet controls (1000) */
+  overflow-y: auto;
+}
+
+.country-card.hidden {
+  display: none;
+}
+
+.card-result-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-result-title.correct {
+  color: var(--success-color);
+}
+
+.card-result-title.incorrect {
+  color: var(--error-color);
+}
+
+.card-flag {
+  width: auto;
+  height: 100px;
+  max-width: 80%;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+}
+
+.card-country-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-details {
+  background: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 1rem;
+}
+
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-detail:last-child {
+  border-bottom: none;
+}
+
+.card-label {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.card-value {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.card-score-breakdown {
+  background: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 1.25rem;
+}
+
+.card-score-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.card-score-item.total {
+  border-top: 1px solid var(--border-color);
+  margin-top: 0.4rem;
+  padding-top: 0.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
 /* Result Overlay */
 .result-content {
   background: white;
