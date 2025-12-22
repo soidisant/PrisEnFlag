@@ -35,7 +35,9 @@ export class IdleTracker {
     this.lastActivityTime = Date.now();
     this.isIdle = false;
 
-    const check = () => {
+    // Use setInterval instead of requestAnimationFrame for better performance
+    // Check every 500ms instead of 60fps
+    this.intervalId = setInterval(() => {
       if (!this.isRunning) return;
 
       const elapsed = Date.now() - this.lastActivityTime;
@@ -44,11 +46,7 @@ export class IdleTracker {
         this.isIdle = true;
         this.idleCallbacks.forEach(cb => cb(elapsed));
       }
-
-      this.animationId = requestAnimationFrame(check);
-    };
-
-    check();
+    }, 500);
   }
 
   /**
@@ -56,9 +54,9 @@ export class IdleTracker {
    */
   stop() {
     this.isRunning = false;
-    if (this.animationId) {
-      cancelAnimationFrame(this.animationId);
-      this.animationId = null;
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = null;
     }
   }
 

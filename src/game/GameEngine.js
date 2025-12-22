@@ -73,6 +73,12 @@ export class GameEngine {
       this.unifiedMap.onCandidateEliminated = (code) => {
         this.ui.eliminateCandidate(code);
       };
+
+      // Apply saved hints preference
+      const savedHints = localStorage.getItem('pris-en-flag-hints');
+      if (savedHints === 'false') {
+        this.unifiedMap.setHintsEnabled(false);
+      }
     }
 
     // Load data if not already loaded

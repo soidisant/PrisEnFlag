@@ -39,6 +39,7 @@ export class UnifiedMap {
     this.countriesLayer = null;
     this.countryLayers = {};
     this.countriesData = null;
+    this.svgCache = this.loadSvgCache(); // Cache for country SVG silhouettes
 
     // Selection state (from AnswerMap)
     this.marker = null;
@@ -581,8 +582,13 @@ export class UnifiedMap {
     return calculateDistance(this.selectedLatLng, capitalCoords);
   }
 
-  // Generate SVG path for a country silhouette
+  // Generate SVG path for a country silhouette (with caching)
   getCountrySVG(code) {
+    // Return cached SVG if available
+    if (this.svgCache[code]) {
+      return this.svgCache[code];
+    }
+
     const layer = this.countryLayers[code];
     if (!layer || !layer.feature) return null;
 
@@ -617,17 +623,50 @@ export class UnifiedMap {
     const padding = 2;
     const scale = (svgSize - padding * 2) / Math.max(width, height);
 
-    // Convert coordinates to SVG path
+    // Convert coordinates to SVG path with simplification
+    // Skip points that are too close together (< 0.5px apart in SVG space)
     const paths = allCoords.map(ring => {
-      const points = ring.map(([lon, lat]) => {
+      const simplified = [];
+      let lastX = null, lastY = null;
+
+      ring.forEach(([lon, lat]) => {
         const x = padding + (lon - minX) * scale;
         const y = padding + (maxY - lat) * scale; // Flip Y axis
-        return `${x.toFixed(1)},${y.toFixed(1)}`;
-      });
-      return `M${points.join('L')}Z`;
-    }).join(' ');
 
-    return `<svg viewBox="0 0 ${svgSize} ${svgSize}" width="${svgSize}" height="${svgSize}"><path d="${paths}" fill="#6b7280" stroke="#374151" stroke-width="0.5"/></svg>`;
+        // Only add point if it's far enough from the last one
+        if (lastX === null || Math.abs(x - lastX) > 0.5 || Math.abs(y - lastY) > 0.5) {
+          simplified.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+          lastX = x;
+          lastY = y;
+        }
+      });
+
+      return simplified.length > 2 ? `M${simplified.join('L')}Z` : '';
+    }).filter(p => p).join(' ');
+
+    const svg = `<svg viewBox="0 0 ${svgSize} ${svgSize}" width="${svgSize}" height="${svgSize}"><path d="${paths}" fill="#6b7280" stroke="#374151" stroke-width="0.5"/></svg>`;
+
+    // Cache the result in memory and localStorage
+    this.svgCache[code] = svg;
+    this.saveSvgCache();
+    return svg;
+  }
+
+  loadSvgCache() {
+    try {
+      const saved = localStorage.getItem('pris-en-flag-svg-cache');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  }
+
+  saveSvgCache() {
+    try {
+      localStorage.setItem('pris-en-flag-svg-cache', JSON.stringify(this.svgCache));
+    } catch {
+      // localStorage full or unavailable - ignore
+    }
   }
 
   // ========== Result Display ==========

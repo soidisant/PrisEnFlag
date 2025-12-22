@@ -68,8 +68,15 @@ document.getElementById('end-home-btn').addEventListener('click', () => {
 });
 
 // Hint toggle
-document.getElementById('hint-toggle').addEventListener('change', (e) => {
+const hintToggle = document.getElementById('hint-toggle');
+const savedHints = localStorage.getItem('pris-en-flag-hints');
+if (savedHints !== null) {
+  hintToggle.checked = savedHints === 'true';
+}
+
+hintToggle.addEventListener('change', (e) => {
   game.unifiedMap?.setHintsEnabled(e.target.checked);
+  localStorage.setItem('pris-en-flag-hints', e.target.checked);
   if (!e.target.checked) {
     ui.hideCandidatesPanel();
   }
