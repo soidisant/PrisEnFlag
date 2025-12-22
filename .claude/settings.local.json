@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__get-library-docs",
+      "WebSearch",
+      "Bash(curl:*)",
+      "Bash(node scripts/processCountries.js:*)",
+      "Bash(node -e:*)",
+      "Bash(pkill:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

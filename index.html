@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pris en Flag</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen">
+        <div class="start-content">
+          <h1>Pris en Flag</h1>
+          <p class="subtitle">Guess the country from its flag!</p>
+          <div class="instructions">
+            <p>A flag will appear on the left map, which slowly zooms toward the target country.</p>
+            <p>Click on the right map to place your pin in the correct country.</p>
+            <p>The faster you answer, the more points you earn!</p>
+          </div>
+          <button id="start-btn" class="btn btn-primary">Play</button>
+        </div>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game-screen" class="screen hidden">
+        <header class="game-header">
+          <div class="score-display">
+            <span class="label">Score:</span>
+            <span id="total-score">0</span>
+          </div>
+          <div class="round-display">
+            <span id="current-round">1</span> / <span id="total-rounds">10</span>
+          </div>
+          <div class="timer-display">
+            <span id="timer">30.0</span>s
+          </div>
+        </header>
+
+        <main class="game-container">
+          <div class="map-panel clue-panel">
+            <div class="flag-container">
+              <img id="flag-image" src="" alt="Country flag" />
+            </div>
+            <div id="clue-map" class="map"></div>
+          </div>
+          <div class="map-panel answer-panel">
+            <div id="answer-map" class="map"></div>
+            <div class="answer-controls">
+              <p id="selected-info">Click on the map to place your guess</p>
+              <button id="submit-btn" class="btn btn-primary" disabled>Submit Answer</button>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Result Screen (shown after each round) -->
+      <div id="result-overlay" class="overlay hidden">
+        <div class="result-content">
+          <h2 id="result-title">Correct!</h2>
+          <p id="result-country"></p>
+          <div class="score-breakdown">
+            <div class="score-item">
+              <span>Time Bonus:</span>
+              <span id="time-bonus">0</span>
+            </div>
+            <div class="score-item">
+              <span>Zoom Bonus:</span>
+              <span id="zoom-bonus">0</span>
+            </div>
+            <div class="score-item">
+              <span>Capital Bonus:</span>
+              <span id="capital-bonus">0</span>
+            </div>
+            <div class="score-item total">
+              <span>Round Score:</span>
+              <span id="round-score">0</span>
+            </div>
+          </div>
+          <button id="next-round-btn" class="btn btn-primary">Next Round</button>
+        </div>
+      </div>
+
+      <!-- End Screen -->
+      <div id="end-screen" class="screen hidden">
+        <div class="end-content">
+          <h1>Game Over!</h1>
+          <div class="final-score">
+            <span class="label">Final Score:</span>
+            <span id="final-score">0</span>
+          </div>
+          <div class="stats">
+            <p><span id="correct-count">0</span> / 10 correct answers</p>
+          </div>
+
+          <div class="recap-section">
+            <h2>Round Recap</h2>
+            <div id="recap-list" class="recap-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

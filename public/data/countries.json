@@ -1,0 +1,2930 @@
+{
+  "AW": {
+    "name": "Aruba",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Oranjestad",
+    "capitalCoords": null,
+    "center": [
+      12.5,
+      -69.96666666
+    ],
+    "flag": "https://flagcdn.com/aw.svg"
+  },
+  "AF": {
+    "name": "Afghanistan",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Kabul",
+    "capitalCoords": null,
+    "center": [
+      33,
+      65
+    ],
+    "flag": "https://flagcdn.com/af.svg"
+  },
+  "AO": {
+    "name": "Angola",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Luanda",
+    "capitalCoords": null,
+    "center": [
+      -12.5,
+      18.5
+    ],
+    "flag": "https://flagcdn.com/ao.svg"
+  },
+  "AI": {
+    "name": "Anguilla",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "The Valley",
+    "capitalCoords": null,
+    "center": [
+      18.25,
+      -63.16666666
+    ],
+    "flag": "https://flagcdn.com/ai.svg"
+  },
+  "AX": {
+    "name": "Åland Islands",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Mariehamn",
+    "capitalCoords": null,
+    "center": [
+      60.116667,
+      19.9
+    ],
+    "flag": "https://flagcdn.com/ax.svg"
+  },
+  "AL": {
+    "name": "Albania",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Tirana",
+    "capitalCoords": null,
+    "center": [
+      41,
+      20
+    ],
+    "flag": "https://flagcdn.com/al.svg"
+  },
+  "AD": {
+    "name": "Andorra",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Andorra la Vella",
+    "capitalCoords": null,
+    "center": [
+      42.5,
+      1.5
+    ],
+    "flag": "https://flagcdn.com/ad.svg"
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Abu Dhabi",
+    "capitalCoords": null,
+    "center": [
+      24,
+      54
+    ],
+    "flag": "https://flagcdn.com/ae.svg"
+  },
+  "AR": {
+    "name": "Argentina",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Buenos Aires",
+    "capitalCoords": null,
+    "center": [
+      -34,
+      -64
+    ],
+    "flag": "https://flagcdn.com/ar.svg"
+  },
+  "AM": {
+    "name": "Armenia",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Yerevan",
+    "capitalCoords": null,
+    "center": [
+      40,
+      45
+    ],
+    "flag": "https://flagcdn.com/am.svg"
+  },
+  "AS": {
+    "name": "American Samoa",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Pago Pago",
+    "capitalCoords": null,
+    "center": [
+      -14.33333333,
+      -170
+    ],
+    "flag": "https://flagcdn.com/as.svg"
+  },
+  "AG": {
+    "name": "Antigua and Barbuda",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Saint John's",
+    "capitalCoords": null,
+    "center": [
+      17.05,
+      -61.8
+    ],
+    "flag": "https://flagcdn.com/ag.svg"
+  },
+  "AU": {
+    "name": "Australia",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "Canberra",
+    "capitalCoords": null,
+    "center": [
+      -27,
+      133
+    ],
+    "flag": "https://flagcdn.com/au.svg"
+  },
+  "AT": {
+    "name": "Austria",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Vienna",
+    "capitalCoords": null,
+    "center": [
+      47.33333333,
+      13.33333333
+    ],
+    "flag": "https://flagcdn.com/at.svg"
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Baku",
+    "capitalCoords": null,
+    "center": [
+      40.5,
+      47.5
+    ],
+    "flag": "https://flagcdn.com/az.svg"
+  },
+  "BI": {
+    "name": "Burundi",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Gitega",
+    "capitalCoords": null,
+    "center": [
+      -3.5,
+      30
+    ],
+    "flag": "https://flagcdn.com/bi.svg"
+  },
+  "BE": {
+    "name": "Belgium",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Brussels",
+    "capitalCoords": null,
+    "center": [
+      50.83333333,
+      4
+    ],
+    "flag": "https://flagcdn.com/be.svg"
+  },
+  "BJ": {
+    "name": "Benin",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Porto-Novo",
+    "capitalCoords": null,
+    "center": [
+      9.5,
+      2.25
+    ],
+    "flag": "https://flagcdn.com/bj.svg"
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Ouagadougou",
+    "capitalCoords": null,
+    "center": [
+      13,
+      -2
+    ],
+    "flag": "https://flagcdn.com/bf.svg"
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Dhaka",
+    "capitalCoords": null,
+    "center": [
+      24,
+      90
+    ],
+    "flag": "https://flagcdn.com/bd.svg"
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Sofia",
+    "capitalCoords": null,
+    "center": [
+      43,
+      25
+    ],
+    "flag": "https://flagcdn.com/bg.svg"
+  },
+  "BH": {
+    "name": "Bahrain",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Manama",
+    "capitalCoords": null,
+    "center": [
+      26,
+      50.55
+    ],
+    "flag": "https://flagcdn.com/bh.svg"
+  },
+  "BS": {
+    "name": "Bahamas",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Nassau",
+    "capitalCoords": null,
+    "center": [
+      24.25,
+      -76
+    ],
+    "flag": "https://flagcdn.com/bs.svg"
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Sarajevo",
+    "capitalCoords": null,
+    "center": [
+      44,
+      18
+    ],
+    "flag": "https://flagcdn.com/ba.svg"
+  },
+  "BL": {
+    "name": "Saint Barthélemy",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Gustavia",
+    "capitalCoords": null,
+    "center": [
+      18.5,
+      -63.41666666
+    ],
+    "flag": "https://flagcdn.com/bl.svg"
+  },
+  "SH": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Jamestown",
+    "capitalCoords": null,
+    "center": [
+      -15.95,
+      -5.72
+    ],
+    "flag": "https://flagcdn.com/sh.svg"
+  },
+  "BY": {
+    "name": "Belarus",
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "capital": "Minsk",
+    "capitalCoords": null,
+    "center": [
+      53,
+      28
+    ],
+    "flag": "https://flagcdn.com/by.svg"
+  },
+  "BZ": {
+    "name": "Belize",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "Belmopan",
+    "capitalCoords": null,
+    "center": [
+      17.25,
+      -88.75
+    ],
+    "flag": "https://flagcdn.com/bz.svg"
+  },
+  "BM": {
+    "name": "Bermuda",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Hamilton",
+    "capitalCoords": null,
+    "center": [
+      32.33333333,
+      -64.75
+    ],
+    "flag": "https://flagcdn.com/bm.svg"
+  },
+  "BO": {
+    "name": "Bolivia",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Sucre",
+    "capitalCoords": null,
+    "center": [
+      -17,
+      -65
+    ],
+    "flag": "https://flagcdn.com/bo.svg"
+  },
+  "BQ": {
+    "name": "Caribbean Netherlands",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Kralendijk",
+    "capitalCoords": null,
+    "center": [
+      12.18,
+      -68.25
+    ],
+    "flag": "https://flagcdn.com/bq.svg"
+  },
+  "BR": {
+    "name": "Brazil",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Brasília",
+    "capitalCoords": null,
+    "center": [
+      -10,
+      -55
+    ],
+    "flag": "https://flagcdn.com/br.svg"
+  },
+  "BB": {
+    "name": "Barbados",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Bridgetown",
+    "capitalCoords": null,
+    "center": [
+      13.16666666,
+      -59.53333333
+    ],
+    "flag": "https://flagcdn.com/bb.svg"
+  },
+  "BN": {
+    "name": "Brunei",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Bandar Seri Begawan",
+    "capitalCoords": null,
+    "center": [
+      4.5,
+      114.66666666
+    ],
+    "flag": "https://flagcdn.com/bn.svg"
+  },
+  "BT": {
+    "name": "Bhutan",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Thimphu",
+    "capitalCoords": null,
+    "center": [
+      27.5,
+      90.5
+    ],
+    "flag": "https://flagcdn.com/bt.svg"
+  },
+  "BW": {
+    "name": "Botswana",
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Gaborone",
+    "capitalCoords": null,
+    "center": [
+      -22,
+      24
+    ],
+    "flag": "https://flagcdn.com/bw.svg"
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Bangui",
+    "capitalCoords": null,
+    "center": [
+      7,
+      21
+    ],
+    "flag": "https://flagcdn.com/cf.svg"
+  },
+  "CA": {
+    "name": "Canada",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Ottawa",
+    "capitalCoords": null,
+    "center": [
+      60,
+      -95
+    ],
+    "flag": "https://flagcdn.com/ca.svg"
+  },
+  "CC": {
+    "name": "Cocos (Keeling) Islands",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "West Island",
+    "capitalCoords": null,
+    "center": [
+      -12.5,
+      96.83333333
+    ],
+    "flag": "https://flagcdn.com/cc.svg"
+  },
+  "CH": {
+    "name": "Switzerland",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Bern",
+    "capitalCoords": null,
+    "center": [
+      47,
+      8
+    ],
+    "flag": "https://flagcdn.com/ch.svg"
+  },
+  "CL": {
+    "name": "Chile",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Santiago",
+    "capitalCoords": null,
+    "center": [
+      -30,
+      -71
+    ],
+    "flag": "https://flagcdn.com/cl.svg"
+  },
+  "CN": {
+    "name": "China",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Beijing",
+    "capitalCoords": null,
+    "center": [
+      35,
+      105
+    ],
+    "flag": "https://flagcdn.com/cn.svg"
+  },
+  "CI": {
+    "name": "Ivory Coast",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Yamoussoukro",
+    "capitalCoords": null,
+    "center": [
+      8,
+      -5
+    ],
+    "flag": "https://flagcdn.com/ci.svg"
+  },
+  "CM": {
+    "name": "Cameroon",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Yaoundé",
+    "capitalCoords": null,
+    "center": [
+      6,
+      12
+    ],
+    "flag": "https://flagcdn.com/cm.svg"
+  },
+  "CD": {
+    "name": "DR Congo",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Kinshasa",
+    "capitalCoords": null,
+    "center": [
+      0,
+      25
+    ],
+    "flag": "https://flagcdn.com/cd.svg"
+  },
+  "CG": {
+    "name": "Congo",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Brazzaville",
+    "capitalCoords": null,
+    "center": [
+      -1,
+      15
+    ],
+    "flag": "https://flagcdn.com/cg.svg"
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Avarua",
+    "capitalCoords": null,
+    "center": [
+      -21.23333333,
+      -159.76666666
+    ],
+    "flag": "https://flagcdn.com/ck.svg"
+  },
+  "CO": {
+    "name": "Colombia",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Bogotá",
+    "capitalCoords": null,
+    "center": [
+      4,
+      -72
+    ],
+    "flag": "https://flagcdn.com/co.svg"
+  },
+  "KM": {
+    "name": "Comoros",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Moroni",
+    "capitalCoords": null,
+    "center": [
+      -12.16666666,
+      44.25
+    ],
+    "flag": "https://flagcdn.com/km.svg"
+  },
+  "CV": {
+    "name": "Cape Verde",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Praia",
+    "capitalCoords": null,
+    "center": [
+      16,
+      -24
+    ],
+    "flag": "https://flagcdn.com/cv.svg"
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "San José",
+    "capitalCoords": null,
+    "center": [
+      10,
+      -84
+    ],
+    "flag": "https://flagcdn.com/cr.svg"
+  },
+  "CU": {
+    "name": "Cuba",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Havana",
+    "capitalCoords": null,
+    "center": [
+      21.5,
+      -80
+    ],
+    "flag": "https://flagcdn.com/cu.svg"
+  },
+  "CW": {
+    "name": "Curaçao",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Willemstad",
+    "capitalCoords": null,
+    "center": [
+      12.116667,
+      -68.933333
+    ],
+    "flag": "https://flagcdn.com/cw.svg"
+  },
+  "CX": {
+    "name": "Christmas Island",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "Flying Fish Cove",
+    "capitalCoords": null,
+    "center": [
+      -10.5,
+      105.66666666
+    ],
+    "flag": "https://flagcdn.com/cx.svg"
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "George Town",
+    "capitalCoords": null,
+    "center": [
+      19.5,
+      -80.5
+    ],
+    "flag": "https://flagcdn.com/ky.svg"
+  },
+  "CY": {
+    "name": "Cyprus",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Nicosia",
+    "capitalCoords": null,
+    "center": [
+      35,
+      33
+    ],
+    "flag": "https://flagcdn.com/cy.svg"
+  },
+  "CZ": {
+    "name": "Czechia",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Prague",
+    "capitalCoords": null,
+    "center": [
+      49.75,
+      15.5
+    ],
+    "flag": "https://flagcdn.com/cz.svg"
+  },
+  "DE": {
+    "name": "Germany",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Berlin",
+    "capitalCoords": null,
+    "center": [
+      51,
+      9
+    ],
+    "flag": "https://flagcdn.com/de.svg"
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Djibouti",
+    "capitalCoords": null,
+    "center": [
+      11.5,
+      43
+    ],
+    "flag": "https://flagcdn.com/dj.svg"
+  },
+  "DM": {
+    "name": "Dominica",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Roseau",
+    "capitalCoords": null,
+    "center": [
+      15.41666666,
+      -61.33333333
+    ],
+    "flag": "https://flagcdn.com/dm.svg"
+  },
+  "DK": {
+    "name": "Denmark",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Copenhagen",
+    "capitalCoords": null,
+    "center": [
+      56,
+      10
+    ],
+    "flag": "https://flagcdn.com/dk.svg"
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Santo Domingo",
+    "capitalCoords": null,
+    "center": [
+      19,
+      -70.66666666
+    ],
+    "flag": "https://flagcdn.com/do.svg"
+  },
+  "DZ": {
+    "name": "Algeria",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Algiers",
+    "capitalCoords": null,
+    "center": [
+      28,
+      3
+    ],
+    "flag": "https://flagcdn.com/dz.svg"
+  },
+  "EC": {
+    "name": "Ecuador",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Quito",
+    "capitalCoords": null,
+    "center": [
+      -2,
+      -77.5
+    ],
+    "flag": "https://flagcdn.com/ec.svg"
+  },
+  "EG": {
+    "name": "Egypt",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Cairo",
+    "capitalCoords": null,
+    "center": [
+      27,
+      30
+    ],
+    "flag": "https://flagcdn.com/eg.svg"
+  },
+  "ER": {
+    "name": "Eritrea",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Asmara",
+    "capitalCoords": null,
+    "center": [
+      15,
+      39
+    ],
+    "flag": "https://flagcdn.com/er.svg"
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "El Aaiún",
+    "capitalCoords": null,
+    "center": [
+      24.5,
+      -13
+    ],
+    "flag": "https://flagcdn.com/eh.svg"
+  },
+  "ES": {
+    "name": "Spain",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Madrid",
+    "capitalCoords": null,
+    "center": [
+      40,
+      -4
+    ],
+    "flag": "https://flagcdn.com/es.svg"
+  },
+  "EE": {
+    "name": "Estonia",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Tallinn",
+    "capitalCoords": null,
+    "center": [
+      59,
+      26
+    ],
+    "flag": "https://flagcdn.com/ee.svg"
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Addis Ababa",
+    "capitalCoords": null,
+    "center": [
+      8,
+      38
+    ],
+    "flag": "https://flagcdn.com/et.svg"
+  },
+  "FI": {
+    "name": "Finland",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Helsinki",
+    "capitalCoords": null,
+    "center": [
+      64,
+      26
+    ],
+    "flag": "https://flagcdn.com/fi.svg"
+  },
+  "FJ": {
+    "name": "Fiji",
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "capital": "Suva",
+    "capitalCoords": null,
+    "center": [
+      -18,
+      175
+    ],
+    "flag": "https://flagcdn.com/fj.svg"
+  },
+  "FK": {
+    "name": "Falkland Islands",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Stanley",
+    "capitalCoords": null,
+    "center": [
+      -51.75,
+      -59
+    ],
+    "flag": "https://flagcdn.com/fk.svg"
+  },
+  "FR": {
+    "name": "France",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Paris",
+    "capitalCoords": null,
+    "center": [
+      46,
+      2
+    ],
+    "flag": "https://flagcdn.com/fr.svg"
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Tórshavn",
+    "capitalCoords": null,
+    "center": [
+      62,
+      -7
+    ],
+    "flag": "https://flagcdn.com/fo.svg"
+  },
+  "FM": {
+    "name": "Micronesia",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Palikir",
+    "capitalCoords": null,
+    "center": [
+      6.91666666,
+      158.25
+    ],
+    "flag": "https://flagcdn.com/fm.svg"
+  },
+  "GA": {
+    "name": "Gabon",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Libreville",
+    "capitalCoords": null,
+    "center": [
+      -1,
+      11.75
+    ],
+    "flag": "https://flagcdn.com/ga.svg"
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "London",
+    "capitalCoords": null,
+    "center": [
+      54,
+      -2
+    ],
+    "flag": "https://flagcdn.com/gb.svg"
+  },
+  "GE": {
+    "name": "Georgia",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Tbilisi",
+    "capitalCoords": null,
+    "center": [
+      42,
+      43.5
+    ],
+    "flag": "https://flagcdn.com/ge.svg"
+  },
+  "GG": {
+    "name": "Guernsey",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "St. Peter Port",
+    "capitalCoords": null,
+    "center": [
+      49.46666666,
+      -2.58333333
+    ],
+    "flag": "https://flagcdn.com/gg.svg"
+  },
+  "GH": {
+    "name": "Ghana",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Accra",
+    "capitalCoords": null,
+    "center": [
+      8,
+      -2
+    ],
+    "flag": "https://flagcdn.com/gh.svg"
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Gibraltar",
+    "capitalCoords": null,
+    "center": [
+      36.13333333,
+      -5.35
+    ],
+    "flag": "https://flagcdn.com/gi.svg"
+  },
+  "GN": {
+    "name": "Guinea",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Conakry",
+    "capitalCoords": null,
+    "center": [
+      11,
+      -10
+    ],
+    "flag": "https://flagcdn.com/gn.svg"
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Basse-Terre",
+    "capitalCoords": null,
+    "center": [
+      16.25,
+      -61.583333
+    ],
+    "flag": "https://flagcdn.com/gp.svg"
+  },
+  "GM": {
+    "name": "Gambia",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Banjul",
+    "capitalCoords": null,
+    "center": [
+      13.46666666,
+      -16.56666666
+    ],
+    "flag": "https://flagcdn.com/gm.svg"
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Bissau",
+    "capitalCoords": null,
+    "center": [
+      12,
+      -15
+    ],
+    "flag": "https://flagcdn.com/gw.svg"
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Malabo",
+    "capitalCoords": null,
+    "center": [
+      2,
+      10
+    ],
+    "flag": "https://flagcdn.com/gq.svg"
+  },
+  "GR": {
+    "name": "Greece",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Athens",
+    "capitalCoords": null,
+    "center": [
+      39,
+      22
+    ],
+    "flag": "https://flagcdn.com/gr.svg"
+  },
+  "GD": {
+    "name": "Grenada",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "St. George's",
+    "capitalCoords": null,
+    "center": [
+      12.11666666,
+      -61.66666666
+    ],
+    "flag": "https://flagcdn.com/gd.svg"
+  },
+  "GL": {
+    "name": "Greenland",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Nuuk",
+    "capitalCoords": null,
+    "center": [
+      72,
+      -40
+    ],
+    "flag": "https://flagcdn.com/gl.svg"
+  },
+  "GT": {
+    "name": "Guatemala",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "Guatemala City",
+    "capitalCoords": null,
+    "center": [
+      15.5,
+      -90.25
+    ],
+    "flag": "https://flagcdn.com/gt.svg"
+  },
+  "GF": {
+    "name": "French Guiana",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Cayenne",
+    "capitalCoords": null,
+    "center": [
+      4,
+      -53
+    ],
+    "flag": "https://flagcdn.com/gf.svg"
+  },
+  "GU": {
+    "name": "Guam",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Hagåtña",
+    "capitalCoords": null,
+    "center": [
+      13.46666666,
+      144.78333333
+    ],
+    "flag": "https://flagcdn.com/gu.svg"
+  },
+  "GY": {
+    "name": "Guyana",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Georgetown",
+    "capitalCoords": null,
+    "center": [
+      5,
+      -59
+    ],
+    "flag": "https://flagcdn.com/gy.svg"
+  },
+  "HK": {
+    "name": "Hong Kong",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "City of Victoria",
+    "capitalCoords": null,
+    "center": [
+      22.267,
+      114.188
+    ],
+    "flag": "https://flagcdn.com/hk.svg"
+  },
+  "HN": {
+    "name": "Honduras",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "Tegucigalpa",
+    "capitalCoords": null,
+    "center": [
+      15,
+      -86.5
+    ],
+    "flag": "https://flagcdn.com/hn.svg"
+  },
+  "HR": {
+    "name": "Croatia",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Zagreb",
+    "capitalCoords": null,
+    "center": [
+      45.16666666,
+      15.5
+    ],
+    "flag": "https://flagcdn.com/hr.svg"
+  },
+  "HT": {
+    "name": "Haiti",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Port-au-Prince",
+    "capitalCoords": null,
+    "center": [
+      19,
+      -72.41666666
+    ],
+    "flag": "https://flagcdn.com/ht.svg"
+  },
+  "HU": {
+    "name": "Hungary",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Budapest",
+    "capitalCoords": null,
+    "center": [
+      47,
+      20
+    ],
+    "flag": "https://flagcdn.com/hu.svg"
+  },
+  "ID": {
+    "name": "Indonesia",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Jakarta",
+    "capitalCoords": null,
+    "center": [
+      -5,
+      120
+    ],
+    "flag": "https://flagcdn.com/id.svg"
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Douglas",
+    "capitalCoords": null,
+    "center": [
+      54.25,
+      -4.5
+    ],
+    "flag": "https://flagcdn.com/im.svg"
+  },
+  "IN": {
+    "name": "India",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "New Delhi",
+    "capitalCoords": null,
+    "center": [
+      20,
+      77
+    ],
+    "flag": "https://flagcdn.com/in.svg"
+  },
+  "IO": {
+    "name": "British Indian Ocean Territory",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Diego Garcia",
+    "capitalCoords": null,
+    "center": [
+      -6,
+      71.5
+    ],
+    "flag": "https://flagcdn.com/io.svg"
+  },
+  "IE": {
+    "name": "Ireland",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Dublin",
+    "capitalCoords": null,
+    "center": [
+      53,
+      -8
+    ],
+    "flag": "https://flagcdn.com/ie.svg"
+  },
+  "IR": {
+    "name": "Iran",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Tehran",
+    "capitalCoords": null,
+    "center": [
+      32,
+      53
+    ],
+    "flag": "https://flagcdn.com/ir.svg"
+  },
+  "IQ": {
+    "name": "Iraq",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Baghdad",
+    "capitalCoords": null,
+    "center": [
+      33,
+      44
+    ],
+    "flag": "https://flagcdn.com/iq.svg"
+  },
+  "IS": {
+    "name": "Iceland",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Reykjavik",
+    "capitalCoords": null,
+    "center": [
+      65,
+      -18
+    ],
+    "flag": "https://flagcdn.com/is.svg"
+  },
+  "IL": {
+    "name": "Israel",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Jerusalem",
+    "capitalCoords": null,
+    "center": [
+      31.47,
+      35.13
+    ],
+    "flag": "https://flagcdn.com/il.svg"
+  },
+  "IT": {
+    "name": "Italy",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Rome",
+    "capitalCoords": null,
+    "center": [
+      42.83333333,
+      12.83333333
+    ],
+    "flag": "https://flagcdn.com/it.svg"
+  },
+  "JM": {
+    "name": "Jamaica",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Kingston",
+    "capitalCoords": null,
+    "center": [
+      18.25,
+      -77.5
+    ],
+    "flag": "https://flagcdn.com/jm.svg"
+  },
+  "JE": {
+    "name": "Jersey",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Saint Helier",
+    "capitalCoords": null,
+    "center": [
+      49.25,
+      -2.16666666
+    ],
+    "flag": "https://flagcdn.com/je.svg"
+  },
+  "JO": {
+    "name": "Jordan",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Amman",
+    "capitalCoords": null,
+    "center": [
+      31,
+      36
+    ],
+    "flag": "https://flagcdn.com/jo.svg"
+  },
+  "JP": {
+    "name": "Japan",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Tokyo",
+    "capitalCoords": null,
+    "center": [
+      36,
+      138
+    ],
+    "flag": "https://flagcdn.com/jp.svg"
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Astana",
+    "capitalCoords": null,
+    "center": [
+      48,
+      68
+    ],
+    "flag": "https://flagcdn.com/kz.svg"
+  },
+  "KE": {
+    "name": "Kenya",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Nairobi",
+    "capitalCoords": null,
+    "center": [
+      1,
+      38
+    ],
+    "flag": "https://flagcdn.com/ke.svg"
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Bishkek",
+    "capitalCoords": null,
+    "center": [
+      41,
+      75
+    ],
+    "flag": "https://flagcdn.com/kg.svg"
+  },
+  "KH": {
+    "name": "Cambodia",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Phnom Penh",
+    "capitalCoords": null,
+    "center": [
+      13,
+      105
+    ],
+    "flag": "https://flagcdn.com/kh.svg"
+  },
+  "KI": {
+    "name": "Kiribati",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "South Tarawa",
+    "capitalCoords": null,
+    "center": [
+      1.41666666,
+      173
+    ],
+    "flag": "https://flagcdn.com/ki.svg"
+  },
+  "KN": {
+    "name": "Saint Kitts and Nevis",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Basseterre",
+    "capitalCoords": null,
+    "center": [
+      17.33333333,
+      -62.75
+    ],
+    "flag": "https://flagcdn.com/kn.svg"
+  },
+  "KR": {
+    "name": "South Korea",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Seoul",
+    "capitalCoords": null,
+    "center": [
+      37,
+      127.5
+    ],
+    "flag": "https://flagcdn.com/kr.svg"
+  },
+  "XK": {
+    "name": "Kosovo",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Pristina",
+    "capitalCoords": null,
+    "center": [
+      42.666667,
+      21.166667
+    ],
+    "flag": "https://flagcdn.com/xk.svg"
+  },
+  "KW": {
+    "name": "Kuwait",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Kuwait City",
+    "capitalCoords": null,
+    "center": [
+      29.5,
+      45.75
+    ],
+    "flag": "https://flagcdn.com/kw.svg"
+  },
+  "LA": {
+    "name": "Laos",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Vientiane",
+    "capitalCoords": null,
+    "center": [
+      18,
+      105
+    ],
+    "flag": "https://flagcdn.com/la.svg"
+  },
+  "LB": {
+    "name": "Lebanon",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Beirut",
+    "capitalCoords": null,
+    "center": [
+      33.83333333,
+      35.83333333
+    ],
+    "flag": "https://flagcdn.com/lb.svg"
+  },
+  "LR": {
+    "name": "Liberia",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Monrovia",
+    "capitalCoords": null,
+    "center": [
+      6.5,
+      -9.5
+    ],
+    "flag": "https://flagcdn.com/lr.svg"
+  },
+  "LY": {
+    "name": "Libya",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Tripoli",
+    "capitalCoords": null,
+    "center": [
+      25,
+      17
+    ],
+    "flag": "https://flagcdn.com/ly.svg"
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Castries",
+    "capitalCoords": null,
+    "center": [
+      13.88333333,
+      -60.96666666
+    ],
+    "flag": "https://flagcdn.com/lc.svg"
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Vaduz",
+    "capitalCoords": null,
+    "center": [
+      47.26666666,
+      9.53333333
+    ],
+    "flag": "https://flagcdn.com/li.svg"
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Colombo",
+    "capitalCoords": null,
+    "center": [
+      7,
+      81
+    ],
+    "flag": "https://flagcdn.com/lk.svg"
+  },
+  "LS": {
+    "name": "Lesotho",
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Maseru",
+    "capitalCoords": null,
+    "center": [
+      -29.5,
+      28.5
+    ],
+    "flag": "https://flagcdn.com/ls.svg"
+  },
+  "LT": {
+    "name": "Lithuania",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Vilnius",
+    "capitalCoords": null,
+    "center": [
+      56,
+      24
+    ],
+    "flag": "https://flagcdn.com/lt.svg"
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Luxembourg",
+    "capitalCoords": null,
+    "center": [
+      49.75,
+      6.16666666
+    ],
+    "flag": "https://flagcdn.com/lu.svg"
+  },
+  "LV": {
+    "name": "Latvia",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Riga",
+    "capitalCoords": null,
+    "center": [
+      57,
+      25
+    ],
+    "flag": "https://flagcdn.com/lv.svg"
+  },
+  "MO": {
+    "name": "Macau",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": null,
+    "capitalCoords": null,
+    "center": [
+      22.16666666,
+      113.55
+    ],
+    "flag": "https://flagcdn.com/mo.svg"
+  },
+  "MF": {
+    "name": "Saint Martin",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Marigot",
+    "capitalCoords": null,
+    "center": [
+      18.08333333,
+      -63.95
+    ],
+    "flag": "https://flagcdn.com/mf.svg"
+  },
+  "MA": {
+    "name": "Morocco",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Rabat",
+    "capitalCoords": null,
+    "center": [
+      32,
+      -5
+    ],
+    "flag": "https://flagcdn.com/ma.svg"
+  },
+  "MC": {
+    "name": "Monaco",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Monaco",
+    "capitalCoords": null,
+    "center": [
+      43.73333333,
+      7.4
+    ],
+    "flag": "https://flagcdn.com/mc.svg"
+  },
+  "MD": {
+    "name": "Moldova",
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "capital": "Chișinău",
+    "capitalCoords": null,
+    "center": [
+      47,
+      29
+    ],
+    "flag": "https://flagcdn.com/md.svg"
+  },
+  "MG": {
+    "name": "Madagascar",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Antananarivo",
+    "capitalCoords": null,
+    "center": [
+      -20,
+      47
+    ],
+    "flag": "https://flagcdn.com/mg.svg"
+  },
+  "MV": {
+    "name": "Maldives",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Malé",
+    "capitalCoords": null,
+    "center": [
+      3.25,
+      73
+    ],
+    "flag": "https://flagcdn.com/mv.svg"
+  },
+  "MX": {
+    "name": "Mexico",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Mexico City",
+    "capitalCoords": null,
+    "center": [
+      23,
+      -102
+    ],
+    "flag": "https://flagcdn.com/mx.svg"
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Majuro",
+    "capitalCoords": null,
+    "center": [
+      9,
+      168
+    ],
+    "flag": "https://flagcdn.com/mh.svg"
+  },
+  "MK": {
+    "name": "North Macedonia",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Skopje",
+    "capitalCoords": null,
+    "center": [
+      41.83333333,
+      22
+    ],
+    "flag": "https://flagcdn.com/mk.svg"
+  },
+  "ML": {
+    "name": "Mali",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Bamako",
+    "capitalCoords": null,
+    "center": [
+      17,
+      -4
+    ],
+    "flag": "https://flagcdn.com/ml.svg"
+  },
+  "MT": {
+    "name": "Malta",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Valletta",
+    "capitalCoords": null,
+    "center": [
+      35.83333333,
+      14.58333333
+    ],
+    "flag": "https://flagcdn.com/mt.svg"
+  },
+  "MM": {
+    "name": "Myanmar",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Naypyidaw",
+    "capitalCoords": null,
+    "center": [
+      22,
+      98
+    ],
+    "flag": "https://flagcdn.com/mm.svg"
+  },
+  "ME": {
+    "name": "Montenegro",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Podgorica",
+    "capitalCoords": null,
+    "center": [
+      42.5,
+      19.3
+    ],
+    "flag": "https://flagcdn.com/me.svg"
+  },
+  "MN": {
+    "name": "Mongolia",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Ulan Bator",
+    "capitalCoords": null,
+    "center": [
+      46,
+      105
+    ],
+    "flag": "https://flagcdn.com/mn.svg"
+  },
+  "MP": {
+    "name": "Northern Mariana Islands",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Saipan",
+    "capitalCoords": null,
+    "center": [
+      15.2,
+      145.75
+    ],
+    "flag": "https://flagcdn.com/mp.svg"
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Maputo",
+    "capitalCoords": null,
+    "center": [
+      -18.25,
+      35
+    ],
+    "flag": "https://flagcdn.com/mz.svg"
+  },
+  "MR": {
+    "name": "Mauritania",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Nouakchott",
+    "capitalCoords": null,
+    "center": [
+      20,
+      -12
+    ],
+    "flag": "https://flagcdn.com/mr.svg"
+  },
+  "MS": {
+    "name": "Montserrat",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Plymouth",
+    "capitalCoords": null,
+    "center": [
+      16.75,
+      -62.2
+    ],
+    "flag": "https://flagcdn.com/ms.svg"
+  },
+  "MQ": {
+    "name": "Martinique",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Fort-de-France",
+    "capitalCoords": null,
+    "center": [
+      14.666667,
+      -61
+    ],
+    "flag": "https://flagcdn.com/mq.svg"
+  },
+  "MU": {
+    "name": "Mauritius",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Port Louis",
+    "capitalCoords": null,
+    "center": [
+      -20.28333333,
+      57.55
+    ],
+    "flag": "https://flagcdn.com/mu.svg"
+  },
+  "MW": {
+    "name": "Malawi",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Lilongwe",
+    "capitalCoords": null,
+    "center": [
+      -13.5,
+      34
+    ],
+    "flag": "https://flagcdn.com/mw.svg"
+  },
+  "MY": {
+    "name": "Malaysia",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Kuala Lumpur",
+    "capitalCoords": null,
+    "center": [
+      2.5,
+      112.5
+    ],
+    "flag": "https://flagcdn.com/my.svg"
+  },
+  "YT": {
+    "name": "Mayotte",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Mamoudzou",
+    "capitalCoords": null,
+    "center": [
+      -12.83333333,
+      45.16666666
+    ],
+    "flag": "https://flagcdn.com/yt.svg"
+  },
+  "NA": {
+    "name": "Namibia",
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Windhoek",
+    "capitalCoords": null,
+    "center": [
+      -22,
+      17
+    ],
+    "flag": "https://flagcdn.com/na.svg"
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "capital": "Nouméa",
+    "capitalCoords": null,
+    "center": [
+      -21.5,
+      165.5
+    ],
+    "flag": "https://flagcdn.com/nc.svg"
+  },
+  "NE": {
+    "name": "Niger",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Niamey",
+    "capitalCoords": null,
+    "center": [
+      16,
+      8
+    ],
+    "flag": "https://flagcdn.com/ne.svg"
+  },
+  "NF": {
+    "name": "Norfolk Island",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "Kingston",
+    "capitalCoords": null,
+    "center": [
+      -29.03333333,
+      167.95
+    ],
+    "flag": "https://flagcdn.com/nf.svg"
+  },
+  "NG": {
+    "name": "Nigeria",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Abuja",
+    "capitalCoords": null,
+    "center": [
+      10,
+      8
+    ],
+    "flag": "https://flagcdn.com/ng.svg"
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "Managua",
+    "capitalCoords": null,
+    "center": [
+      13,
+      -85
+    ],
+    "flag": "https://flagcdn.com/ni.svg"
+  },
+  "NU": {
+    "name": "Niue",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Alofi",
+    "capitalCoords": null,
+    "center": [
+      -19.03333333,
+      -169.86666666
+    ],
+    "flag": "https://flagcdn.com/nu.svg"
+  },
+  "NL": {
+    "name": "Netherlands",
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "capital": "Amsterdam",
+    "capitalCoords": null,
+    "center": [
+      52.5,
+      5.75
+    ],
+    "flag": "https://flagcdn.com/nl.svg"
+  },
+  "NO": {
+    "name": "Norway",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Oslo",
+    "capitalCoords": null,
+    "center": [
+      62,
+      10
+    ],
+    "flag": "https://flagcdn.com/no.svg"
+  },
+  "NP": {
+    "name": "Nepal",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Kathmandu",
+    "capitalCoords": null,
+    "center": [
+      28,
+      84
+    ],
+    "flag": "https://flagcdn.com/np.svg"
+  },
+  "NR": {
+    "name": "Nauru",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Yaren",
+    "capitalCoords": null,
+    "center": [
+      -0.53333333,
+      166.91666666
+    ],
+    "flag": "https://flagcdn.com/nr.svg"
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "Wellington",
+    "capitalCoords": null,
+    "center": [
+      -41,
+      174
+    ],
+    "flag": "https://flagcdn.com/nz.svg"
+  },
+  "OM": {
+    "name": "Oman",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Muscat",
+    "capitalCoords": null,
+    "center": [
+      21,
+      57
+    ],
+    "flag": "https://flagcdn.com/om.svg"
+  },
+  "PK": {
+    "name": "Pakistan",
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Islamabad",
+    "capitalCoords": null,
+    "center": [
+      30,
+      70
+    ],
+    "flag": "https://flagcdn.com/pk.svg"
+  },
+  "PA": {
+    "name": "Panama",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "Panama City",
+    "capitalCoords": null,
+    "center": [
+      9,
+      -80
+    ],
+    "flag": "https://flagcdn.com/pa.svg"
+  },
+  "PN": {
+    "name": "Pitcairn Islands",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Adamstown",
+    "capitalCoords": null,
+    "center": [
+      -25.06666666,
+      -130.1
+    ],
+    "flag": "https://flagcdn.com/pn.svg"
+  },
+  "PE": {
+    "name": "Peru",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Lima",
+    "capitalCoords": null,
+    "center": [
+      -10,
+      -76
+    ],
+    "flag": "https://flagcdn.com/pe.svg"
+  },
+  "PH": {
+    "name": "Philippines",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Manila",
+    "capitalCoords": null,
+    "center": [
+      13,
+      122
+    ],
+    "flag": "https://flagcdn.com/ph.svg"
+  },
+  "PW": {
+    "name": "Palau",
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "capital": "Ngerulmud",
+    "capitalCoords": null,
+    "center": [
+      7.5,
+      134.5
+    ],
+    "flag": "https://flagcdn.com/pw.svg"
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "capital": "Port Moresby",
+    "capitalCoords": null,
+    "center": [
+      -6,
+      147
+    ],
+    "flag": "https://flagcdn.com/pg.svg"
+  },
+  "PL": {
+    "name": "Poland",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Warsaw",
+    "capitalCoords": null,
+    "center": [
+      52,
+      20
+    ],
+    "flag": "https://flagcdn.com/pl.svg"
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "San Juan",
+    "capitalCoords": null,
+    "center": [
+      18.25,
+      -66.5
+    ],
+    "flag": "https://flagcdn.com/pr.svg"
+  },
+  "KP": {
+    "name": "North Korea",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Pyongyang",
+    "capitalCoords": null,
+    "center": [
+      40,
+      127
+    ],
+    "flag": "https://flagcdn.com/kp.svg"
+  },
+  "PT": {
+    "name": "Portugal",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Lisbon",
+    "capitalCoords": null,
+    "center": [
+      39.5,
+      -8
+    ],
+    "flag": "https://flagcdn.com/pt.svg"
+  },
+  "PY": {
+    "name": "Paraguay",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Asunción",
+    "capitalCoords": null,
+    "center": [
+      -23,
+      -58
+    ],
+    "flag": "https://flagcdn.com/py.svg"
+  },
+  "PS": {
+    "name": "Palestine",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Ramallah",
+    "capitalCoords": null,
+    "center": [
+      31.9,
+      35.2
+    ],
+    "flag": "https://flagcdn.com/ps.svg"
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Papeetē",
+    "capitalCoords": null,
+    "center": [
+      -15,
+      -140
+    ],
+    "flag": "https://flagcdn.com/pf.svg"
+  },
+  "QA": {
+    "name": "Qatar",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Doha",
+    "capitalCoords": null,
+    "center": [
+      25.5,
+      51.25
+    ],
+    "flag": "https://flagcdn.com/qa.svg"
+  },
+  "RE": {
+    "name": "Réunion",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Saint-Denis",
+    "capitalCoords": null,
+    "center": [
+      -21.15,
+      55.5
+    ],
+    "flag": "https://flagcdn.com/re.svg"
+  },
+  "RO": {
+    "name": "Romania",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Bucharest",
+    "capitalCoords": null,
+    "center": [
+      46,
+      25
+    ],
+    "flag": "https://flagcdn.com/ro.svg"
+  },
+  "RU": {
+    "name": "Russia",
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "capital": "Moscow",
+    "capitalCoords": null,
+    "center": [
+      60,
+      100
+    ],
+    "flag": "https://flagcdn.com/ru.svg"
+  },
+  "RW": {
+    "name": "Rwanda",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Kigali",
+    "capitalCoords": null,
+    "center": [
+      -2,
+      30
+    ],
+    "flag": "https://flagcdn.com/rw.svg"
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Riyadh",
+    "capitalCoords": null,
+    "center": [
+      25,
+      45
+    ],
+    "flag": "https://flagcdn.com/sa.svg"
+  },
+  "SD": {
+    "name": "Sudan",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Khartoum",
+    "capitalCoords": null,
+    "center": [
+      15,
+      30
+    ],
+    "flag": "https://flagcdn.com/sd.svg"
+  },
+  "SN": {
+    "name": "Senegal",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Dakar",
+    "capitalCoords": null,
+    "center": [
+      14,
+      -14
+    ],
+    "flag": "https://flagcdn.com/sn.svg"
+  },
+  "SG": {
+    "name": "Singapore",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Singapore",
+    "capitalCoords": null,
+    "center": [
+      1.36666666,
+      103.8
+    ],
+    "flag": "https://flagcdn.com/sg.svg"
+  },
+  "SJ": {
+    "name": "Svalbard and Jan Mayen",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Longyearbyen",
+    "capitalCoords": null,
+    "center": [
+      78,
+      20
+    ],
+    "flag": "https://flagcdn.com/sj.svg"
+  },
+  "SB": {
+    "name": "Solomon Islands",
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "capital": "Honiara",
+    "capitalCoords": null,
+    "center": [
+      -8,
+      159
+    ],
+    "flag": "https://flagcdn.com/sb.svg"
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Freetown",
+    "capitalCoords": null,
+    "center": [
+      8.5,
+      -11.5
+    ],
+    "flag": "https://flagcdn.com/sl.svg"
+  },
+  "SV": {
+    "name": "El Salvador",
+    "continent": "Americas",
+    "subregion": "Central America",
+    "capital": "San Salvador",
+    "capitalCoords": null,
+    "center": [
+      13.83333333,
+      -88.91666666
+    ],
+    "flag": "https://flagcdn.com/sv.svg"
+  },
+  "SM": {
+    "name": "San Marino",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "City of San Marino",
+    "capitalCoords": null,
+    "center": [
+      43.76666666,
+      12.41666666
+    ],
+    "flag": "https://flagcdn.com/sm.svg"
+  },
+  "SO": {
+    "name": "Somalia",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Mogadishu",
+    "capitalCoords": null,
+    "center": [
+      10,
+      49
+    ],
+    "flag": "https://flagcdn.com/so.svg"
+  },
+  "PM": {
+    "name": "Saint Pierre and Miquelon",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Saint-Pierre",
+    "capitalCoords": null,
+    "center": [
+      46.83333333,
+      -56.33333333
+    ],
+    "flag": "https://flagcdn.com/pm.svg"
+  },
+  "RS": {
+    "name": "Serbia",
+    "continent": "Europe",
+    "subregion": "Southeast Europe",
+    "capital": "Belgrade",
+    "capitalCoords": null,
+    "center": [
+      44,
+      21
+    ],
+    "flag": "https://flagcdn.com/rs.svg"
+  },
+  "SS": {
+    "name": "South Sudan",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "Juba",
+    "capitalCoords": null,
+    "center": [
+      7,
+      30
+    ],
+    "flag": "https://flagcdn.com/ss.svg"
+  },
+  "ST": {
+    "name": "São Tomé and Príncipe",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "São Tomé",
+    "capitalCoords": null,
+    "center": [
+      1,
+      7
+    ],
+    "flag": "https://flagcdn.com/st.svg"
+  },
+  "SR": {
+    "name": "Suriname",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Paramaribo",
+    "capitalCoords": null,
+    "center": [
+      4,
+      -56
+    ],
+    "flag": "https://flagcdn.com/sr.svg"
+  },
+  "SK": {
+    "name": "Slovakia",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Bratislava",
+    "capitalCoords": null,
+    "center": [
+      48.66666666,
+      19.5
+    ],
+    "flag": "https://flagcdn.com/sk.svg"
+  },
+  "SI": {
+    "name": "Slovenia",
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "capital": "Ljubljana",
+    "capitalCoords": null,
+    "center": [
+      46.11666666,
+      14.81666666
+    ],
+    "flag": "https://flagcdn.com/si.svg"
+  },
+  "SE": {
+    "name": "Sweden",
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "capital": "Stockholm",
+    "capitalCoords": null,
+    "center": [
+      62,
+      15
+    ],
+    "flag": "https://flagcdn.com/se.svg"
+  },
+  "SZ": {
+    "name": "Eswatini",
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Lobamba",
+    "capitalCoords": null,
+    "center": [
+      -26.5,
+      31.5
+    ],
+    "flag": "https://flagcdn.com/sz.svg"
+  },
+  "SX": {
+    "name": "Sint Maarten",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Philipsburg",
+    "capitalCoords": null,
+    "center": [
+      18.033333,
+      -63.05
+    ],
+    "flag": "https://flagcdn.com/sx.svg"
+  },
+  "SC": {
+    "name": "Seychelles",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Victoria",
+    "capitalCoords": null,
+    "center": [
+      -4.58333333,
+      55.66666666
+    ],
+    "flag": "https://flagcdn.com/sc.svg"
+  },
+  "SY": {
+    "name": "Syria",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Damascus",
+    "capitalCoords": null,
+    "center": [
+      35,
+      38
+    ],
+    "flag": "https://flagcdn.com/sy.svg"
+  },
+  "TC": {
+    "name": "Turks and Caicos Islands",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Cockburn Town",
+    "capitalCoords": null,
+    "center": [
+      21.75,
+      -71.58333333
+    ],
+    "flag": "https://flagcdn.com/tc.svg"
+  },
+  "TD": {
+    "name": "Chad",
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "capital": "N'Djamena",
+    "capitalCoords": null,
+    "center": [
+      15,
+      19
+    ],
+    "flag": "https://flagcdn.com/td.svg"
+  },
+  "TG": {
+    "name": "Togo",
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Lomé",
+    "capitalCoords": null,
+    "center": [
+      8,
+      1.16666666
+    ],
+    "flag": "https://flagcdn.com/tg.svg"
+  },
+  "TH": {
+    "name": "Thailand",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Bangkok",
+    "capitalCoords": null,
+    "center": [
+      15,
+      100
+    ],
+    "flag": "https://flagcdn.com/th.svg"
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Dushanbe",
+    "capitalCoords": null,
+    "center": [
+      39,
+      71
+    ],
+    "flag": "https://flagcdn.com/tj.svg"
+  },
+  "TK": {
+    "name": "Tokelau",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Fakaofo",
+    "capitalCoords": null,
+    "center": [
+      -9,
+      -172
+    ],
+    "flag": "https://flagcdn.com/tk.svg"
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Ashgabat",
+    "capitalCoords": null,
+    "center": [
+      40,
+      60
+    ],
+    "flag": "https://flagcdn.com/tm.svg"
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Dili",
+    "capitalCoords": null,
+    "center": [
+      -8.83333333,
+      125.91666666
+    ],
+    "flag": "https://flagcdn.com/tl.svg"
+  },
+  "TO": {
+    "name": "Tonga",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Nuku'alofa",
+    "capitalCoords": null,
+    "center": [
+      -20,
+      -175
+    ],
+    "flag": "https://flagcdn.com/to.svg"
+  },
+  "TT": {
+    "name": "Trinidad and Tobago",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Port of Spain",
+    "capitalCoords": null,
+    "center": [
+      11,
+      -61
+    ],
+    "flag": "https://flagcdn.com/tt.svg"
+  },
+  "TN": {
+    "name": "Tunisia",
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Tunis",
+    "capitalCoords": null,
+    "center": [
+      34,
+      9
+    ],
+    "flag": "https://flagcdn.com/tn.svg"
+  },
+  "TR": {
+    "name": "Türkiye",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Ankara",
+    "capitalCoords": null,
+    "center": [
+      39,
+      35
+    ],
+    "flag": "https://flagcdn.com/tr.svg"
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Funafuti",
+    "capitalCoords": null,
+    "center": [
+      -8,
+      178
+    ],
+    "flag": "https://flagcdn.com/tv.svg"
+  },
+  "TW": {
+    "name": "Taiwan",
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Taipei",
+    "capitalCoords": null,
+    "center": [
+      23.5,
+      121
+    ],
+    "flag": "https://flagcdn.com/tw.svg"
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Dodoma",
+    "capitalCoords": null,
+    "center": [
+      -6,
+      35
+    ],
+    "flag": "https://flagcdn.com/tz.svg"
+  },
+  "UG": {
+    "name": "Uganda",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Kampala",
+    "capitalCoords": null,
+    "center": [
+      1,
+      32
+    ],
+    "flag": "https://flagcdn.com/ug.svg"
+  },
+  "UA": {
+    "name": "Ukraine",
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "capital": "Kyiv",
+    "capitalCoords": null,
+    "center": [
+      49,
+      32
+    ],
+    "flag": "https://flagcdn.com/ua.svg"
+  },
+  "UY": {
+    "name": "Uruguay",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Montevideo",
+    "capitalCoords": null,
+    "center": [
+      -33,
+      -56
+    ],
+    "flag": "https://flagcdn.com/uy.svg"
+  },
+  "US": {
+    "name": "United States",
+    "continent": "Americas",
+    "subregion": "North America",
+    "capital": "Washington D.C.",
+    "capitalCoords": null,
+    "center": [
+      38,
+      -97
+    ],
+    "flag": "https://flagcdn.com/us.svg"
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Tashkent",
+    "capitalCoords": null,
+    "center": [
+      41,
+      64
+    ],
+    "flag": "https://flagcdn.com/uz.svg"
+  },
+  "VA": {
+    "name": "Vatican City",
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Vatican City",
+    "capitalCoords": null,
+    "center": [
+      41.9,
+      12.45
+    ],
+    "flag": "https://flagcdn.com/va.svg"
+  },
+  "VC": {
+    "name": "Saint Vincent and the Grenadines",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Kingstown",
+    "capitalCoords": null,
+    "center": [
+      13.25,
+      -61.2
+    ],
+    "flag": "https://flagcdn.com/vc.svg"
+  },
+  "VE": {
+    "name": "Venezuela",
+    "continent": "Americas",
+    "subregion": "South America",
+    "capital": "Caracas",
+    "capitalCoords": null,
+    "center": [
+      8,
+      -66
+    ],
+    "flag": "https://flagcdn.com/ve.svg"
+  },
+  "VG": {
+    "name": "British Virgin Islands",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Road Town",
+    "capitalCoords": null,
+    "center": [
+      18.431383,
+      -64.62305
+    ],
+    "flag": "https://flagcdn.com/vg.svg"
+  },
+  "VI": {
+    "name": "United States Virgin Islands",
+    "continent": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Charlotte Amalie",
+    "capitalCoords": null,
+    "center": [
+      18.35,
+      -64.933333
+    ],
+    "flag": "https://flagcdn.com/vi.svg"
+  },
+  "VN": {
+    "name": "Vietnam",
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Hanoi",
+    "capitalCoords": null,
+    "center": [
+      16.16666666,
+      107.83333333
+    ],
+    "flag": "https://flagcdn.com/vn.svg"
+  },
+  "VU": {
+    "name": "Vanuatu",
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "capital": "Port Vila",
+    "capitalCoords": null,
+    "center": [
+      -16,
+      167
+    ],
+    "flag": "https://flagcdn.com/vu.svg"
+  },
+  "WF": {
+    "name": "Wallis and Futuna",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Mata-Utu",
+    "capitalCoords": null,
+    "center": [
+      -13.3,
+      -176.2
+    ],
+    "flag": "https://flagcdn.com/wf.svg"
+  },
+  "WS": {
+    "name": "Samoa",
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Apia",
+    "capitalCoords": null,
+    "center": [
+      -13.58333333,
+      -172.33333333
+    ],
+    "flag": "https://flagcdn.com/ws.svg"
+  },
+  "YE": {
+    "name": "Yemen",
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Sana'a",
+    "capitalCoords": null,
+    "center": [
+      15,
+      48
+    ],
+    "flag": "https://flagcdn.com/ye.svg"
+  },
+  "ZA": {
+    "name": "South Africa",
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Pretoria",
+    "capitalCoords": null,
+    "center": [
+      -29,
+      24
+    ],
+    "flag": "https://flagcdn.com/za.svg"
+  },
+  "ZM": {
+    "name": "Zambia",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Lusaka",
+    "capitalCoords": null,
+    "center": [
+      -15,
+      30
+    ],
+    "flag": "https://flagcdn.com/zm.svg"
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Harare",
+    "capitalCoords": null,
+    "center": [
+      -20,
+      30
+    ],
+    "flag": "https://flagcdn.com/zw.svg"
+  }
+}

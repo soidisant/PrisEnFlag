@@ -1,0 +1,20 @@
+{
+  "name": "pris-en-flag",
+  "version": "1.0.0",
+  "description": "A flag-based country guessing game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["game", "geography", "flags", "countries"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
