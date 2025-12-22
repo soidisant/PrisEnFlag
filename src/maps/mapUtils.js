@@ -12,8 +12,18 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-export const TILE_LAYER_URL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-export const TILE_LAYER_ATTRIBUTION = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+// Tile layer configurations per language
+// Note: Styles differ slightly - FR tiles are more detailed but show French labels
+const TILE_CONFIGS = {
+  en: {
+    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
+  },
+  fr: {
+    url: 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://www.openstreetmap.fr/">OSM France</a>'
+  }
+};
 
 export const WORLD_BOUNDS = [
   [-60, -180],
@@ -24,9 +34,10 @@ export const DEFAULT_CENTER = [20, 0];
 export const DEFAULT_ZOOM = 2;
 export const MAX_ZOOM = 10;
 
-export function createTileLayer() {
-  return L.tileLayer(TILE_LAYER_URL, {
-    attribution: TILE_LAYER_ATTRIBUTION,
+export function createTileLayer(lang = 'en') {
+  const config = TILE_CONFIGS[lang] || TILE_CONFIGS.en;
+  return L.tileLayer(config.url, {
+    attribution: config.attribution,
     maxZoom: 19
   });
 }

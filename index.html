@@ -4,32 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pris en Flag</title>
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   </head>
   <body>
     <div id="app">
+      <!-- Language Selector (visible on all screens) -->
+      <div class="lang-selector">
+        <button id="lang-en" class="lang-btn active" data-lang="en">EN</button>
+        <button id="lang-fr" class="lang-btn" data-lang="fr">FR</button>
+      </div>
+
       <!-- Start Screen -->
       <div id="start-screen" class="screen">
+        <div class="flags-bg">
+          <span class="flag">🇫🇷</span>
+          <span class="flag">🇧🇷</span>
+          <span class="flag">🇯🇵</span>
+          <span class="flag">🇩🇪</span>
+          <span class="flag">🇮🇳</span>
+          <span class="flag">🇬🇧</span>
+          <span class="flag">🇮🇹</span>
+          <span class="flag">🇪🇸</span>
+          <span class="flag">🇨🇦</span>
+          <span class="flag">🇦🇺</span>
+          <span class="flag">🇲🇽</span>
+          <span class="flag">🇰🇷</span>
+          <span class="flag">🇳🇱</span>
+          <span class="flag">🇸🇪</span>
+          <span class="flag">🇨🇭</span>
+          <span class="flag">🇵🇹</span>
+          <span class="flag">🇦🇷</span>
+          <span class="flag">🇿🇦</span>
+          <span class="flag">🇳🇴</span>
+          <span class="flag">🇵🇱</span>
+          <span class="flag">🇹🇷</span>
+          <span class="flag">🇷🇺</span>
+          <span class="flag">🇨🇳</span>
+          <span class="flag">🇪🇬</span>
+          <span class="flag">🇬🇷</span>
+          <span class="flag">🇮🇪</span>
+          <span class="flag">🇧🇪</span>
+          <span class="flag">🇦🇹</span>
+          <span class="flag">🇹🇭</span>
+          <span class="flag">🇻🇳</span>
+          <span class="flag">🇮🇩</span>
+          <span class="flag">🇵🇭</span>
+          <span class="flag">🇲🇾</span>
+          <span class="flag">🇸🇬</span>
+          <span class="flag">🇳🇿</span>
+          <span class="flag">🇨🇱</span>
+          <span class="flag">🇨🇴</span>
+          <span class="flag">🇵🇪</span>
+          <span class="flag">🇺🇦</span>
+          <span class="flag">🇫🇮</span>
+          <span class="flag">🇩🇰</span>
+          <span class="flag">🇨🇿</span>
+          <span class="flag">🇷🇴</span>
+          <span class="flag">🇭🇺</span>
+          <span class="flag">🇮🇱</span>
+          <span class="flag">🇸🇦</span>
+          <span class="flag">🇦🇪</span>
+          <span class="flag">🇵🇰</span>
+          <span class="flag">🇧🇩</span>
+          <span class="flag">🇳🇬</span>
+        </div>
         <div class="start-content">
-          <h1>Pris en Flag</h1>
-          <p class="subtitle">Guess the country from its flag!</p>
+          <img src="/logo.jpg" alt="Pris en Flag" class="logo" />
           <div class="instructions">
-            <p>A flag will appear on the left map, which slowly zooms toward the target country.</p>
-            <p>Click on the right map to place your pin in the correct country.</p>
-            <p>The faster you answer, the more points you earn!</p>
+            <p data-i18n="instruction1">A flag will appear on the left map, which progressively reveals the target country.</p>
+            <p data-i18n="instruction2">Click on the right map to place your pin in the correct country.</p>
+            <p data-i18n="instruction3">The faster you answer, the more points you earn!</p>
           </div>
-          <button id="start-btn" class="btn btn-primary">Play</button>
+
+          <div class="mode-selection">
+            <p class="mode-label" data-i18n="selectRegion">Select Region</p>
+            <div class="continent-buttons">
+              <button class="continent-btn active" data-continent="all" data-i18n="allWorld">All World</button>
+              <button class="continent-btn" data-continent="Europe" data-i18n="europe">Europe</button>
+              <button class="continent-btn" data-continent="Asia" data-i18n="asia">Asia</button>
+              <button class="continent-btn" data-continent="Africa" data-i18n="africa">Africa</button>
+              <button class="continent-btn" data-continent="Americas" data-i18n="americas">Americas</button>
+              <button class="continent-btn" data-continent="Oceania" data-i18n="oceania">Oceania</button>
+            </div>
+          </div>
+
+          <button id="start-btn" class="btn btn-primary" data-i18n="play">Play</button>
         </div>
       </div>
 
       <!-- Game Screen -->
       <div id="game-screen" class="screen hidden">
         <header class="game-header">
+          <button id="game-home-btn" class="home-btn" title="Back to Home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </button>
           <div class="score-display">
-            <span class="label">Score:</span>
+            <span class="label" data-i18n="score">Score</span>:
             <span id="total-score">0</span>
           </div>
           <div class="round-display">
+            <span class="label" data-i18n="round">Round</span>
             <span id="current-round">1</span> / <span id="total-rounds">10</span>
           </div>
           <div class="timer-display">
@@ -47,8 +122,8 @@
           <div class="map-panel answer-panel">
             <div id="answer-map" class="map"></div>
             <div class="answer-controls">
-              <p id="selected-info">Click on the map to place your guess</p>
-              <button id="submit-btn" class="btn btn-primary" disabled>Submit Answer</button>
+              <p id="selected-info" data-i18n="selectCountry">Click on the map to place your guess</p>
+              <button id="submit-btn" class="btn btn-primary" disabled data-i18n="submit">Submit Answer</button>
             </div>
           </div>
         </main>
@@ -61,46 +136,101 @@
           <p id="result-country"></p>
           <div class="score-breakdown">
             <div class="score-item">
-              <span>Time Bonus:</span>
+              <span data-i18n="timeBonus">Time Bonus</span>:
               <span id="time-bonus">0</span>
             </div>
             <div class="score-item">
-              <span>Zoom Bonus:</span>
+              <span data-i18n="clueBonus">Clue Bonus</span>:
               <span id="zoom-bonus">0</span>
             </div>
             <div class="score-item">
-              <span>Capital Bonus:</span>
+              <span data-i18n="capitalBonus">Capital Bonus</span>:
               <span id="capital-bonus">0</span>
             </div>
             <div class="score-item total">
-              <span>Round Score:</span>
+              <span data-i18n="roundScore">Round Score</span>:
               <span id="round-score">0</span>
             </div>
           </div>
-          <button id="next-round-btn" class="btn btn-primary">Next Round</button>
+          <button id="next-round-btn" class="btn btn-primary" data-i18n="nextRound">Next Round</button>
         </div>
       </div>
 
       <!-- End Screen -->
       <div id="end-screen" class="screen hidden">
+        <div class="flags-bg">
+          <span class="flag">🇫🇷</span>
+          <span class="flag">🇧🇷</span>
+          <span class="flag">🇯🇵</span>
+          <span class="flag">🇩🇪</span>
+          <span class="flag">🇮🇳</span>
+          <span class="flag">🇬🇧</span>
+          <span class="flag">🇮🇹</span>
+          <span class="flag">🇪🇸</span>
+          <span class="flag">🇨🇦</span>
+          <span class="flag">🇦🇺</span>
+          <span class="flag">🇲🇽</span>
+          <span class="flag">🇰🇷</span>
+          <span class="flag">🇳🇱</span>
+          <span class="flag">🇸🇪</span>
+          <span class="flag">🇨🇭</span>
+          <span class="flag">🇵🇹</span>
+          <span class="flag">🇦🇷</span>
+          <span class="flag">🇿🇦</span>
+          <span class="flag">🇳🇴</span>
+          <span class="flag">🇵🇱</span>
+          <span class="flag">🇹🇷</span>
+          <span class="flag">🇷🇺</span>
+          <span class="flag">🇨🇳</span>
+          <span class="flag">🇪🇬</span>
+          <span class="flag">🇬🇷</span>
+          <span class="flag">🇮🇪</span>
+          <span class="flag">🇧🇪</span>
+          <span class="flag">🇦🇹</span>
+          <span class="flag">🇹🇭</span>
+          <span class="flag">🇻🇳</span>
+          <span class="flag">🇮🇩</span>
+          <span class="flag">🇵🇭</span>
+          <span class="flag">🇲🇾</span>
+          <span class="flag">🇸🇬</span>
+          <span class="flag">🇳🇿</span>
+          <span class="flag">🇨🇱</span>
+          <span class="flag">🇨🇴</span>
+          <span class="flag">🇵🇪</span>
+          <span class="flag">🇺🇦</span>
+          <span class="flag">🇫🇮</span>
+          <span class="flag">🇩🇰</span>
+          <span class="flag">🇨🇿</span>
+          <span class="flag">🇷🇴</span>
+          <span class="flag">🇭🇺</span>
+          <span class="flag">🇮🇱</span>
+          <span class="flag">🇸🇦</span>
+          <span class="flag">🇦🇪</span>
+          <span class="flag">🇵🇰</span>
+          <span class="flag">🇧🇩</span>
+          <span class="flag">🇳🇬</span>
+        </div>
         <div class="end-content">
-          <h1>Game Over!</h1>
+          <h1 data-i18n="gameOver">Game Over!</h1>
           <div class="final-score">
-            <span class="label">Final Score:</span>
+            <span class="label" data-i18n="finalScore">Final Score</span>:
             <span id="final-score">0</span>
           </div>
           <div class="stats">
-            <p><span id="correct-count">0</span> / 10 correct answers</p>
+            <p><span id="correct-count">0</span> / 10 <span data-i18n="correctAnswers">correct answers</span></p>
           </div>
 
           <div class="recap-section">
-            <h2>Round Recap</h2>
+            <h2 data-i18n="roundRecap">Round Recap</h2>
             <div id="recap-list" class="recap-list">
               <!-- Dynamically populated -->
             </div>
           </div>
 
-          <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+          <div class="end-buttons">
+            <button id="play-again-btn" class="btn btn-primary" data-i18n="playAgain">Play Again</button>
+            <button id="end-home-btn" class="btn btn-secondary" data-i18n="backToHome">Back to Home</button>
+          </div>
         </div>
       </div>
     </div>

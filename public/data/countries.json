@@ -1,6 +1,9 @@
 {
   "AW": {
-    "name": "Aruba",
+    "name": {
+      "en": "Aruba",
+      "fr": "Aruba"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Oranjestad",
@@ -9,10 +12,14 @@
       12.5,
       -69.96666666
     ],
-    "flag": "https://flagcdn.com/aw.svg"
+    "flag": "https://flagcdn.com/aw.svg",
+    "difficulty": 3
   },
   "AF": {
-    "name": "Afghanistan",
+    "name": {
+      "en": "Afghanistan",
+      "fr": "Afghanistan"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Kabul",
@@ -21,10 +28,14 @@
       33,
       65
     ],
-    "flag": "https://flagcdn.com/af.svg"
+    "flag": "https://flagcdn.com/af.svg",
+    "difficulty": 2
   },
   "AO": {
-    "name": "Angola",
+    "name": {
+      "en": "Angola",
+      "fr": "Angola"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Luanda",
@@ -33,10 +44,14 @@
       -12.5,
       18.5
     ],
-    "flag": "https://flagcdn.com/ao.svg"
+    "flag": "https://flagcdn.com/ao.svg",
+    "difficulty": 2
   },
   "AI": {
-    "name": "Anguilla",
+    "name": {
+      "en": "Anguilla",
+      "fr": "Anguilla"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "The Valley",
@@ -45,10 +60,14 @@
       18.25,
       -63.16666666
     ],
-    "flag": "https://flagcdn.com/ai.svg"
+    "flag": "https://flagcdn.com/ai.svg",
+    "difficulty": 3
   },
   "AX": {
-    "name": "Åland Islands",
+    "name": {
+      "en": "Åland Islands",
+      "fr": "Ahvenanmaa"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Mariehamn",
@@ -57,10 +76,14 @@
       60.116667,
       19.9
     ],
-    "flag": "https://flagcdn.com/ax.svg"
+    "flag": "https://flagcdn.com/ax.svg",
+    "difficulty": 3
   },
   "AL": {
-    "name": "Albania",
+    "name": {
+      "en": "Albania",
+      "fr": "Albanie"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Tirana",
@@ -69,10 +92,14 @@
       41,
       20
     ],
-    "flag": "https://flagcdn.com/al.svg"
+    "flag": "https://flagcdn.com/al.svg",
+    "difficulty": 2
   },
   "AD": {
-    "name": "Andorra",
+    "name": {
+      "en": "Andorra",
+      "fr": "Andorre"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Andorra la Vella",
@@ -81,10 +108,14 @@
       42.5,
       1.5
     ],
-    "flag": "https://flagcdn.com/ad.svg"
+    "flag": "https://flagcdn.com/ad.svg",
+    "difficulty": 3
   },
   "AE": {
-    "name": "United Arab Emirates",
+    "name": {
+      "en": "United Arab Emirates",
+      "fr": "Émirats arabes unis"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Abu Dhabi",
@@ -93,10 +124,14 @@
       24,
       54
     ],
-    "flag": "https://flagcdn.com/ae.svg"
+    "flag": "https://flagcdn.com/ae.svg",
+    "difficulty": 1
   },
   "AR": {
-    "name": "Argentina",
+    "name": {
+      "en": "Argentina",
+      "fr": "Argentine"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Buenos Aires",
@@ -105,10 +140,14 @@
       -34,
       -64
     ],
-    "flag": "https://flagcdn.com/ar.svg"
+    "flag": "https://flagcdn.com/ar.svg",
+    "difficulty": 1
   },
   "AM": {
-    "name": "Armenia",
+    "name": {
+      "en": "Armenia",
+      "fr": "Arménie"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Yerevan",
@@ -117,10 +156,14 @@
       40,
       45
     ],
-    "flag": "https://flagcdn.com/am.svg"
+    "flag": "https://flagcdn.com/am.svg",
+    "difficulty": 2
   },
   "AS": {
-    "name": "American Samoa",
+    "name": {
+      "en": "American Samoa",
+      "fr": "Samoa américaines"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Pago Pago",
@@ -129,10 +172,14 @@
       -14.33333333,
       -170
     ],
-    "flag": "https://flagcdn.com/as.svg"
+    "flag": "https://flagcdn.com/as.svg",
+    "difficulty": 3
   },
   "AG": {
-    "name": "Antigua and Barbuda",
+    "name": {
+      "en": "Antigua and Barbuda",
+      "fr": "Antigua-et-Barbuda"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Saint John's",
@@ -141,10 +188,14 @@
       17.05,
       -61.8
     ],
-    "flag": "https://flagcdn.com/ag.svg"
+    "flag": "https://flagcdn.com/ag.svg",
+    "difficulty": 3
   },
   "AU": {
-    "name": "Australia",
+    "name": {
+      "en": "Australia",
+      "fr": "Australie"
+    },
     "continent": "Oceania",
     "subregion": "Australia and New Zealand",
     "capital": "Canberra",
@@ -153,10 +204,14 @@
       -27,
       133
     ],
-    "flag": "https://flagcdn.com/au.svg"
+    "flag": "https://flagcdn.com/au.svg",
+    "difficulty": 1
   },
   "AT": {
-    "name": "Austria",
+    "name": {
+      "en": "Austria",
+      "fr": "Autriche"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Vienna",
@@ -165,10 +220,14 @@
       47.33333333,
       13.33333333
     ],
-    "flag": "https://flagcdn.com/at.svg"
+    "flag": "https://flagcdn.com/at.svg",
+    "difficulty": 1
   },
   "AZ": {
-    "name": "Azerbaijan",
+    "name": {
+      "en": "Azerbaijan",
+      "fr": "Azerbaïdjan"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Baku",
@@ -177,10 +236,14 @@
       40.5,
       47.5
     ],
-    "flag": "https://flagcdn.com/az.svg"
+    "flag": "https://flagcdn.com/az.svg",
+    "difficulty": 2
   },
   "BI": {
-    "name": "Burundi",
+    "name": {
+      "en": "Burundi",
+      "fr": "Burundi"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Gitega",
@@ -189,10 +252,14 @@
       -3.5,
       30
     ],
-    "flag": "https://flagcdn.com/bi.svg"
+    "flag": "https://flagcdn.com/bi.svg",
+    "difficulty": 3
   },
   "BE": {
-    "name": "Belgium",
+    "name": {
+      "en": "Belgium",
+      "fr": "Belgique"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Brussels",
@@ -201,10 +268,14 @@
       50.83333333,
       4
     ],
-    "flag": "https://flagcdn.com/be.svg"
+    "flag": "https://flagcdn.com/be.svg",
+    "difficulty": 1
   },
   "BJ": {
-    "name": "Benin",
+    "name": {
+      "en": "Benin",
+      "fr": "Bénin"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Porto-Novo",
@@ -213,10 +284,14 @@
       9.5,
       2.25
     ],
-    "flag": "https://flagcdn.com/bj.svg"
+    "flag": "https://flagcdn.com/bj.svg",
+    "difficulty": 3
   },
   "BF": {
-    "name": "Burkina Faso",
+    "name": {
+      "en": "Burkina Faso",
+      "fr": "Burkina Faso"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Ouagadougou",
@@ -225,10 +300,14 @@
       13,
       -2
     ],
-    "flag": "https://flagcdn.com/bf.svg"
+    "flag": "https://flagcdn.com/bf.svg",
+    "difficulty": 3
   },
   "BD": {
-    "name": "Bangladesh",
+    "name": {
+      "en": "Bangladesh",
+      "fr": "Bangladesh"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Dhaka",
@@ -237,10 +316,14 @@
       24,
       90
     ],
-    "flag": "https://flagcdn.com/bd.svg"
+    "flag": "https://flagcdn.com/bd.svg",
+    "difficulty": 1
   },
   "BG": {
-    "name": "Bulgaria",
+    "name": {
+      "en": "Bulgaria",
+      "fr": "Bulgarie"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Sofia",
@@ -249,10 +332,14 @@
       43,
       25
     ],
-    "flag": "https://flagcdn.com/bg.svg"
+    "flag": "https://flagcdn.com/bg.svg",
+    "difficulty": 2
   },
   "BH": {
-    "name": "Bahrain",
+    "name": {
+      "en": "Bahrain",
+      "fr": "Bahreïn"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Manama",
@@ -261,10 +348,14 @@
       26,
       50.55
     ],
-    "flag": "https://flagcdn.com/bh.svg"
+    "flag": "https://flagcdn.com/bh.svg",
+    "difficulty": 2
   },
   "BS": {
-    "name": "Bahamas",
+    "name": {
+      "en": "Bahamas",
+      "fr": "Bahamas"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Nassau",
@@ -273,10 +364,14 @@
       24.25,
       -76
     ],
-    "flag": "https://flagcdn.com/bs.svg"
+    "flag": "https://flagcdn.com/bs.svg",
+    "difficulty": 3
   },
   "BA": {
-    "name": "Bosnia and Herzegovina",
+    "name": {
+      "en": "Bosnia and Herzegovina",
+      "fr": "Bosnie-Herzégovine"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Sarajevo",
@@ -285,10 +380,14 @@
       44,
       18
     ],
-    "flag": "https://flagcdn.com/ba.svg"
+    "flag": "https://flagcdn.com/ba.svg",
+    "difficulty": 2
   },
   "BL": {
-    "name": "Saint Barthélemy",
+    "name": {
+      "en": "Saint Barthélemy",
+      "fr": "Saint-Barthélemy"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Gustavia",
@@ -297,10 +396,14 @@
       18.5,
       -63.41666666
     ],
-    "flag": "https://flagcdn.com/bl.svg"
+    "flag": "https://flagcdn.com/bl.svg",
+    "difficulty": 3
   },
   "SH": {
-    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "name": {
+      "en": "Saint Helena, Ascension and Tristan da Cunha",
+      "fr": "Sainte-Hélène, Ascension et Tristan da Cunha"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Jamestown",
@@ -309,10 +412,14 @@
       -15.95,
       -5.72
     ],
-    "flag": "https://flagcdn.com/sh.svg"
+    "flag": "https://flagcdn.com/sh.svg",
+    "difficulty": 3
   },
   "BY": {
-    "name": "Belarus",
+    "name": {
+      "en": "Belarus",
+      "fr": "Biélorussie"
+    },
     "continent": "Europe",
     "subregion": "Eastern Europe",
     "capital": "Minsk",
@@ -321,10 +428,14 @@
       53,
       28
     ],
-    "flag": "https://flagcdn.com/by.svg"
+    "flag": "https://flagcdn.com/by.svg",
+    "difficulty": 2
   },
   "BZ": {
-    "name": "Belize",
+    "name": {
+      "en": "Belize",
+      "fr": "Belize"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "Belmopan",
@@ -333,10 +444,14 @@
       17.25,
       -88.75
     ],
-    "flag": "https://flagcdn.com/bz.svg"
+    "flag": "https://flagcdn.com/bz.svg",
+    "difficulty": 3
   },
   "BM": {
-    "name": "Bermuda",
+    "name": {
+      "en": "Bermuda",
+      "fr": "Bermudes"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Hamilton",
@@ -345,10 +460,14 @@
       32.33333333,
       -64.75
     ],
-    "flag": "https://flagcdn.com/bm.svg"
+    "flag": "https://flagcdn.com/bm.svg",
+    "difficulty": 3
   },
   "BO": {
-    "name": "Bolivia",
+    "name": {
+      "en": "Bolivia",
+      "fr": "Bolivie"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Sucre",
@@ -357,10 +476,14 @@
       -17,
       -65
     ],
-    "flag": "https://flagcdn.com/bo.svg"
+    "flag": "https://flagcdn.com/bo.svg",
+    "difficulty": 2
   },
   "BQ": {
-    "name": "Caribbean Netherlands",
+    "name": {
+      "en": "Caribbean Netherlands",
+      "fr": "Pays-Bas caribéens"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Kralendijk",
@@ -369,10 +492,14 @@
       12.18,
       -68.25
     ],
-    "flag": "https://flagcdn.com/bq.svg"
+    "flag": "https://flagcdn.com/bq.svg",
+    "difficulty": 3
   },
   "BR": {
-    "name": "Brazil",
+    "name": {
+      "en": "Brazil",
+      "fr": "Brésil"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Brasília",
@@ -381,10 +508,14 @@
       -10,
       -55
     ],
-    "flag": "https://flagcdn.com/br.svg"
+    "flag": "https://flagcdn.com/br.svg",
+    "difficulty": 1
   },
   "BB": {
-    "name": "Barbados",
+    "name": {
+      "en": "Barbados",
+      "fr": "Barbade"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Bridgetown",
@@ -393,10 +524,14 @@
       13.16666666,
       -59.53333333
     ],
-    "flag": "https://flagcdn.com/bb.svg"
+    "flag": "https://flagcdn.com/bb.svg",
+    "difficulty": 3
   },
   "BN": {
-    "name": "Brunei",
+    "name": {
+      "en": "Brunei",
+      "fr": "Brunei"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Bandar Seri Begawan",
@@ -405,10 +540,14 @@
       4.5,
       114.66666666
     ],
-    "flag": "https://flagcdn.com/bn.svg"
+    "flag": "https://flagcdn.com/bn.svg",
+    "difficulty": 2
   },
   "BT": {
-    "name": "Bhutan",
+    "name": {
+      "en": "Bhutan",
+      "fr": "Bhoutan"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Thimphu",
@@ -417,10 +556,14 @@
       27.5,
       90.5
     ],
-    "flag": "https://flagcdn.com/bt.svg"
+    "flag": "https://flagcdn.com/bt.svg",
+    "difficulty": 3
   },
   "BW": {
-    "name": "Botswana",
+    "name": {
+      "en": "Botswana",
+      "fr": "Botswana"
+    },
     "continent": "Africa",
     "subregion": "Southern Africa",
     "capital": "Gaborone",
@@ -429,10 +572,14 @@
       -22,
       24
     ],
-    "flag": "https://flagcdn.com/bw.svg"
+    "flag": "https://flagcdn.com/bw.svg",
+    "difficulty": 2
   },
   "CF": {
-    "name": "Central African Republic",
+    "name": {
+      "en": "Central African Republic",
+      "fr": "République centrafricaine"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Bangui",
@@ -441,10 +588,14 @@
       7,
       21
     ],
-    "flag": "https://flagcdn.com/cf.svg"
+    "flag": "https://flagcdn.com/cf.svg",
+    "difficulty": 3
   },
   "CA": {
-    "name": "Canada",
+    "name": {
+      "en": "Canada",
+      "fr": "Canada"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Ottawa",
@@ -453,10 +604,14 @@
       60,
       -95
     ],
-    "flag": "https://flagcdn.com/ca.svg"
+    "flag": "https://flagcdn.com/ca.svg",
+    "difficulty": 1
   },
   "CC": {
-    "name": "Cocos (Keeling) Islands",
+    "name": {
+      "en": "Cocos (Keeling) Islands",
+      "fr": "Îles Cocos"
+    },
     "continent": "Oceania",
     "subregion": "Australia and New Zealand",
     "capital": "West Island",
@@ -465,10 +620,14 @@
       -12.5,
       96.83333333
     ],
-    "flag": "https://flagcdn.com/cc.svg"
+    "flag": "https://flagcdn.com/cc.svg",
+    "difficulty": 3
   },
   "CH": {
-    "name": "Switzerland",
+    "name": {
+      "en": "Switzerland",
+      "fr": "Suisse"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Bern",
@@ -477,10 +636,14 @@
       47,
       8
     ],
-    "flag": "https://flagcdn.com/ch.svg"
+    "flag": "https://flagcdn.com/ch.svg",
+    "difficulty": 1
   },
   "CL": {
-    "name": "Chile",
+    "name": {
+      "en": "Chile",
+      "fr": "Chili"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Santiago",
@@ -489,10 +652,14 @@
       -30,
       -71
     ],
-    "flag": "https://flagcdn.com/cl.svg"
+    "flag": "https://flagcdn.com/cl.svg",
+    "difficulty": 1
   },
   "CN": {
-    "name": "China",
+    "name": {
+      "en": "China",
+      "fr": "Chine"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Beijing",
@@ -501,10 +668,14 @@
       35,
       105
     ],
-    "flag": "https://flagcdn.com/cn.svg"
+    "flag": "https://flagcdn.com/cn.svg",
+    "difficulty": 1
   },
   "CI": {
-    "name": "Ivory Coast",
+    "name": {
+      "en": "Ivory Coast",
+      "fr": "Côte d'Ivoire"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Yamoussoukro",
@@ -513,10 +684,14 @@
       8,
       -5
     ],
-    "flag": "https://flagcdn.com/ci.svg"
+    "flag": "https://flagcdn.com/ci.svg",
+    "difficulty": 2
   },
   "CM": {
-    "name": "Cameroon",
+    "name": {
+      "en": "Cameroon",
+      "fr": "Cameroun"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Yaoundé",
@@ -525,10 +700,14 @@
       6,
       12
     ],
-    "flag": "https://flagcdn.com/cm.svg"
+    "flag": "https://flagcdn.com/cm.svg",
+    "difficulty": 2
   },
   "CD": {
-    "name": "DR Congo",
+    "name": {
+      "en": "DR Congo",
+      "fr": "Congo (Rép. dém.)"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Kinshasa",
@@ -537,10 +716,14 @@
       0,
       25
     ],
-    "flag": "https://flagcdn.com/cd.svg"
+    "flag": "https://flagcdn.com/cd.svg",
+    "difficulty": 3
   },
   "CG": {
-    "name": "Congo",
+    "name": {
+      "en": "Congo",
+      "fr": "Congo"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Brazzaville",
@@ -549,10 +732,14 @@
       -1,
       15
     ],
-    "flag": "https://flagcdn.com/cg.svg"
+    "flag": "https://flagcdn.com/cg.svg",
+    "difficulty": 3
   },
   "CK": {
-    "name": "Cook Islands",
+    "name": {
+      "en": "Cook Islands",
+      "fr": "Îles Cook"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Avarua",
@@ -561,10 +748,14 @@
       -21.23333333,
       -159.76666666
     ],
-    "flag": "https://flagcdn.com/ck.svg"
+    "flag": "https://flagcdn.com/ck.svg",
+    "difficulty": 3
   },
   "CO": {
-    "name": "Colombia",
+    "name": {
+      "en": "Colombia",
+      "fr": "Colombie"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Bogotá",
@@ -573,10 +764,14 @@
       4,
       -72
     ],
-    "flag": "https://flagcdn.com/co.svg"
+    "flag": "https://flagcdn.com/co.svg",
+    "difficulty": 1
   },
   "KM": {
-    "name": "Comoros",
+    "name": {
+      "en": "Comoros",
+      "fr": "Comores"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Moroni",
@@ -585,10 +780,14 @@
       -12.16666666,
       44.25
     ],
-    "flag": "https://flagcdn.com/km.svg"
+    "flag": "https://flagcdn.com/km.svg",
+    "difficulty": 3
   },
   "CV": {
-    "name": "Cape Verde",
+    "name": {
+      "en": "Cape Verde",
+      "fr": "Îles du Cap-Vert"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Praia",
@@ -597,10 +796,14 @@
       16,
       -24
     ],
-    "flag": "https://flagcdn.com/cv.svg"
+    "flag": "https://flagcdn.com/cv.svg",
+    "difficulty": 3
   },
   "CR": {
-    "name": "Costa Rica",
+    "name": {
+      "en": "Costa Rica",
+      "fr": "Costa Rica"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "San José",
@@ -609,10 +812,14 @@
       10,
       -84
     ],
-    "flag": "https://flagcdn.com/cr.svg"
+    "flag": "https://flagcdn.com/cr.svg",
+    "difficulty": 2
   },
   "CU": {
-    "name": "Cuba",
+    "name": {
+      "en": "Cuba",
+      "fr": "Cuba"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Havana",
@@ -621,10 +828,14 @@
       21.5,
       -80
     ],
-    "flag": "https://flagcdn.com/cu.svg"
+    "flag": "https://flagcdn.com/cu.svg",
+    "difficulty": 2
   },
   "CW": {
-    "name": "Curaçao",
+    "name": {
+      "en": "Curaçao",
+      "fr": "Curaçao"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Willemstad",
@@ -633,10 +844,14 @@
       12.116667,
       -68.933333
     ],
-    "flag": "https://flagcdn.com/cw.svg"
+    "flag": "https://flagcdn.com/cw.svg",
+    "difficulty": 3
   },
   "CX": {
-    "name": "Christmas Island",
+    "name": {
+      "en": "Christmas Island",
+      "fr": "Île Christmas"
+    },
     "continent": "Oceania",
     "subregion": "Australia and New Zealand",
     "capital": "Flying Fish Cove",
@@ -645,10 +860,14 @@
       -10.5,
       105.66666666
     ],
-    "flag": "https://flagcdn.com/cx.svg"
+    "flag": "https://flagcdn.com/cx.svg",
+    "difficulty": 3
   },
   "KY": {
-    "name": "Cayman Islands",
+    "name": {
+      "en": "Cayman Islands",
+      "fr": "Îles Caïmans"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "George Town",
@@ -657,10 +876,14 @@
       19.5,
       -80.5
     ],
-    "flag": "https://flagcdn.com/ky.svg"
+    "flag": "https://flagcdn.com/ky.svg",
+    "difficulty": 3
   },
   "CY": {
-    "name": "Cyprus",
+    "name": {
+      "en": "Cyprus",
+      "fr": "Chypre"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Nicosia",
@@ -669,10 +892,14 @@
       35,
       33
     ],
-    "flag": "https://flagcdn.com/cy.svg"
+    "flag": "https://flagcdn.com/cy.svg",
+    "difficulty": 2
   },
   "CZ": {
-    "name": "Czechia",
+    "name": {
+      "en": "Czechia",
+      "fr": "Tchéquie"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Prague",
@@ -681,10 +908,14 @@
       49.75,
       15.5
     ],
-    "flag": "https://flagcdn.com/cz.svg"
+    "flag": "https://flagcdn.com/cz.svg",
+    "difficulty": 1
   },
   "DE": {
-    "name": "Germany",
+    "name": {
+      "en": "Germany",
+      "fr": "Allemagne"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Berlin",
@@ -693,10 +924,14 @@
       51,
       9
     ],
-    "flag": "https://flagcdn.com/de.svg"
+    "flag": "https://flagcdn.com/de.svg",
+    "difficulty": 1
   },
   "DJ": {
-    "name": "Djibouti",
+    "name": {
+      "en": "Djibouti",
+      "fr": "Djibouti"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Djibouti",
@@ -705,10 +940,14 @@
       11.5,
       43
     ],
-    "flag": "https://flagcdn.com/dj.svg"
+    "flag": "https://flagcdn.com/dj.svg",
+    "difficulty": 3
   },
   "DM": {
-    "name": "Dominica",
+    "name": {
+      "en": "Dominica",
+      "fr": "Dominique"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Roseau",
@@ -717,10 +956,14 @@
       15.41666666,
       -61.33333333
     ],
-    "flag": "https://flagcdn.com/dm.svg"
+    "flag": "https://flagcdn.com/dm.svg",
+    "difficulty": 3
   },
   "DK": {
-    "name": "Denmark",
+    "name": {
+      "en": "Denmark",
+      "fr": "Danemark"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Copenhagen",
@@ -729,10 +972,14 @@
       56,
       10
     ],
-    "flag": "https://flagcdn.com/dk.svg"
+    "flag": "https://flagcdn.com/dk.svg",
+    "difficulty": 1
   },
   "DO": {
-    "name": "Dominican Republic",
+    "name": {
+      "en": "Dominican Republic",
+      "fr": "République dominicaine"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Santo Domingo",
@@ -741,10 +988,14 @@
       19,
       -70.66666666
     ],
-    "flag": "https://flagcdn.com/do.svg"
+    "flag": "https://flagcdn.com/do.svg",
+    "difficulty": 2
   },
   "DZ": {
-    "name": "Algeria",
+    "name": {
+      "en": "Algeria",
+      "fr": "Algérie"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Algiers",
@@ -753,10 +1004,14 @@
       28,
       3
     ],
-    "flag": "https://flagcdn.com/dz.svg"
+    "flag": "https://flagcdn.com/dz.svg",
+    "difficulty": 2
   },
   "EC": {
-    "name": "Ecuador",
+    "name": {
+      "en": "Ecuador",
+      "fr": "Équateur"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Quito",
@@ -765,10 +1020,14 @@
       -2,
       -77.5
     ],
-    "flag": "https://flagcdn.com/ec.svg"
+    "flag": "https://flagcdn.com/ec.svg",
+    "difficulty": 2
   },
   "EG": {
-    "name": "Egypt",
+    "name": {
+      "en": "Egypt",
+      "fr": "Égypte"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Cairo",
@@ -777,10 +1036,14 @@
       27,
       30
     ],
-    "flag": "https://flagcdn.com/eg.svg"
+    "flag": "https://flagcdn.com/eg.svg",
+    "difficulty": 1
   },
   "ER": {
-    "name": "Eritrea",
+    "name": {
+      "en": "Eritrea",
+      "fr": "Érythrée"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Asmara",
@@ -789,10 +1052,14 @@
       15,
       39
     ],
-    "flag": "https://flagcdn.com/er.svg"
+    "flag": "https://flagcdn.com/er.svg",
+    "difficulty": 3
   },
   "EH": {
-    "name": "Western Sahara",
+    "name": {
+      "en": "Western Sahara",
+      "fr": "Sahara Occidental"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "El Aaiún",
@@ -801,10 +1068,14 @@
       24.5,
       -13
     ],
-    "flag": "https://flagcdn.com/eh.svg"
+    "flag": "https://flagcdn.com/eh.svg",
+    "difficulty": 3
   },
   "ES": {
-    "name": "Spain",
+    "name": {
+      "en": "Spain",
+      "fr": "Espagne"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Madrid",
@@ -813,10 +1084,14 @@
       40,
       -4
     ],
-    "flag": "https://flagcdn.com/es.svg"
+    "flag": "https://flagcdn.com/es.svg",
+    "difficulty": 1
   },
   "EE": {
-    "name": "Estonia",
+    "name": {
+      "en": "Estonia",
+      "fr": "Estonie"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Tallinn",
@@ -825,10 +1100,14 @@
       59,
       26
     ],
-    "flag": "https://flagcdn.com/ee.svg"
+    "flag": "https://flagcdn.com/ee.svg",
+    "difficulty": 2
   },
   "ET": {
-    "name": "Ethiopia",
+    "name": {
+      "en": "Ethiopia",
+      "fr": "Éthiopie"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Addis Ababa",
@@ -837,10 +1116,14 @@
       8,
       38
     ],
-    "flag": "https://flagcdn.com/et.svg"
+    "flag": "https://flagcdn.com/et.svg",
+    "difficulty": 2
   },
   "FI": {
-    "name": "Finland",
+    "name": {
+      "en": "Finland",
+      "fr": "Finlande"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Helsinki",
@@ -849,10 +1132,14 @@
       64,
       26
     ],
-    "flag": "https://flagcdn.com/fi.svg"
+    "flag": "https://flagcdn.com/fi.svg",
+    "difficulty": 1
   },
   "FJ": {
-    "name": "Fiji",
+    "name": {
+      "en": "Fiji",
+      "fr": "Fidji"
+    },
     "continent": "Oceania",
     "subregion": "Melanesia",
     "capital": "Suva",
@@ -861,10 +1148,14 @@
       -18,
       175
     ],
-    "flag": "https://flagcdn.com/fj.svg"
+    "flag": "https://flagcdn.com/fj.svg",
+    "difficulty": 3
   },
   "FK": {
-    "name": "Falkland Islands",
+    "name": {
+      "en": "Falkland Islands",
+      "fr": "Îles Malouines"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Stanley",
@@ -873,10 +1164,14 @@
       -51.75,
       -59
     ],
-    "flag": "https://flagcdn.com/fk.svg"
+    "flag": "https://flagcdn.com/fk.svg",
+    "difficulty": 3
   },
   "FR": {
-    "name": "France",
+    "name": {
+      "en": "France",
+      "fr": "France"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Paris",
@@ -885,10 +1180,14 @@
       46,
       2
     ],
-    "flag": "https://flagcdn.com/fr.svg"
+    "flag": "https://flagcdn.com/fr.svg",
+    "difficulty": 1
   },
   "FO": {
-    "name": "Faroe Islands",
+    "name": {
+      "en": "Faroe Islands",
+      "fr": "Îles Féroé"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Tórshavn",
@@ -897,10 +1196,14 @@
       62,
       -7
     ],
-    "flag": "https://flagcdn.com/fo.svg"
+    "flag": "https://flagcdn.com/fo.svg",
+    "difficulty": 3
   },
   "FM": {
-    "name": "Micronesia",
+    "name": {
+      "en": "Micronesia",
+      "fr": "Micronésie"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Palikir",
@@ -909,10 +1212,14 @@
       6.91666666,
       158.25
     ],
-    "flag": "https://flagcdn.com/fm.svg"
+    "flag": "https://flagcdn.com/fm.svg",
+    "difficulty": 3
   },
   "GA": {
-    "name": "Gabon",
+    "name": {
+      "en": "Gabon",
+      "fr": "Gabon"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Libreville",
@@ -921,10 +1228,14 @@
       -1,
       11.75
     ],
-    "flag": "https://flagcdn.com/ga.svg"
+    "flag": "https://flagcdn.com/ga.svg",
+    "difficulty": 3
   },
   "GB": {
-    "name": "United Kingdom",
+    "name": {
+      "en": "United Kingdom",
+      "fr": "Royaume-Uni"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "London",
@@ -933,10 +1244,14 @@
       54,
       -2
     ],
-    "flag": "https://flagcdn.com/gb.svg"
+    "flag": "https://flagcdn.com/gb.svg",
+    "difficulty": 1
   },
   "GE": {
-    "name": "Georgia",
+    "name": {
+      "en": "Georgia",
+      "fr": "Géorgie"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Tbilisi",
@@ -945,10 +1260,14 @@
       42,
       43.5
     ],
-    "flag": "https://flagcdn.com/ge.svg"
+    "flag": "https://flagcdn.com/ge.svg",
+    "difficulty": 2
   },
   "GG": {
-    "name": "Guernsey",
+    "name": {
+      "en": "Guernsey",
+      "fr": "Guernesey"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "St. Peter Port",
@@ -957,10 +1276,14 @@
       49.46666666,
       -2.58333333
     ],
-    "flag": "https://flagcdn.com/gg.svg"
+    "flag": "https://flagcdn.com/gg.svg",
+    "difficulty": 3
   },
   "GH": {
-    "name": "Ghana",
+    "name": {
+      "en": "Ghana",
+      "fr": "Ghana"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Accra",
@@ -969,10 +1292,14 @@
       8,
       -2
     ],
-    "flag": "https://flagcdn.com/gh.svg"
+    "flag": "https://flagcdn.com/gh.svg",
+    "difficulty": 2
   },
   "GI": {
-    "name": "Gibraltar",
+    "name": {
+      "en": "Gibraltar",
+      "fr": "Gibraltar"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Gibraltar",
@@ -981,10 +1308,14 @@
       36.13333333,
       -5.35
     ],
-    "flag": "https://flagcdn.com/gi.svg"
+    "flag": "https://flagcdn.com/gi.svg",
+    "difficulty": 3
   },
   "GN": {
-    "name": "Guinea",
+    "name": {
+      "en": "Guinea",
+      "fr": "Guinée"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Conakry",
@@ -993,10 +1324,14 @@
       11,
       -10
     ],
-    "flag": "https://flagcdn.com/gn.svg"
+    "flag": "https://flagcdn.com/gn.svg",
+    "difficulty": 3
   },
   "GP": {
-    "name": "Guadeloupe",
+    "name": {
+      "en": "Guadeloupe",
+      "fr": "Guadeloupe"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Basse-Terre",
@@ -1005,10 +1340,14 @@
       16.25,
       -61.583333
     ],
-    "flag": "https://flagcdn.com/gp.svg"
+    "flag": "https://flagcdn.com/gp.svg",
+    "difficulty": 3
   },
   "GM": {
-    "name": "Gambia",
+    "name": {
+      "en": "Gambia",
+      "fr": "Gambie"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Banjul",
@@ -1017,10 +1356,14 @@
       13.46666666,
       -16.56666666
     ],
-    "flag": "https://flagcdn.com/gm.svg"
+    "flag": "https://flagcdn.com/gm.svg",
+    "difficulty": 3
   },
   "GW": {
-    "name": "Guinea-Bissau",
+    "name": {
+      "en": "Guinea-Bissau",
+      "fr": "Guinée-Bissau"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Bissau",
@@ -1029,10 +1372,14 @@
       12,
       -15
     ],
-    "flag": "https://flagcdn.com/gw.svg"
+    "flag": "https://flagcdn.com/gw.svg",
+    "difficulty": 3
   },
   "GQ": {
-    "name": "Equatorial Guinea",
+    "name": {
+      "en": "Equatorial Guinea",
+      "fr": "Guinée équatoriale"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Malabo",
@@ -1041,10 +1388,14 @@
       2,
       10
     ],
-    "flag": "https://flagcdn.com/gq.svg"
+    "flag": "https://flagcdn.com/gq.svg",
+    "difficulty": 3
   },
   "GR": {
-    "name": "Greece",
+    "name": {
+      "en": "Greece",
+      "fr": "Grèce"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Athens",
@@ -1053,10 +1404,14 @@
       39,
       22
     ],
-    "flag": "https://flagcdn.com/gr.svg"
+    "flag": "https://flagcdn.com/gr.svg",
+    "difficulty": 1
   },
   "GD": {
-    "name": "Grenada",
+    "name": {
+      "en": "Grenada",
+      "fr": "Grenade"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "St. George's",
@@ -1065,10 +1420,14 @@
       12.11666666,
       -61.66666666
     ],
-    "flag": "https://flagcdn.com/gd.svg"
+    "flag": "https://flagcdn.com/gd.svg",
+    "difficulty": 3
   },
   "GL": {
-    "name": "Greenland",
+    "name": {
+      "en": "Greenland",
+      "fr": "Groenland"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Nuuk",
@@ -1077,10 +1436,14 @@
       72,
       -40
     ],
-    "flag": "https://flagcdn.com/gl.svg"
+    "flag": "https://flagcdn.com/gl.svg",
+    "difficulty": 3
   },
   "GT": {
-    "name": "Guatemala",
+    "name": {
+      "en": "Guatemala",
+      "fr": "Guatemala"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "Guatemala City",
@@ -1089,10 +1452,14 @@
       15.5,
       -90.25
     ],
-    "flag": "https://flagcdn.com/gt.svg"
+    "flag": "https://flagcdn.com/gt.svg",
+    "difficulty": 2
   },
   "GF": {
-    "name": "French Guiana",
+    "name": {
+      "en": "French Guiana",
+      "fr": "Guyane"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Cayenne",
@@ -1101,10 +1468,14 @@
       4,
       -53
     ],
-    "flag": "https://flagcdn.com/gf.svg"
+    "flag": "https://flagcdn.com/gf.svg",
+    "difficulty": 3
   },
   "GU": {
-    "name": "Guam",
+    "name": {
+      "en": "Guam",
+      "fr": "Guam"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Hagåtña",
@@ -1113,10 +1484,14 @@
       13.46666666,
       144.78333333
     ],
-    "flag": "https://flagcdn.com/gu.svg"
+    "flag": "https://flagcdn.com/gu.svg",
+    "difficulty": 3
   },
   "GY": {
-    "name": "Guyana",
+    "name": {
+      "en": "Guyana",
+      "fr": "Guyana"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Georgetown",
@@ -1125,10 +1500,14 @@
       5,
       -59
     ],
-    "flag": "https://flagcdn.com/gy.svg"
+    "flag": "https://flagcdn.com/gy.svg",
+    "difficulty": 3
   },
   "HK": {
-    "name": "Hong Kong",
+    "name": {
+      "en": "Hong Kong",
+      "fr": "Hong Kong"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "City of Victoria",
@@ -1137,10 +1516,14 @@
       22.267,
       114.188
     ],
-    "flag": "https://flagcdn.com/hk.svg"
+    "flag": "https://flagcdn.com/hk.svg",
+    "difficulty": 2
   },
   "HN": {
-    "name": "Honduras",
+    "name": {
+      "en": "Honduras",
+      "fr": "Honduras"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "Tegucigalpa",
@@ -1149,10 +1532,14 @@
       15,
       -86.5
     ],
-    "flag": "https://flagcdn.com/hn.svg"
+    "flag": "https://flagcdn.com/hn.svg",
+    "difficulty": 2
   },
   "HR": {
-    "name": "Croatia",
+    "name": {
+      "en": "Croatia",
+      "fr": "Croatie"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Zagreb",
@@ -1161,10 +1548,14 @@
       45.16666666,
       15.5
     ],
-    "flag": "https://flagcdn.com/hr.svg"
+    "flag": "https://flagcdn.com/hr.svg",
+    "difficulty": 2
   },
   "HT": {
-    "name": "Haiti",
+    "name": {
+      "en": "Haiti",
+      "fr": "Haïti"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Port-au-Prince",
@@ -1173,10 +1564,14 @@
       19,
       -72.41666666
     ],
-    "flag": "https://flagcdn.com/ht.svg"
+    "flag": "https://flagcdn.com/ht.svg",
+    "difficulty": 2
   },
   "HU": {
-    "name": "Hungary",
+    "name": {
+      "en": "Hungary",
+      "fr": "Hongrie"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Budapest",
@@ -1185,10 +1580,14 @@
       47,
       20
     ],
-    "flag": "https://flagcdn.com/hu.svg"
+    "flag": "https://flagcdn.com/hu.svg",
+    "difficulty": 1
   },
   "ID": {
-    "name": "Indonesia",
+    "name": {
+      "en": "Indonesia",
+      "fr": "Indonésie"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Jakarta",
@@ -1197,10 +1596,14 @@
       -5,
       120
     ],
-    "flag": "https://flagcdn.com/id.svg"
+    "flag": "https://flagcdn.com/id.svg",
+    "difficulty": 1
   },
   "IM": {
-    "name": "Isle of Man",
+    "name": {
+      "en": "Isle of Man",
+      "fr": "Île de Man"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Douglas",
@@ -1209,10 +1612,14 @@
       54.25,
       -4.5
     ],
-    "flag": "https://flagcdn.com/im.svg"
+    "flag": "https://flagcdn.com/im.svg",
+    "difficulty": 3
   },
   "IN": {
-    "name": "India",
+    "name": {
+      "en": "India",
+      "fr": "Inde"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "New Delhi",
@@ -1221,10 +1628,14 @@
       20,
       77
     ],
-    "flag": "https://flagcdn.com/in.svg"
+    "flag": "https://flagcdn.com/in.svg",
+    "difficulty": 1
   },
   "IO": {
-    "name": "British Indian Ocean Territory",
+    "name": {
+      "en": "British Indian Ocean Territory",
+      "fr": "Territoire britannique de l'océan Indien"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Diego Garcia",
@@ -1233,10 +1644,14 @@
       -6,
       71.5
     ],
-    "flag": "https://flagcdn.com/io.svg"
+    "flag": "https://flagcdn.com/io.svg",
+    "difficulty": 3
   },
   "IE": {
-    "name": "Ireland",
+    "name": {
+      "en": "Ireland",
+      "fr": "Irlande"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Dublin",
@@ -1245,10 +1660,14 @@
       53,
       -8
     ],
-    "flag": "https://flagcdn.com/ie.svg"
+    "flag": "https://flagcdn.com/ie.svg",
+    "difficulty": 1
   },
   "IR": {
-    "name": "Iran",
+    "name": {
+      "en": "Iran",
+      "fr": "Iran"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Tehran",
@@ -1257,10 +1676,14 @@
       32,
       53
     ],
-    "flag": "https://flagcdn.com/ir.svg"
+    "flag": "https://flagcdn.com/ir.svg",
+    "difficulty": 1
   },
   "IQ": {
-    "name": "Iraq",
+    "name": {
+      "en": "Iraq",
+      "fr": "Irak"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Baghdad",
@@ -1269,10 +1692,14 @@
       33,
       44
     ],
-    "flag": "https://flagcdn.com/iq.svg"
+    "flag": "https://flagcdn.com/iq.svg",
+    "difficulty": 1
   },
   "IS": {
-    "name": "Iceland",
+    "name": {
+      "en": "Iceland",
+      "fr": "Islande"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Reykjavik",
@@ -1281,10 +1708,14 @@
       65,
       -18
     ],
-    "flag": "https://flagcdn.com/is.svg"
+    "flag": "https://flagcdn.com/is.svg",
+    "difficulty": 2
   },
   "IL": {
-    "name": "Israel",
+    "name": {
+      "en": "Israel",
+      "fr": "Israël"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Jerusalem",
@@ -1293,10 +1724,14 @@
       31.47,
       35.13
     ],
-    "flag": "https://flagcdn.com/il.svg"
+    "flag": "https://flagcdn.com/il.svg",
+    "difficulty": 1
   },
   "IT": {
-    "name": "Italy",
+    "name": {
+      "en": "Italy",
+      "fr": "Italie"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Rome",
@@ -1305,10 +1740,14 @@
       42.83333333,
       12.83333333
     ],
-    "flag": "https://flagcdn.com/it.svg"
+    "flag": "https://flagcdn.com/it.svg",
+    "difficulty": 1
   },
   "JM": {
-    "name": "Jamaica",
+    "name": {
+      "en": "Jamaica",
+      "fr": "Jamaïque"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Kingston",
@@ -1317,10 +1756,14 @@
       18.25,
       -77.5
     ],
-    "flag": "https://flagcdn.com/jm.svg"
+    "flag": "https://flagcdn.com/jm.svg",
+    "difficulty": 2
   },
   "JE": {
-    "name": "Jersey",
+    "name": {
+      "en": "Jersey",
+      "fr": "Jersey"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Saint Helier",
@@ -1329,10 +1772,14 @@
       49.25,
       -2.16666666
     ],
-    "flag": "https://flagcdn.com/je.svg"
+    "flag": "https://flagcdn.com/je.svg",
+    "difficulty": 3
   },
   "JO": {
-    "name": "Jordan",
+    "name": {
+      "en": "Jordan",
+      "fr": "Jordanie"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Amman",
@@ -1341,10 +1788,14 @@
       31,
       36
     ],
-    "flag": "https://flagcdn.com/jo.svg"
+    "flag": "https://flagcdn.com/jo.svg",
+    "difficulty": 2
   },
   "JP": {
-    "name": "Japan",
+    "name": {
+      "en": "Japan",
+      "fr": "Japon"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Tokyo",
@@ -1353,10 +1804,14 @@
       36,
       138
     ],
-    "flag": "https://flagcdn.com/jp.svg"
+    "flag": "https://flagcdn.com/jp.svg",
+    "difficulty": 1
   },
   "KZ": {
-    "name": "Kazakhstan",
+    "name": {
+      "en": "Kazakhstan",
+      "fr": "Kazakhstan"
+    },
     "continent": "Asia",
     "subregion": "Central Asia",
     "capital": "Astana",
@@ -1365,10 +1820,14 @@
       48,
       68
     ],
-    "flag": "https://flagcdn.com/kz.svg"
+    "flag": "https://flagcdn.com/kz.svg",
+    "difficulty": 2
   },
   "KE": {
-    "name": "Kenya",
+    "name": {
+      "en": "Kenya",
+      "fr": "Kenya"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Nairobi",
@@ -1377,10 +1836,14 @@
       1,
       38
     ],
-    "flag": "https://flagcdn.com/ke.svg"
+    "flag": "https://flagcdn.com/ke.svg",
+    "difficulty": 1
   },
   "KG": {
-    "name": "Kyrgyzstan",
+    "name": {
+      "en": "Kyrgyzstan",
+      "fr": "Kirghizistan"
+    },
     "continent": "Asia",
     "subregion": "Central Asia",
     "capital": "Bishkek",
@@ -1389,10 +1852,14 @@
       41,
       75
     ],
-    "flag": "https://flagcdn.com/kg.svg"
+    "flag": "https://flagcdn.com/kg.svg",
+    "difficulty": 2
   },
   "KH": {
-    "name": "Cambodia",
+    "name": {
+      "en": "Cambodia",
+      "fr": "Cambodge"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Phnom Penh",
@@ -1401,10 +1868,14 @@
       13,
       105
     ],
-    "flag": "https://flagcdn.com/kh.svg"
+    "flag": "https://flagcdn.com/kh.svg",
+    "difficulty": 2
   },
   "KI": {
-    "name": "Kiribati",
+    "name": {
+      "en": "Kiribati",
+      "fr": "Kiribati"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "South Tarawa",
@@ -1413,10 +1884,14 @@
       1.41666666,
       173
     ],
-    "flag": "https://flagcdn.com/ki.svg"
+    "flag": "https://flagcdn.com/ki.svg",
+    "difficulty": 3
   },
   "KN": {
-    "name": "Saint Kitts and Nevis",
+    "name": {
+      "en": "Saint Kitts and Nevis",
+      "fr": "Saint-Christophe-et-Niévès"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Basseterre",
@@ -1425,10 +1900,14 @@
       17.33333333,
       -62.75
     ],
-    "flag": "https://flagcdn.com/kn.svg"
+    "flag": "https://flagcdn.com/kn.svg",
+    "difficulty": 3
   },
   "KR": {
-    "name": "South Korea",
+    "name": {
+      "en": "South Korea",
+      "fr": "Corée du Sud"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Seoul",
@@ -1437,10 +1916,14 @@
       37,
       127.5
     ],
-    "flag": "https://flagcdn.com/kr.svg"
+    "flag": "https://flagcdn.com/kr.svg",
+    "difficulty": 1
   },
   "XK": {
-    "name": "Kosovo",
+    "name": {
+      "en": "Kosovo",
+      "fr": "Kosovo"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Pristina",
@@ -1449,10 +1932,14 @@
       42.666667,
       21.166667
     ],
-    "flag": "https://flagcdn.com/xk.svg"
+    "flag": "https://flagcdn.com/xk.svg",
+    "difficulty": 2
   },
   "KW": {
-    "name": "Kuwait",
+    "name": {
+      "en": "Kuwait",
+      "fr": "Koweït"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Kuwait City",
@@ -1461,10 +1948,14 @@
       29.5,
       45.75
     ],
-    "flag": "https://flagcdn.com/kw.svg"
+    "flag": "https://flagcdn.com/kw.svg",
+    "difficulty": 2
   },
   "LA": {
-    "name": "Laos",
+    "name": {
+      "en": "Laos",
+      "fr": "Laos"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Vientiane",
@@ -1473,10 +1964,14 @@
       18,
       105
     ],
-    "flag": "https://flagcdn.com/la.svg"
+    "flag": "https://flagcdn.com/la.svg",
+    "difficulty": 2
   },
   "LB": {
-    "name": "Lebanon",
+    "name": {
+      "en": "Lebanon",
+      "fr": "Liban"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Beirut",
@@ -1485,10 +1980,14 @@
       33.83333333,
       35.83333333
     ],
-    "flag": "https://flagcdn.com/lb.svg"
+    "flag": "https://flagcdn.com/lb.svg",
+    "difficulty": 2
   },
   "LR": {
-    "name": "Liberia",
+    "name": {
+      "en": "Liberia",
+      "fr": "Liberia"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Monrovia",
@@ -1497,10 +1996,14 @@
       6.5,
       -9.5
     ],
-    "flag": "https://flagcdn.com/lr.svg"
+    "flag": "https://flagcdn.com/lr.svg",
+    "difficulty": 3
   },
   "LY": {
-    "name": "Libya",
+    "name": {
+      "en": "Libya",
+      "fr": "Libye"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Tripoli",
@@ -1509,10 +2012,14 @@
       25,
       17
     ],
-    "flag": "https://flagcdn.com/ly.svg"
+    "flag": "https://flagcdn.com/ly.svg",
+    "difficulty": 2
   },
   "LC": {
-    "name": "Saint Lucia",
+    "name": {
+      "en": "Saint Lucia",
+      "fr": "Sainte-Lucie"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Castries",
@@ -1521,10 +2028,14 @@
       13.88333333,
       -60.96666666
     ],
-    "flag": "https://flagcdn.com/lc.svg"
+    "flag": "https://flagcdn.com/lc.svg",
+    "difficulty": 3
   },
   "LI": {
-    "name": "Liechtenstein",
+    "name": {
+      "en": "Liechtenstein",
+      "fr": "Liechtenstein"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Vaduz",
@@ -1533,10 +2044,14 @@
       47.26666666,
       9.53333333
     ],
-    "flag": "https://flagcdn.com/li.svg"
+    "flag": "https://flagcdn.com/li.svg",
+    "difficulty": 3
   },
   "LK": {
-    "name": "Sri Lanka",
+    "name": {
+      "en": "Sri Lanka",
+      "fr": "Sri Lanka"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Colombo",
@@ -1545,10 +2060,14 @@
       7,
       81
     ],
-    "flag": "https://flagcdn.com/lk.svg"
+    "flag": "https://flagcdn.com/lk.svg",
+    "difficulty": 2
   },
   "LS": {
-    "name": "Lesotho",
+    "name": {
+      "en": "Lesotho",
+      "fr": "Lesotho"
+    },
     "continent": "Africa",
     "subregion": "Southern Africa",
     "capital": "Maseru",
@@ -1557,10 +2076,14 @@
       -29.5,
       28.5
     ],
-    "flag": "https://flagcdn.com/ls.svg"
+    "flag": "https://flagcdn.com/ls.svg",
+    "difficulty": 3
   },
   "LT": {
-    "name": "Lithuania",
+    "name": {
+      "en": "Lithuania",
+      "fr": "Lituanie"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Vilnius",
@@ -1569,10 +2092,14 @@
       56,
       24
     ],
-    "flag": "https://flagcdn.com/lt.svg"
+    "flag": "https://flagcdn.com/lt.svg",
+    "difficulty": 2
   },
   "LU": {
-    "name": "Luxembourg",
+    "name": {
+      "en": "Luxembourg",
+      "fr": "Luxembourg"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Luxembourg",
@@ -1581,10 +2108,14 @@
       49.75,
       6.16666666
     ],
-    "flag": "https://flagcdn.com/lu.svg"
+    "flag": "https://flagcdn.com/lu.svg",
+    "difficulty": 2
   },
   "LV": {
-    "name": "Latvia",
+    "name": {
+      "en": "Latvia",
+      "fr": "Lettonie"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Riga",
@@ -1593,10 +2124,14 @@
       57,
       25
     ],
-    "flag": "https://flagcdn.com/lv.svg"
+    "flag": "https://flagcdn.com/lv.svg",
+    "difficulty": 2
   },
   "MO": {
-    "name": "Macau",
+    "name": {
+      "en": "Macau",
+      "fr": "Macao"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": null,
@@ -1605,10 +2140,14 @@
       22.16666666,
       113.55
     ],
-    "flag": "https://flagcdn.com/mo.svg"
+    "flag": "https://flagcdn.com/mo.svg",
+    "difficulty": 2
   },
   "MF": {
-    "name": "Saint Martin",
+    "name": {
+      "en": "Saint Martin",
+      "fr": "Saint-Martin"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Marigot",
@@ -1617,10 +2156,14 @@
       18.08333333,
       -63.95
     ],
-    "flag": "https://flagcdn.com/mf.svg"
+    "flag": "https://flagcdn.com/mf.svg",
+    "difficulty": 3
   },
   "MA": {
-    "name": "Morocco",
+    "name": {
+      "en": "Morocco",
+      "fr": "Maroc"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Rabat",
@@ -1629,10 +2172,14 @@
       32,
       -5
     ],
-    "flag": "https://flagcdn.com/ma.svg"
+    "flag": "https://flagcdn.com/ma.svg",
+    "difficulty": 1
   },
   "MC": {
-    "name": "Monaco",
+    "name": {
+      "en": "Monaco",
+      "fr": "Monaco"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Monaco",
@@ -1641,10 +2188,14 @@
       43.73333333,
       7.4
     ],
-    "flag": "https://flagcdn.com/mc.svg"
+    "flag": "https://flagcdn.com/mc.svg",
+    "difficulty": 3
   },
   "MD": {
-    "name": "Moldova",
+    "name": {
+      "en": "Moldova",
+      "fr": "Moldavie"
+    },
     "continent": "Europe",
     "subregion": "Eastern Europe",
     "capital": "Chișinău",
@@ -1653,10 +2204,14 @@
       47,
       29
     ],
-    "flag": "https://flagcdn.com/md.svg"
+    "flag": "https://flagcdn.com/md.svg",
+    "difficulty": 2
   },
   "MG": {
-    "name": "Madagascar",
+    "name": {
+      "en": "Madagascar",
+      "fr": "Madagascar"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Antananarivo",
@@ -1665,10 +2220,14 @@
       -20,
       47
     ],
-    "flag": "https://flagcdn.com/mg.svg"
+    "flag": "https://flagcdn.com/mg.svg",
+    "difficulty": 2
   },
   "MV": {
-    "name": "Maldives",
+    "name": {
+      "en": "Maldives",
+      "fr": "Maldives"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Malé",
@@ -1677,10 +2236,14 @@
       3.25,
       73
     ],
-    "flag": "https://flagcdn.com/mv.svg"
+    "flag": "https://flagcdn.com/mv.svg",
+    "difficulty": 3
   },
   "MX": {
-    "name": "Mexico",
+    "name": {
+      "en": "Mexico",
+      "fr": "Mexique"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Mexico City",
@@ -1689,10 +2252,14 @@
       23,
       -102
     ],
-    "flag": "https://flagcdn.com/mx.svg"
+    "flag": "https://flagcdn.com/mx.svg",
+    "difficulty": 1
   },
   "MH": {
-    "name": "Marshall Islands",
+    "name": {
+      "en": "Marshall Islands",
+      "fr": "Îles Marshall"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Majuro",
@@ -1701,10 +2268,14 @@
       9,
       168
     ],
-    "flag": "https://flagcdn.com/mh.svg"
+    "flag": "https://flagcdn.com/mh.svg",
+    "difficulty": 3
   },
   "MK": {
-    "name": "North Macedonia",
+    "name": {
+      "en": "North Macedonia",
+      "fr": "Macédoine du Nord"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Skopje",
@@ -1713,10 +2284,14 @@
       41.83333333,
       22
     ],
-    "flag": "https://flagcdn.com/mk.svg"
+    "flag": "https://flagcdn.com/mk.svg",
+    "difficulty": 2
   },
   "ML": {
-    "name": "Mali",
+    "name": {
+      "en": "Mali",
+      "fr": "Mali"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Bamako",
@@ -1725,10 +2300,14 @@
       17,
       -4
     ],
-    "flag": "https://flagcdn.com/ml.svg"
+    "flag": "https://flagcdn.com/ml.svg",
+    "difficulty": 3
   },
   "MT": {
-    "name": "Malta",
+    "name": {
+      "en": "Malta",
+      "fr": "Malte"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Valletta",
@@ -1737,10 +2316,14 @@
       35.83333333,
       14.58333333
     ],
-    "flag": "https://flagcdn.com/mt.svg"
+    "flag": "https://flagcdn.com/mt.svg",
+    "difficulty": 2
   },
   "MM": {
-    "name": "Myanmar",
+    "name": {
+      "en": "Myanmar",
+      "fr": "Birmanie"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Naypyidaw",
@@ -1749,10 +2332,14 @@
       22,
       98
     ],
-    "flag": "https://flagcdn.com/mm.svg"
+    "flag": "https://flagcdn.com/mm.svg",
+    "difficulty": 2
   },
   "ME": {
-    "name": "Montenegro",
+    "name": {
+      "en": "Montenegro",
+      "fr": "Monténégro"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Podgorica",
@@ -1761,10 +2348,14 @@
       42.5,
       19.3
     ],
-    "flag": "https://flagcdn.com/me.svg"
+    "flag": "https://flagcdn.com/me.svg",
+    "difficulty": 2
   },
   "MN": {
-    "name": "Mongolia",
+    "name": {
+      "en": "Mongolia",
+      "fr": "Mongolie"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Ulan Bator",
@@ -1773,10 +2364,14 @@
       46,
       105
     ],
-    "flag": "https://flagcdn.com/mn.svg"
+    "flag": "https://flagcdn.com/mn.svg",
+    "difficulty": 2
   },
   "MP": {
-    "name": "Northern Mariana Islands",
+    "name": {
+      "en": "Northern Mariana Islands",
+      "fr": "Îles Mariannes du Nord"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Saipan",
@@ -1785,10 +2380,14 @@
       15.2,
       145.75
     ],
-    "flag": "https://flagcdn.com/mp.svg"
+    "flag": "https://flagcdn.com/mp.svg",
+    "difficulty": 3
   },
   "MZ": {
-    "name": "Mozambique",
+    "name": {
+      "en": "Mozambique",
+      "fr": "Mozambique"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Maputo",
@@ -1797,10 +2396,14 @@
       -18.25,
       35
     ],
-    "flag": "https://flagcdn.com/mz.svg"
+    "flag": "https://flagcdn.com/mz.svg",
+    "difficulty": 2
   },
   "MR": {
-    "name": "Mauritania",
+    "name": {
+      "en": "Mauritania",
+      "fr": "Mauritanie"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Nouakchott",
@@ -1809,10 +2412,14 @@
       20,
       -12
     ],
-    "flag": "https://flagcdn.com/mr.svg"
+    "flag": "https://flagcdn.com/mr.svg",
+    "difficulty": 3
   },
   "MS": {
-    "name": "Montserrat",
+    "name": {
+      "en": "Montserrat",
+      "fr": "Montserrat"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Plymouth",
@@ -1821,10 +2428,14 @@
       16.75,
       -62.2
     ],
-    "flag": "https://flagcdn.com/ms.svg"
+    "flag": "https://flagcdn.com/ms.svg",
+    "difficulty": 3
   },
   "MQ": {
-    "name": "Martinique",
+    "name": {
+      "en": "Martinique",
+      "fr": "Martinique"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Fort-de-France",
@@ -1833,10 +2444,14 @@
       14.666667,
       -61
     ],
-    "flag": "https://flagcdn.com/mq.svg"
+    "flag": "https://flagcdn.com/mq.svg",
+    "difficulty": 3
   },
   "MU": {
-    "name": "Mauritius",
+    "name": {
+      "en": "Mauritius",
+      "fr": "Île Maurice"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Port Louis",
@@ -1845,10 +2460,14 @@
       -20.28333333,
       57.55
     ],
-    "flag": "https://flagcdn.com/mu.svg"
+    "flag": "https://flagcdn.com/mu.svg",
+    "difficulty": 3
   },
   "MW": {
-    "name": "Malawi",
+    "name": {
+      "en": "Malawi",
+      "fr": "Malawi"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Lilongwe",
@@ -1857,10 +2476,14 @@
       -13.5,
       34
     ],
-    "flag": "https://flagcdn.com/mw.svg"
+    "flag": "https://flagcdn.com/mw.svg",
+    "difficulty": 3
   },
   "MY": {
-    "name": "Malaysia",
+    "name": {
+      "en": "Malaysia",
+      "fr": "Malaisie"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Kuala Lumpur",
@@ -1869,10 +2492,14 @@
       2.5,
       112.5
     ],
-    "flag": "https://flagcdn.com/my.svg"
+    "flag": "https://flagcdn.com/my.svg",
+    "difficulty": 1
   },
   "YT": {
-    "name": "Mayotte",
+    "name": {
+      "en": "Mayotte",
+      "fr": "Mayotte"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Mamoudzou",
@@ -1881,10 +2508,14 @@
       -12.83333333,
       45.16666666
     ],
-    "flag": "https://flagcdn.com/yt.svg"
+    "flag": "https://flagcdn.com/yt.svg",
+    "difficulty": 3
   },
   "NA": {
-    "name": "Namibia",
+    "name": {
+      "en": "Namibia",
+      "fr": "Namibie"
+    },
     "continent": "Africa",
     "subregion": "Southern Africa",
     "capital": "Windhoek",
@@ -1893,10 +2524,14 @@
       -22,
       17
     ],
-    "flag": "https://flagcdn.com/na.svg"
+    "flag": "https://flagcdn.com/na.svg",
+    "difficulty": 2
   },
   "NC": {
-    "name": "New Caledonia",
+    "name": {
+      "en": "New Caledonia",
+      "fr": "Nouvelle-Calédonie"
+    },
     "continent": "Oceania",
     "subregion": "Melanesia",
     "capital": "Nouméa",
@@ -1905,10 +2540,14 @@
       -21.5,
       165.5
     ],
-    "flag": "https://flagcdn.com/nc.svg"
+    "flag": "https://flagcdn.com/nc.svg",
+    "difficulty": 3
   },
   "NE": {
-    "name": "Niger",
+    "name": {
+      "en": "Niger",
+      "fr": "Niger"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Niamey",
@@ -1917,10 +2556,14 @@
       16,
       8
     ],
-    "flag": "https://flagcdn.com/ne.svg"
+    "flag": "https://flagcdn.com/ne.svg",
+    "difficulty": 3
   },
   "NF": {
-    "name": "Norfolk Island",
+    "name": {
+      "en": "Norfolk Island",
+      "fr": "Île Norfolk"
+    },
     "continent": "Oceania",
     "subregion": "Australia and New Zealand",
     "capital": "Kingston",
@@ -1929,10 +2572,14 @@
       -29.03333333,
       167.95
     ],
-    "flag": "https://flagcdn.com/nf.svg"
+    "flag": "https://flagcdn.com/nf.svg",
+    "difficulty": 3
   },
   "NG": {
-    "name": "Nigeria",
+    "name": {
+      "en": "Nigeria",
+      "fr": "Nigéria"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Abuja",
@@ -1941,10 +2588,14 @@
       10,
       8
     ],
-    "flag": "https://flagcdn.com/ng.svg"
+    "flag": "https://flagcdn.com/ng.svg",
+    "difficulty": 1
   },
   "NI": {
-    "name": "Nicaragua",
+    "name": {
+      "en": "Nicaragua",
+      "fr": "Nicaragua"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "Managua",
@@ -1953,10 +2604,14 @@
       13,
       -85
     ],
-    "flag": "https://flagcdn.com/ni.svg"
+    "flag": "https://flagcdn.com/ni.svg",
+    "difficulty": 2
   },
   "NU": {
-    "name": "Niue",
+    "name": {
+      "en": "Niue",
+      "fr": "Niue"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Alofi",
@@ -1965,10 +2620,14 @@
       -19.03333333,
       -169.86666666
     ],
-    "flag": "https://flagcdn.com/nu.svg"
+    "flag": "https://flagcdn.com/nu.svg",
+    "difficulty": 3
   },
   "NL": {
-    "name": "Netherlands",
+    "name": {
+      "en": "Netherlands",
+      "fr": "Pays-Bas"
+    },
     "continent": "Europe",
     "subregion": "Western Europe",
     "capital": "Amsterdam",
@@ -1977,10 +2636,14 @@
       52.5,
       5.75
     ],
-    "flag": "https://flagcdn.com/nl.svg"
+    "flag": "https://flagcdn.com/nl.svg",
+    "difficulty": 1
   },
   "NO": {
-    "name": "Norway",
+    "name": {
+      "en": "Norway",
+      "fr": "Norvège"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Oslo",
@@ -1989,10 +2652,14 @@
       62,
       10
     ],
-    "flag": "https://flagcdn.com/no.svg"
+    "flag": "https://flagcdn.com/no.svg",
+    "difficulty": 1
   },
   "NP": {
-    "name": "Nepal",
+    "name": {
+      "en": "Nepal",
+      "fr": "Népal"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Kathmandu",
@@ -2001,10 +2668,14 @@
       28,
       84
     ],
-    "flag": "https://flagcdn.com/np.svg"
+    "flag": "https://flagcdn.com/np.svg",
+    "difficulty": 2
   },
   "NR": {
-    "name": "Nauru",
+    "name": {
+      "en": "Nauru",
+      "fr": "Nauru"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Yaren",
@@ -2013,10 +2684,14 @@
       -0.53333333,
       166.91666666
     ],
-    "flag": "https://flagcdn.com/nr.svg"
+    "flag": "https://flagcdn.com/nr.svg",
+    "difficulty": 3
   },
   "NZ": {
-    "name": "New Zealand",
+    "name": {
+      "en": "New Zealand",
+      "fr": "Nouvelle-Zélande"
+    },
     "continent": "Oceania",
     "subregion": "Australia and New Zealand",
     "capital": "Wellington",
@@ -2025,10 +2700,14 @@
       -41,
       174
     ],
-    "flag": "https://flagcdn.com/nz.svg"
+    "flag": "https://flagcdn.com/nz.svg",
+    "difficulty": 1
   },
   "OM": {
-    "name": "Oman",
+    "name": {
+      "en": "Oman",
+      "fr": "Oman"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Muscat",
@@ -2037,10 +2716,14 @@
       21,
       57
     ],
-    "flag": "https://flagcdn.com/om.svg"
+    "flag": "https://flagcdn.com/om.svg",
+    "difficulty": 2
   },
   "PK": {
-    "name": "Pakistan",
+    "name": {
+      "en": "Pakistan",
+      "fr": "Pakistan"
+    },
     "continent": "Asia",
     "subregion": "Southern Asia",
     "capital": "Islamabad",
@@ -2049,10 +2732,14 @@
       30,
       70
     ],
-    "flag": "https://flagcdn.com/pk.svg"
+    "flag": "https://flagcdn.com/pk.svg",
+    "difficulty": 1
   },
   "PA": {
-    "name": "Panama",
+    "name": {
+      "en": "Panama",
+      "fr": "Panama"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "Panama City",
@@ -2061,10 +2748,14 @@
       9,
       -80
     ],
-    "flag": "https://flagcdn.com/pa.svg"
+    "flag": "https://flagcdn.com/pa.svg",
+    "difficulty": 2
   },
   "PN": {
-    "name": "Pitcairn Islands",
+    "name": {
+      "en": "Pitcairn Islands",
+      "fr": "Îles Pitcairn"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Adamstown",
@@ -2073,10 +2764,14 @@
       -25.06666666,
       -130.1
     ],
-    "flag": "https://flagcdn.com/pn.svg"
+    "flag": "https://flagcdn.com/pn.svg",
+    "difficulty": 3
   },
   "PE": {
-    "name": "Peru",
+    "name": {
+      "en": "Peru",
+      "fr": "Pérou"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Lima",
@@ -2085,10 +2780,14 @@
       -10,
       -76
     ],
-    "flag": "https://flagcdn.com/pe.svg"
+    "flag": "https://flagcdn.com/pe.svg",
+    "difficulty": 1
   },
   "PH": {
-    "name": "Philippines",
+    "name": {
+      "en": "Philippines",
+      "fr": "Philippines"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Manila",
@@ -2097,10 +2796,14 @@
       13,
       122
     ],
-    "flag": "https://flagcdn.com/ph.svg"
+    "flag": "https://flagcdn.com/ph.svg",
+    "difficulty": 1
   },
   "PW": {
-    "name": "Palau",
+    "name": {
+      "en": "Palau",
+      "fr": "Palaos (Palau)"
+    },
     "continent": "Oceania",
     "subregion": "Micronesia",
     "capital": "Ngerulmud",
@@ -2109,10 +2812,14 @@
       7.5,
       134.5
     ],
-    "flag": "https://flagcdn.com/pw.svg"
+    "flag": "https://flagcdn.com/pw.svg",
+    "difficulty": 3
   },
   "PG": {
-    "name": "Papua New Guinea",
+    "name": {
+      "en": "Papua New Guinea",
+      "fr": "Papouasie-Nouvelle-Guinée"
+    },
     "continent": "Oceania",
     "subregion": "Melanesia",
     "capital": "Port Moresby",
@@ -2121,10 +2828,14 @@
       -6,
       147
     ],
-    "flag": "https://flagcdn.com/pg.svg"
+    "flag": "https://flagcdn.com/pg.svg",
+    "difficulty": 3
   },
   "PL": {
-    "name": "Poland",
+    "name": {
+      "en": "Poland",
+      "fr": "Pologne"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Warsaw",
@@ -2133,10 +2844,14 @@
       52,
       20
     ],
-    "flag": "https://flagcdn.com/pl.svg"
+    "flag": "https://flagcdn.com/pl.svg",
+    "difficulty": 1
   },
   "PR": {
-    "name": "Puerto Rico",
+    "name": {
+      "en": "Puerto Rico",
+      "fr": "Porto Rico"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "San Juan",
@@ -2145,10 +2860,14 @@
       18.25,
       -66.5
     ],
-    "flag": "https://flagcdn.com/pr.svg"
+    "flag": "https://flagcdn.com/pr.svg",
+    "difficulty": 2
   },
   "KP": {
-    "name": "North Korea",
+    "name": {
+      "en": "North Korea",
+      "fr": "Corée du Nord"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Pyongyang",
@@ -2157,10 +2876,14 @@
       40,
       127
     ],
-    "flag": "https://flagcdn.com/kp.svg"
+    "flag": "https://flagcdn.com/kp.svg",
+    "difficulty": 3
   },
   "PT": {
-    "name": "Portugal",
+    "name": {
+      "en": "Portugal",
+      "fr": "Portugal"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Lisbon",
@@ -2169,10 +2892,14 @@
       39.5,
       -8
     ],
-    "flag": "https://flagcdn.com/pt.svg"
+    "flag": "https://flagcdn.com/pt.svg",
+    "difficulty": 1
   },
   "PY": {
-    "name": "Paraguay",
+    "name": {
+      "en": "Paraguay",
+      "fr": "Paraguay"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Asunción",
@@ -2181,10 +2908,14 @@
       -23,
       -58
     ],
-    "flag": "https://flagcdn.com/py.svg"
+    "flag": "https://flagcdn.com/py.svg",
+    "difficulty": 2
   },
   "PS": {
-    "name": "Palestine",
+    "name": {
+      "en": "Palestine",
+      "fr": "Palestine"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Ramallah",
@@ -2193,10 +2924,14 @@
       31.9,
       35.2
     ],
-    "flag": "https://flagcdn.com/ps.svg"
+    "flag": "https://flagcdn.com/ps.svg",
+    "difficulty": 3
   },
   "PF": {
-    "name": "French Polynesia",
+    "name": {
+      "en": "French Polynesia",
+      "fr": "Polynésie française"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Papeetē",
@@ -2205,10 +2940,14 @@
       -15,
       -140
     ],
-    "flag": "https://flagcdn.com/pf.svg"
+    "flag": "https://flagcdn.com/pf.svg",
+    "difficulty": 3
   },
   "QA": {
-    "name": "Qatar",
+    "name": {
+      "en": "Qatar",
+      "fr": "Qatar"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Doha",
@@ -2217,10 +2956,14 @@
       25.5,
       51.25
     ],
-    "flag": "https://flagcdn.com/qa.svg"
+    "flag": "https://flagcdn.com/qa.svg",
+    "difficulty": 2
   },
   "RE": {
-    "name": "Réunion",
+    "name": {
+      "en": "Réunion",
+      "fr": "Réunion"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Saint-Denis",
@@ -2229,10 +2972,14 @@
       -21.15,
       55.5
     ],
-    "flag": "https://flagcdn.com/re.svg"
+    "flag": "https://flagcdn.com/re.svg",
+    "difficulty": 3
   },
   "RO": {
-    "name": "Romania",
+    "name": {
+      "en": "Romania",
+      "fr": "Roumanie"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Bucharest",
@@ -2241,10 +2988,14 @@
       46,
       25
     ],
-    "flag": "https://flagcdn.com/ro.svg"
+    "flag": "https://flagcdn.com/ro.svg",
+    "difficulty": 1
   },
   "RU": {
-    "name": "Russia",
+    "name": {
+      "en": "Russia",
+      "fr": "Russie"
+    },
     "continent": "Europe",
     "subregion": "Eastern Europe",
     "capital": "Moscow",
@@ -2253,10 +3004,14 @@
       60,
       100
     ],
-    "flag": "https://flagcdn.com/ru.svg"
+    "flag": "https://flagcdn.com/ru.svg",
+    "difficulty": 1
   },
   "RW": {
-    "name": "Rwanda",
+    "name": {
+      "en": "Rwanda",
+      "fr": "Rwanda"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Kigali",
@@ -2265,10 +3020,14 @@
       -2,
       30
     ],
-    "flag": "https://flagcdn.com/rw.svg"
+    "flag": "https://flagcdn.com/rw.svg",
+    "difficulty": 3
   },
   "SA": {
-    "name": "Saudi Arabia",
+    "name": {
+      "en": "Saudi Arabia",
+      "fr": "Arabie Saoudite"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Riyadh",
@@ -2277,10 +3036,14 @@
       25,
       45
     ],
-    "flag": "https://flagcdn.com/sa.svg"
+    "flag": "https://flagcdn.com/sa.svg",
+    "difficulty": 1
   },
   "SD": {
-    "name": "Sudan",
+    "name": {
+      "en": "Sudan",
+      "fr": "Soudan"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Khartoum",
@@ -2289,10 +3052,14 @@
       15,
       30
     ],
-    "flag": "https://flagcdn.com/sd.svg"
+    "flag": "https://flagcdn.com/sd.svg",
+    "difficulty": 2
   },
   "SN": {
-    "name": "Senegal",
+    "name": {
+      "en": "Senegal",
+      "fr": "Sénégal"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Dakar",
@@ -2301,10 +3068,14 @@
       14,
       -14
     ],
-    "flag": "https://flagcdn.com/sn.svg"
+    "flag": "https://flagcdn.com/sn.svg",
+    "difficulty": 2
   },
   "SG": {
-    "name": "Singapore",
+    "name": {
+      "en": "Singapore",
+      "fr": "Singapour"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Singapore",
@@ -2313,10 +3084,14 @@
       1.36666666,
       103.8
     ],
-    "flag": "https://flagcdn.com/sg.svg"
+    "flag": "https://flagcdn.com/sg.svg",
+    "difficulty": 1
   },
   "SJ": {
-    "name": "Svalbard and Jan Mayen",
+    "name": {
+      "en": "Svalbard and Jan Mayen",
+      "fr": "Svalbard et Jan Mayen"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Longyearbyen",
@@ -2325,10 +3100,14 @@
       78,
       20
     ],
-    "flag": "https://flagcdn.com/sj.svg"
+    "flag": "https://flagcdn.com/sj.svg",
+    "difficulty": 3
   },
   "SB": {
-    "name": "Solomon Islands",
+    "name": {
+      "en": "Solomon Islands",
+      "fr": "Îles Salomon"
+    },
     "continent": "Oceania",
     "subregion": "Melanesia",
     "capital": "Honiara",
@@ -2337,10 +3116,14 @@
       -8,
       159
     ],
-    "flag": "https://flagcdn.com/sb.svg"
+    "flag": "https://flagcdn.com/sb.svg",
+    "difficulty": 3
   },
   "SL": {
-    "name": "Sierra Leone",
+    "name": {
+      "en": "Sierra Leone",
+      "fr": "Sierra Leone"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Freetown",
@@ -2349,10 +3132,14 @@
       8.5,
       -11.5
     ],
-    "flag": "https://flagcdn.com/sl.svg"
+    "flag": "https://flagcdn.com/sl.svg",
+    "difficulty": 3
   },
   "SV": {
-    "name": "El Salvador",
+    "name": {
+      "en": "El Salvador",
+      "fr": "Salvador"
+    },
     "continent": "Americas",
     "subregion": "Central America",
     "capital": "San Salvador",
@@ -2361,10 +3148,14 @@
       13.83333333,
       -88.91666666
     ],
-    "flag": "https://flagcdn.com/sv.svg"
+    "flag": "https://flagcdn.com/sv.svg",
+    "difficulty": 2
   },
   "SM": {
-    "name": "San Marino",
+    "name": {
+      "en": "San Marino",
+      "fr": "Saint-Marin"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "City of San Marino",
@@ -2373,10 +3164,14 @@
       43.76666666,
       12.41666666
     ],
-    "flag": "https://flagcdn.com/sm.svg"
+    "flag": "https://flagcdn.com/sm.svg",
+    "difficulty": 3
   },
   "SO": {
-    "name": "Somalia",
+    "name": {
+      "en": "Somalia",
+      "fr": "Somalie"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Mogadishu",
@@ -2385,10 +3180,14 @@
       10,
       49
     ],
-    "flag": "https://flagcdn.com/so.svg"
+    "flag": "https://flagcdn.com/so.svg",
+    "difficulty": 3
   },
   "PM": {
-    "name": "Saint Pierre and Miquelon",
+    "name": {
+      "en": "Saint Pierre and Miquelon",
+      "fr": "Saint-Pierre-et-Miquelon"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Saint-Pierre",
@@ -2397,10 +3196,14 @@
       46.83333333,
       -56.33333333
     ],
-    "flag": "https://flagcdn.com/pm.svg"
+    "flag": "https://flagcdn.com/pm.svg",
+    "difficulty": 3
   },
   "RS": {
-    "name": "Serbia",
+    "name": {
+      "en": "Serbia",
+      "fr": "Serbie"
+    },
     "continent": "Europe",
     "subregion": "Southeast Europe",
     "capital": "Belgrade",
@@ -2409,10 +3212,14 @@
       44,
       21
     ],
-    "flag": "https://flagcdn.com/rs.svg"
+    "flag": "https://flagcdn.com/rs.svg",
+    "difficulty": 2
   },
   "SS": {
-    "name": "South Sudan",
+    "name": {
+      "en": "South Sudan",
+      "fr": "Soudan du Sud"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "Juba",
@@ -2421,10 +3228,14 @@
       7,
       30
     ],
-    "flag": "https://flagcdn.com/ss.svg"
+    "flag": "https://flagcdn.com/ss.svg",
+    "difficulty": 3
   },
   "ST": {
-    "name": "São Tomé and Príncipe",
+    "name": {
+      "en": "São Tomé and Príncipe",
+      "fr": "São Tomé et Príncipe"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "São Tomé",
@@ -2433,10 +3244,14 @@
       1,
       7
     ],
-    "flag": "https://flagcdn.com/st.svg"
+    "flag": "https://flagcdn.com/st.svg",
+    "difficulty": 3
   },
   "SR": {
-    "name": "Suriname",
+    "name": {
+      "en": "Suriname",
+      "fr": "Surinam"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Paramaribo",
@@ -2445,10 +3260,14 @@
       4,
       -56
     ],
-    "flag": "https://flagcdn.com/sr.svg"
+    "flag": "https://flagcdn.com/sr.svg",
+    "difficulty": 3
   },
   "SK": {
-    "name": "Slovakia",
+    "name": {
+      "en": "Slovakia",
+      "fr": "Slovaquie"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Bratislava",
@@ -2457,10 +3276,14 @@
       48.66666666,
       19.5
     ],
-    "flag": "https://flagcdn.com/sk.svg"
+    "flag": "https://flagcdn.com/sk.svg",
+    "difficulty": 2
   },
   "SI": {
-    "name": "Slovenia",
+    "name": {
+      "en": "Slovenia",
+      "fr": "Slovénie"
+    },
     "continent": "Europe",
     "subregion": "Central Europe",
     "capital": "Ljubljana",
@@ -2469,10 +3292,14 @@
       46.11666666,
       14.81666666
     ],
-    "flag": "https://flagcdn.com/si.svg"
+    "flag": "https://flagcdn.com/si.svg",
+    "difficulty": 2
   },
   "SE": {
-    "name": "Sweden",
+    "name": {
+      "en": "Sweden",
+      "fr": "Suède"
+    },
     "continent": "Europe",
     "subregion": "Northern Europe",
     "capital": "Stockholm",
@@ -2481,10 +3308,14 @@
       62,
       15
     ],
-    "flag": "https://flagcdn.com/se.svg"
+    "flag": "https://flagcdn.com/se.svg",
+    "difficulty": 1
   },
   "SZ": {
-    "name": "Eswatini",
+    "name": {
+      "en": "Eswatini",
+      "fr": "Eswatini"
+    },
     "continent": "Africa",
     "subregion": "Southern Africa",
     "capital": "Lobamba",
@@ -2493,10 +3324,14 @@
       -26.5,
       31.5
     ],
-    "flag": "https://flagcdn.com/sz.svg"
+    "flag": "https://flagcdn.com/sz.svg",
+    "difficulty": 3
   },
   "SX": {
-    "name": "Sint Maarten",
+    "name": {
+      "en": "Sint Maarten",
+      "fr": "Saint-Martin"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Philipsburg",
@@ -2505,10 +3340,14 @@
       18.033333,
       -63.05
     ],
-    "flag": "https://flagcdn.com/sx.svg"
+    "flag": "https://flagcdn.com/sx.svg",
+    "difficulty": 3
   },
   "SC": {
-    "name": "Seychelles",
+    "name": {
+      "en": "Seychelles",
+      "fr": "Seychelles"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Victoria",
@@ -2517,10 +3356,14 @@
       -4.58333333,
       55.66666666
     ],
-    "flag": "https://flagcdn.com/sc.svg"
+    "flag": "https://flagcdn.com/sc.svg",
+    "difficulty": 3
   },
   "SY": {
-    "name": "Syria",
+    "name": {
+      "en": "Syria",
+      "fr": "Syrie"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Damascus",
@@ -2529,10 +3372,14 @@
       35,
       38
     ],
-    "flag": "https://flagcdn.com/sy.svg"
+    "flag": "https://flagcdn.com/sy.svg",
+    "difficulty": 2
   },
   "TC": {
-    "name": "Turks and Caicos Islands",
+    "name": {
+      "en": "Turks and Caicos Islands",
+      "fr": "Îles Turques-et-Caïques"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Cockburn Town",
@@ -2541,10 +3388,14 @@
       21.75,
       -71.58333333
     ],
-    "flag": "https://flagcdn.com/tc.svg"
+    "flag": "https://flagcdn.com/tc.svg",
+    "difficulty": 3
   },
   "TD": {
-    "name": "Chad",
+    "name": {
+      "en": "Chad",
+      "fr": "Tchad"
+    },
     "continent": "Africa",
     "subregion": "Middle Africa",
     "capital": "N'Djamena",
@@ -2553,10 +3404,14 @@
       15,
       19
     ],
-    "flag": "https://flagcdn.com/td.svg"
+    "flag": "https://flagcdn.com/td.svg",
+    "difficulty": 3
   },
   "TG": {
-    "name": "Togo",
+    "name": {
+      "en": "Togo",
+      "fr": "Togo"
+    },
     "continent": "Africa",
     "subregion": "Western Africa",
     "capital": "Lomé",
@@ -2565,10 +3420,14 @@
       8,
       1.16666666
     ],
-    "flag": "https://flagcdn.com/tg.svg"
+    "flag": "https://flagcdn.com/tg.svg",
+    "difficulty": 3
   },
   "TH": {
-    "name": "Thailand",
+    "name": {
+      "en": "Thailand",
+      "fr": "Thaïlande"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Bangkok",
@@ -2577,10 +3436,14 @@
       15,
       100
     ],
-    "flag": "https://flagcdn.com/th.svg"
+    "flag": "https://flagcdn.com/th.svg",
+    "difficulty": 1
   },
   "TJ": {
-    "name": "Tajikistan",
+    "name": {
+      "en": "Tajikistan",
+      "fr": "Tadjikistan"
+    },
     "continent": "Asia",
     "subregion": "Central Asia",
     "capital": "Dushanbe",
@@ -2589,10 +3452,14 @@
       39,
       71
     ],
-    "flag": "https://flagcdn.com/tj.svg"
+    "flag": "https://flagcdn.com/tj.svg",
+    "difficulty": 2
   },
   "TK": {
-    "name": "Tokelau",
+    "name": {
+      "en": "Tokelau",
+      "fr": "Tokelau"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Fakaofo",
@@ -2601,10 +3468,14 @@
       -9,
       -172
     ],
-    "flag": "https://flagcdn.com/tk.svg"
+    "flag": "https://flagcdn.com/tk.svg",
+    "difficulty": 3
   },
   "TM": {
-    "name": "Turkmenistan",
+    "name": {
+      "en": "Turkmenistan",
+      "fr": "Turkménistan"
+    },
     "continent": "Asia",
     "subregion": "Central Asia",
     "capital": "Ashgabat",
@@ -2613,10 +3484,14 @@
       40,
       60
     ],
-    "flag": "https://flagcdn.com/tm.svg"
+    "flag": "https://flagcdn.com/tm.svg",
+    "difficulty": 2
   },
   "TL": {
-    "name": "Timor-Leste",
+    "name": {
+      "en": "Timor-Leste",
+      "fr": "Timor oriental"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Dili",
@@ -2625,10 +3500,14 @@
       -8.83333333,
       125.91666666
     ],
-    "flag": "https://flagcdn.com/tl.svg"
+    "flag": "https://flagcdn.com/tl.svg",
+    "difficulty": 3
   },
   "TO": {
-    "name": "Tonga",
+    "name": {
+      "en": "Tonga",
+      "fr": "Tonga"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Nuku'alofa",
@@ -2637,10 +3516,14 @@
       -20,
       -175
     ],
-    "flag": "https://flagcdn.com/to.svg"
+    "flag": "https://flagcdn.com/to.svg",
+    "difficulty": 3
   },
   "TT": {
-    "name": "Trinidad and Tobago",
+    "name": {
+      "en": "Trinidad and Tobago",
+      "fr": "Trinité-et-Tobago"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Port of Spain",
@@ -2649,10 +3532,14 @@
       11,
       -61
     ],
-    "flag": "https://flagcdn.com/tt.svg"
+    "flag": "https://flagcdn.com/tt.svg",
+    "difficulty": 2
   },
   "TN": {
-    "name": "Tunisia",
+    "name": {
+      "en": "Tunisia",
+      "fr": "Tunisie"
+    },
     "continent": "Africa",
     "subregion": "Northern Africa",
     "capital": "Tunis",
@@ -2661,10 +3548,14 @@
       34,
       9
     ],
-    "flag": "https://flagcdn.com/tn.svg"
+    "flag": "https://flagcdn.com/tn.svg",
+    "difficulty": 2
   },
   "TR": {
-    "name": "Türkiye",
+    "name": {
+      "en": "Türkiye",
+      "fr": "Turquie"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Ankara",
@@ -2673,10 +3564,14 @@
       39,
       35
     ],
-    "flag": "https://flagcdn.com/tr.svg"
+    "flag": "https://flagcdn.com/tr.svg",
+    "difficulty": 1
   },
   "TV": {
-    "name": "Tuvalu",
+    "name": {
+      "en": "Tuvalu",
+      "fr": "Tuvalu"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Funafuti",
@@ -2685,10 +3580,14 @@
       -8,
       178
     ],
-    "flag": "https://flagcdn.com/tv.svg"
+    "flag": "https://flagcdn.com/tv.svg",
+    "difficulty": 3
   },
   "TW": {
-    "name": "Taiwan",
+    "name": {
+      "en": "Taiwan",
+      "fr": "Taïwan"
+    },
     "continent": "Asia",
     "subregion": "Eastern Asia",
     "capital": "Taipei",
@@ -2697,10 +3596,14 @@
       23.5,
       121
     ],
-    "flag": "https://flagcdn.com/tw.svg"
+    "flag": "https://flagcdn.com/tw.svg",
+    "difficulty": 2
   },
   "TZ": {
-    "name": "Tanzania",
+    "name": {
+      "en": "Tanzania",
+      "fr": "Tanzanie"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Dodoma",
@@ -2709,10 +3612,14 @@
       -6,
       35
     ],
-    "flag": "https://flagcdn.com/tz.svg"
+    "flag": "https://flagcdn.com/tz.svg",
+    "difficulty": 2
   },
   "UG": {
-    "name": "Uganda",
+    "name": {
+      "en": "Uganda",
+      "fr": "Ouganda"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Kampala",
@@ -2721,10 +3628,14 @@
       1,
       32
     ],
-    "flag": "https://flagcdn.com/ug.svg"
+    "flag": "https://flagcdn.com/ug.svg",
+    "difficulty": 2
   },
   "UA": {
-    "name": "Ukraine",
+    "name": {
+      "en": "Ukraine",
+      "fr": "Ukraine"
+    },
     "continent": "Europe",
     "subregion": "Eastern Europe",
     "capital": "Kyiv",
@@ -2733,10 +3644,14 @@
       49,
       32
     ],
-    "flag": "https://flagcdn.com/ua.svg"
+    "flag": "https://flagcdn.com/ua.svg",
+    "difficulty": 1
   },
   "UY": {
-    "name": "Uruguay",
+    "name": {
+      "en": "Uruguay",
+      "fr": "Uruguay"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Montevideo",
@@ -2745,10 +3660,14 @@
       -33,
       -56
     ],
-    "flag": "https://flagcdn.com/uy.svg"
+    "flag": "https://flagcdn.com/uy.svg",
+    "difficulty": 2
   },
   "US": {
-    "name": "United States",
+    "name": {
+      "en": "United States",
+      "fr": "États-Unis"
+    },
     "continent": "Americas",
     "subregion": "North America",
     "capital": "Washington D.C.",
@@ -2757,10 +3676,14 @@
       38,
       -97
     ],
-    "flag": "https://flagcdn.com/us.svg"
+    "flag": "https://flagcdn.com/us.svg",
+    "difficulty": 1
   },
   "UZ": {
-    "name": "Uzbekistan",
+    "name": {
+      "en": "Uzbekistan",
+      "fr": "Ouzbékistan"
+    },
     "continent": "Asia",
     "subregion": "Central Asia",
     "capital": "Tashkent",
@@ -2769,10 +3692,14 @@
       41,
       64
     ],
-    "flag": "https://flagcdn.com/uz.svg"
+    "flag": "https://flagcdn.com/uz.svg",
+    "difficulty": 2
   },
   "VA": {
-    "name": "Vatican City",
+    "name": {
+      "en": "Vatican City",
+      "fr": "Cité du Vatican"
+    },
     "continent": "Europe",
     "subregion": "Southern Europe",
     "capital": "Vatican City",
@@ -2781,10 +3708,14 @@
       41.9,
       12.45
     ],
-    "flag": "https://flagcdn.com/va.svg"
+    "flag": "https://flagcdn.com/va.svg",
+    "difficulty": 3
   },
   "VC": {
-    "name": "Saint Vincent and the Grenadines",
+    "name": {
+      "en": "Saint Vincent and the Grenadines",
+      "fr": "Saint-Vincent-et-les-Grenadines"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Kingstown",
@@ -2793,10 +3724,14 @@
       13.25,
       -61.2
     ],
-    "flag": "https://flagcdn.com/vc.svg"
+    "flag": "https://flagcdn.com/vc.svg",
+    "difficulty": 3
   },
   "VE": {
-    "name": "Venezuela",
+    "name": {
+      "en": "Venezuela",
+      "fr": "Venezuela"
+    },
     "continent": "Americas",
     "subregion": "South America",
     "capital": "Caracas",
@@ -2805,10 +3740,14 @@
       8,
       -66
     ],
-    "flag": "https://flagcdn.com/ve.svg"
+    "flag": "https://flagcdn.com/ve.svg",
+    "difficulty": 2
   },
   "VG": {
-    "name": "British Virgin Islands",
+    "name": {
+      "en": "British Virgin Islands",
+      "fr": "Îles Vierges britanniques"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Road Town",
@@ -2817,10 +3756,14 @@
       18.431383,
       -64.62305
     ],
-    "flag": "https://flagcdn.com/vg.svg"
+    "flag": "https://flagcdn.com/vg.svg",
+    "difficulty": 3
   },
   "VI": {
-    "name": "United States Virgin Islands",
+    "name": {
+      "en": "United States Virgin Islands",
+      "fr": "Îles Vierges des États-Unis"
+    },
     "continent": "Americas",
     "subregion": "Caribbean",
     "capital": "Charlotte Amalie",
@@ -2829,10 +3772,14 @@
       18.35,
       -64.933333
     ],
-    "flag": "https://flagcdn.com/vi.svg"
+    "flag": "https://flagcdn.com/vi.svg",
+    "difficulty": 3
   },
   "VN": {
-    "name": "Vietnam",
+    "name": {
+      "en": "Vietnam",
+      "fr": "Viêt Nam"
+    },
     "continent": "Asia",
     "subregion": "South-Eastern Asia",
     "capital": "Hanoi",
@@ -2841,10 +3788,14 @@
       16.16666666,
       107.83333333
     ],
-    "flag": "https://flagcdn.com/vn.svg"
+    "flag": "https://flagcdn.com/vn.svg",
+    "difficulty": 1
   },
   "VU": {
-    "name": "Vanuatu",
+    "name": {
+      "en": "Vanuatu",
+      "fr": "Vanuatu"
+    },
     "continent": "Oceania",
     "subregion": "Melanesia",
     "capital": "Port Vila",
@@ -2853,10 +3804,14 @@
       -16,
       167
     ],
-    "flag": "https://flagcdn.com/vu.svg"
+    "flag": "https://flagcdn.com/vu.svg",
+    "difficulty": 3
   },
   "WF": {
-    "name": "Wallis and Futuna",
+    "name": {
+      "en": "Wallis and Futuna",
+      "fr": "Wallis-et-Futuna"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Mata-Utu",
@@ -2865,10 +3820,14 @@
       -13.3,
       -176.2
     ],
-    "flag": "https://flagcdn.com/wf.svg"
+    "flag": "https://flagcdn.com/wf.svg",
+    "difficulty": 3
   },
   "WS": {
-    "name": "Samoa",
+    "name": {
+      "en": "Samoa",
+      "fr": "Samoa"
+    },
     "continent": "Oceania",
     "subregion": "Polynesia",
     "capital": "Apia",
@@ -2877,10 +3836,14 @@
       -13.58333333,
       -172.33333333
     ],
-    "flag": "https://flagcdn.com/ws.svg"
+    "flag": "https://flagcdn.com/ws.svg",
+    "difficulty": 3
   },
   "YE": {
-    "name": "Yemen",
+    "name": {
+      "en": "Yemen",
+      "fr": "Yémen"
+    },
     "continent": "Asia",
     "subregion": "Western Asia",
     "capital": "Sana'a",
@@ -2889,10 +3852,14 @@
       15,
       48
     ],
-    "flag": "https://flagcdn.com/ye.svg"
+    "flag": "https://flagcdn.com/ye.svg",
+    "difficulty": 2
   },
   "ZA": {
-    "name": "South Africa",
+    "name": {
+      "en": "South Africa",
+      "fr": "Afrique du Sud"
+    },
     "continent": "Africa",
     "subregion": "Southern Africa",
     "capital": "Pretoria",
@@ -2901,10 +3868,14 @@
       -29,
       24
     ],
-    "flag": "https://flagcdn.com/za.svg"
+    "flag": "https://flagcdn.com/za.svg",
+    "difficulty": 1
   },
   "ZM": {
-    "name": "Zambia",
+    "name": {
+      "en": "Zambia",
+      "fr": "Zambie"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Lusaka",
@@ -2913,10 +3884,14 @@
       -15,
       30
     ],
-    "flag": "https://flagcdn.com/zm.svg"
+    "flag": "https://flagcdn.com/zm.svg",
+    "difficulty": 2
   },
   "ZW": {
-    "name": "Zimbabwe",
+    "name": {
+      "en": "Zimbabwe",
+      "fr": "Zimbabwe"
+    },
     "continent": "Africa",
     "subregion": "Eastern Africa",
     "capital": "Harare",
@@ -2925,6 +3900,7 @@
       -20,
       30
     ],
-    "flag": "https://flagcdn.com/zw.svg"
+    "flag": "https://flagcdn.com/zw.svg",
+    "difficulty": 2
   }
 }

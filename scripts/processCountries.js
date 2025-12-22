@@ -19,14 +19,20 @@ for (const country of rawData) {
     continue;
   }
 
-  const name = country.name?.common || country.name?.official;
-  if (!name) continue;
+  const nameEn = country.name?.common || country.name?.official;
+  if (!nameEn) continue;
+
+  // Get French name from translations
+  const nameFr = country.translations?.fra?.common || nameEn;
 
   const capital = country.capital?.[0] || null;
   const capitalCoords = country.capitalInfo?.latlng || null;
 
   countries[code] = {
-    name,
+    name: {
+      en: nameEn,
+      fr: nameFr
+    },
     continent: country.region || 'Unknown',
     subregion: country.subregion || null,
     capital,

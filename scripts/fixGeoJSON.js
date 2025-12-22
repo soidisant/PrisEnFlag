@@ -7,7 +7,9 @@ const countries = JSON.parse(readFileSync('./public/data/countries.json', 'utf-8
 // Create name -> code mapping from countries.json
 const nameToCode = {};
 for (const [code, data] of Object.entries(countries)) {
-  nameToCode[data.name.toLowerCase()] = code;
+  // Handle both old format (string) and new format (object with en/fr)
+  const name = typeof data.name === 'string' ? data.name : data.name.en;
+  nameToCode[name.toLowerCase()] = code;
 }
 
 // Add common name variations

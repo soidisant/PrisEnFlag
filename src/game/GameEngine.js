@@ -3,6 +3,7 @@ import { AnswerMap } from '../maps/AnswerMap.js';
 import { DataLoader } from '../data/DataLoader.js';
 import { ScoreManager } from './ScoreManager.js';
 import { Timer } from './Timer.js';
+import { languageManager } from '../i18n/LanguageManager.js';
 
 export class GameEngine {
   constructor(ui) {
@@ -19,8 +20,21 @@ export class GameEngine {
     this.totalRounds = 10;
     this.isGameActive = false;
     this.usedCountries = new Set();
+    this.selectedContinent = 'all';
 
     this.setupTimer();
+  }
+
+  goHome() {
+    this.isGameActive = false;
+    this.timer.stop();
+    this.clueMap?.stopAnimation();
+  }
+
+  onLanguageChange(lang) {
+    if (this.answerMap) {
+      this.answerMap.setLanguage(lang);
+    }
   }
 
   setupTimer() {
@@ -34,7 +48,8 @@ export class GameEngine {
     };
   }
 
-  async startGame() {
+  async startGame(continent = 'all') {
+    this.selectedContinent = continent;
     this.ui.showScreen('game');
 
     // Initialize maps if not already done
@@ -43,7 +58,12 @@ export class GameEngine {
       this.answerMap = new AnswerMap('answer-map');
 
       this.answerMap.onCountrySelected = (code, name, latlng) => {
-        this.ui.setSelectedCountry(name);
+        // Get localized name if available
+        const countryData = code ? this.dataLoader.getCountryByCode(code) : null;
+        const localizedName = countryData
+          ? languageManager.getCountryName(countryData.name)
+          : name;
+        this.ui.setSelectedCountry(localizedName);
       };
     }
 
@@ -116,7 +136,41 @@ export class GameEngine {
 
   getUniqueRandomCountry() {
     const countries = this.dataLoader.getCountryList();
-    const available = countries.filter(c => !this.usedCountries.has(c.code));
+
+    // Determine max difficulty based on current round
+    // Rounds 1-3: Easy only (difficulty 1)
+    // Rounds 4-6: Easy + Medium (difficulty 1-2)
+    // Rounds 7-10: All difficulties (1-3)
+    let maxDifficulty;
+    if (this.currentRound <= 3) {
+      maxDifficulty = 1;
+    } else if (this.currentRound <= 6) {
+      maxDifficulty = 2;
+    } else {
+      maxDifficulty = 3;
+    }
+
+    // Filter by continent (if selected), difficulty, and not yet used
+    let available = countries.filter(c => {
+      if (this.usedCountries.has(c.code)) return false;
+      if (this.selectedContinent !== 'all' && c.continent !== this.selectedContinent) return false;
+      if ((c.difficulty || 3) > maxDifficulty) return false;
+      return true;
+    });
+
+    // Fallback: relax difficulty requirement
+    if (available.length === 0) {
+      available = countries.filter(c => {
+        if (this.usedCountries.has(c.code)) return false;
+        if (this.selectedContinent !== 'all' && c.continent !== this.selectedContinent) return false;
+        return true;
+      });
+    }
+
+    // Final fallback: any unused country
+    if (available.length === 0) {
+      available = countries.filter(c => !this.usedCountries.has(c.code));
+    }
 
     if (available.length === 0) return null;
 
@@ -148,14 +202,16 @@ export class GameEngine {
       distanceToCapital
     });
 
-    // Get the guessed country name
-    const guessedCountryName = countryCode
-      ? this.dataLoader.getCountryByCode(countryCode)?.name || 'Unknown'
-      : 'No answer';
+    // Get localized country names
+    const targetName = languageManager.getCountryName(this.currentCountry.name);
+    const guessedCountryData = countryCode ? this.dataLoader.getCountryByCode(countryCode) : null;
+    const guessedCountryName = guessedCountryData
+      ? languageManager.getCountryName(guessedCountryData.name)
+      : languageManager.t('noAnswer');
 
     this.scoreManager.addRoundScore(score, isCorrect, {
       targetCode: this.currentCountry.code,
-      targetName: this.currentCountry.name,
+      targetName: targetName,
       targetFlag: this.currentCountry.flag,
       guessedCode: countryCode,
       guessedName: guessedCountryName
@@ -169,7 +225,7 @@ export class GameEngine {
     this.clueMap.showTarget();
 
     // Show result overlay
-    this.ui.showResult(isCorrect, this.currentCountry.name, score);
+    this.ui.showResult(isCorrect, targetName, score);
   }
 
   endGame() {

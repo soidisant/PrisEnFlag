@@ -1,11 +1,13 @@
 import L from 'leaflet';
 import { createTileLayer, DEFAULT_CENTER, DEFAULT_ZOOM, calculateDistance, findLayersAtPoint } from './mapUtils.js';
+import { languageManager } from '../i18n/LanguageManager.js';
 
 export class AnswerMap {
   constructor(containerId) {
     this.map = L.map(containerId).setView(DEFAULT_CENTER, DEFAULT_ZOOM);
 
-    createTileLayer().addTo(this.map);
+    this.tileLayer = createTileLayer(languageManager.lang);
+    this.tileLayer.addTo(this.map);
 
     this.marker = null;
     this.countriesLayer = null;
@@ -16,6 +18,14 @@ export class AnswerMap {
     this.onCountrySelected = null;
 
     this.setupClickHandler();
+  }
+
+  setLanguage(lang) {
+    if (this.tileLayer) {
+      this.map.removeLayer(this.tileLayer);
+    }
+    this.tileLayer = createTileLayer(lang);
+    this.tileLayer.addTo(this.map);
   }
 
   setGeoJSON(geojson) {
