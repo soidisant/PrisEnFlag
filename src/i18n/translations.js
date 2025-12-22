@@ -3,8 +3,8 @@ export const translations = {
     // Start screen
     title: 'Pris en Flag',
     subtitle: 'Guess the country from its flag!',
-    instruction1: 'A flag will appear on the left map, which progressively reveals the target country.',
-    instruction2: 'Click on the right map to place your pin in the correct country.',
+    instruction1: 'A flag will appear on the map. Stay idle and hints will progressively reveal the target country.',
+    instruction2: 'Click on the map to place your pin in the correct country.',
     instruction3: 'The faster you answer, the more points you earn!',
     play: 'Play',
 
@@ -20,7 +20,7 @@ export const translations = {
     wrong: 'Wrong!',
     answerWas: 'The answer was',
     timeBonus: 'Time Bonus',
-    clueBonus: 'Clue Bonus',
+    hintBonus: 'Hint Bonus',
     capitalBonus: 'Capital Bonus',
     roundScore: 'Round Score',
     nextRound: 'Next Round',
@@ -48,6 +48,9 @@ export const translations = {
     // Language
     language: 'Language',
 
+    // Hints
+    hints: 'Hints',
+
     // Country card
     capital: 'Capital',
     continent: 'Continent',
@@ -58,8 +61,8 @@ export const translations = {
     // Start screen
     title: 'Pris en Flag',
     subtitle: 'Devinez le pays à partir de son drapeau !',
-    instruction1: 'Un drapeau apparaîtra sur la carte de gauche, qui révèle progressivement le pays cible.',
-    instruction2: 'Cliquez sur la carte de droite pour placer votre épingle dans le bon pays.',
+    instruction1: 'Un drapeau apparaîtra sur la carte. Restez inactif et des indices révèleront progressivement le pays cible.',
+    instruction2: 'Cliquez sur la carte pour placer votre épingle dans le bon pays.',
     instruction3: 'Plus vous répondez vite, plus vous gagnez de points !',
     play: 'Jouer',
 
@@ -75,7 +78,7 @@ export const translations = {
     wrong: 'Faux !',
     answerWas: 'La réponse était',
     timeBonus: 'Bonus Temps',
-    clueBonus: 'Bonus Indice',
+    hintBonus: 'Bonus Indice',
     capitalBonus: 'Bonus Capitale',
     roundScore: 'Score Manche',
     nextRound: 'Manche Suivante',
@@ -102,6 +105,9 @@ export const translations = {
 
     // Language
     language: 'Langue',
+
+    // Hints
+    hints: 'Indices',
 
     // Country card
     capital: 'Capitale',

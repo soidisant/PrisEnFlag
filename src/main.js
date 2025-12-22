@@ -66,3 +66,11 @@ document.getElementById('game-home-btn').addEventListener('click', () => {
 document.getElementById('end-home-btn').addEventListener('click', () => {
   ui.showScreen('start');
 });
+
+// Hint toggle
+document.getElementById('hint-toggle').addEventListener('change', (e) => {
+  game.unifiedMap?.setHintsEnabled(e.target.checked);
+  if (!e.target.checked) {
+    ui.hideCandidatesPanel();
+  }
+});

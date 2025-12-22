@@ -110,59 +110,75 @@
           <div class="timer-display">
             <span id="timer">30.0</span>s
           </div>
+          <div class="hint-toggle">
+            <label class="toggle-label">
+              <input type="checkbox" id="hint-toggle" checked />
+              <span class="toggle-slider"></span>
+              <span class="toggle-text" data-i18n="hints">Hints</span>
+            </label>
+          </div>
         </header>
 
-        <main class="game-container">
-          <div class="map-panel clue-panel">
-            <div class="flag-container">
-              <img id="flag-image" src="" alt="Country flag" />
-            </div>
-            <div id="clue-map" class="map"></div>
+        <main class="game-container unified">
+          <!-- Single unified map -->
+          <div id="unified-map" class="map full-width"></div>
+
+          <!-- Flag overlay on map -->
+          <div class="flag-overlay">
+            <img id="flag-image" src="" alt="Country flag" />
           </div>
-          <div class="map-panel answer-panel">
-            <div id="answer-map" class="map"></div>
-            <div id="country-card" class="country-card hidden">
-              <h2 id="card-result-title" class="card-result-title">Correct!</h2>
-              <img id="card-flag" class="card-flag" src="" alt="Country flag" />
-              <h3 id="card-country-name" class="card-country-name"></h3>
-              <div class="card-details">
-                <div class="card-detail">
-                  <span class="card-label" data-i18n="capital">Capital</span>
-                  <span id="card-capital" class="card-value"></span>
-                </div>
-                <div class="card-detail">
-                  <span class="card-label" data-i18n="continent">Continent</span>
-                  <span id="card-continent" class="card-value"></span>
-                </div>
-                <div class="card-detail">
-                  <span class="card-label" data-i18n="region">Region</span>
-                  <span id="card-region" class="card-value"></span>
-                </div>
+
+          <!-- Country card (result display) -->
+          <div id="country-card" class="country-card hidden">
+            <h2 id="card-result-title" class="card-result-title">Correct!</h2>
+            <img id="card-flag" class="card-flag" src="" alt="Country flag" />
+            <h3 id="card-country-name" class="card-country-name"></h3>
+            <div class="card-details">
+              <div class="card-detail">
+                <span class="card-label" data-i18n="capital">Capital</span>
+                <span id="card-capital" class="card-value"></span>
               </div>
-              <div class="card-score-breakdown">
-                <div class="card-score-item">
-                  <span data-i18n="timeBonus">Time Bonus</span>
-                  <span id="card-time-bonus">+0</span>
-                </div>
-                <div class="card-score-item">
-                  <span data-i18n="clueBonus">Clue Bonus</span>
-                  <span id="card-clue-bonus">+0</span>
-                </div>
-                <div class="card-score-item">
-                  <span data-i18n="capitalBonus">Capital Bonus</span>
-                  <span id="card-capital-bonus">+0</span>
-                </div>
-                <div class="card-score-item total">
-                  <span data-i18n="roundScore">Round Score</span>
-                  <span id="card-round-score">0</span>
-                </div>
+              <div class="card-detail">
+                <span class="card-label" data-i18n="continent">Continent</span>
+                <span id="card-continent" class="card-value"></span>
               </div>
-              <button id="card-next-btn" class="btn btn-primary" data-i18n="nextRound">Next Round</button>
+              <div class="card-detail">
+                <span class="card-label" data-i18n="region">Region</span>
+                <span id="card-region" class="card-value"></span>
+              </div>
             </div>
-            <div class="answer-controls">
-              <p id="selected-info" data-i18n="selectCountry">Click on the map to place your guess</p>
-              <button id="submit-btn" class="btn btn-primary" disabled data-i18n="submit">Submit Answer</button>
+            <div class="card-score-breakdown">
+              <div class="card-score-item">
+                <span data-i18n="timeBonus">Time Bonus</span>
+                <span id="card-time-bonus">+0</span>
+              </div>
+              <div class="card-score-item">
+                <span data-i18n="hintBonus">Hint Bonus</span>
+                <span id="card-hint-bonus">+0</span>
+              </div>
+              <div class="card-score-item">
+                <span data-i18n="capitalBonus">Capital Bonus</span>
+                <span id="card-capital-bonus">+0</span>
+              </div>
+              <div class="card-score-item total">
+                <span data-i18n="roundScore">Round Score</span>
+                <span id="card-round-score">0</span>
+              </div>
             </div>
+            <button id="card-next-btn" class="btn btn-primary" data-i18n="nextRound">Next Round</button>
+          </div>
+
+          <!-- Candidates panel (shown when hints reveal candidates) -->
+          <div id="candidates-panel" class="candidates-panel hidden">
+            <div class="candidates-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Answer controls floating at bottom -->
+          <div class="answer-controls floating">
+            <p id="selected-info" data-i18n="selectCountry">Click on the map to place your guess</p>
+            <button id="submit-btn" class="btn btn-primary" disabled data-i18n="submit">Submit Answer</button>
           </div>
         </main>
       </div>
@@ -178,8 +194,8 @@
               <span id="time-bonus">0</span>
             </div>
             <div class="score-item">
-              <span data-i18n="clueBonus">Clue Bonus</span>:
-              <span id="zoom-bonus">0</span>
+              <span data-i18n="hintBonus">Hint Bonus</span>:
+              <span id="hint-bonus">0</span>
             </div>
             <div class="score-item">
               <span data-i18n="capitalBonus">Capital Bonus</span>:

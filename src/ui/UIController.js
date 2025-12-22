@@ -20,7 +20,7 @@ export class UIController {
       resultTitle: document.getElementById('result-title'),
       resultCountry: document.getElementById('result-country'),
       timeBonus: document.getElementById('time-bonus'),
-      zoomBonus: document.getElementById('zoom-bonus'),
+      hintBonus: document.getElementById('hint-bonus'),
       capitalBonus: document.getElementById('capital-bonus'),
       roundScore: document.getElementById('round-score'),
       nextRoundBtn: document.getElementById('next-round-btn'),
@@ -36,14 +36,54 @@ export class UIController {
       cardContinent: document.getElementById('card-continent'),
       cardRegion: document.getElementById('card-region'),
       cardTimeBonus: document.getElementById('card-time-bonus'),
-      cardClueBonus: document.getElementById('card-clue-bonus'),
+      cardHintBonus: document.getElementById('card-hint-bonus'),
       cardCapitalBonus: document.getElementById('card-capital-bonus'),
       cardRoundScore: document.getElementById('card-round-score'),
-      cardNextBtn: document.getElementById('card-next-btn')
+      cardNextBtn: document.getElementById('card-next-btn'),
+      // Candidates panel elements
+      candidatesPanel: document.getElementById('candidates-panel'),
+      candidatesList: document.querySelector('.candidates-list')
     };
 
     // Apply initial translations and language selector state
     this.applyTranslations();
+  }
+
+  showCandidatesPanel(candidates, onSelect) {
+    this.elements.candidatesList.innerHTML = '';
+
+    candidates.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = 'candidate-btn';
+      btn.dataset.code = c.code;
+      // Show country shape silhouette and name (no flag to avoid giving away answer)
+      const svgHtml = c.svg || '';
+      btn.innerHTML = `
+        <div class="candidate-shape">${svgHtml}</div>
+        <span>${languageManager.getCountryName(c.name)}</span>
+      `;
+      btn.addEventListener('click', () => onSelect(c.code));
+      this.elements.candidatesList.appendChild(btn);
+    });
+
+    this.elements.candidatesPanel.classList.remove('hidden');
+  }
+
+  hideCandidatesPanel() {
+    if (this.elements.candidatesPanel) {
+      this.elements.candidatesPanel.classList.add('hidden');
+    }
+  }
+
+  eliminateCandidate(code) {
+    const btn = this.elements.candidatesList?.querySelector(`[data-code="${code}"]`);
+    if (btn) btn.classList.add('eliminated');
+  }
+
+  highlightSelectedCandidate(code) {
+    this.elements.candidatesList?.querySelectorAll('.candidate-btn').forEach(btn => {
+      btn.classList.toggle('selected', btn.dataset.code === code);
+    });
   }
 
   applyTranslations() {
@@ -103,7 +143,7 @@ export class UIController {
 
     this.elements.resultCountry.textContent = `${languageManager.t('answerWas')}: ${countryName}`;
     this.elements.timeBonus.textContent = `+${score.timeBonus}`;
-    this.elements.zoomBonus.textContent = `+${score.zoomBonus}`;
+    this.elements.hintBonus.textContent = `+${score.hintBonus}`;
     this.elements.capitalBonus.textContent = `+${score.capitalBonus}`;
     this.elements.roundScore.textContent = score.total;
 
@@ -129,7 +169,7 @@ export class UIController {
 
     // Score breakdown
     this.elements.cardTimeBonus.textContent = `+${score.timeBonus}`;
-    this.elements.cardClueBonus.textContent = `+${score.zoomBonus}`;
+    this.elements.cardHintBonus.textContent = `+${score.hintBonus}`;
     this.elements.cardCapitalBonus.textContent = `+${score.capitalBonus}`;
     this.elements.cardRoundScore.textContent = score.total;
 

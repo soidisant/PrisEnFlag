@@ -7,45 +7,56 @@ export class ScoreManager {
 
     // Scoring constants
     this.MAX_TIME_BONUS = 1000;
-    this.MAX_ZOOM_BONUS = 500;
+    this.MAX_HINT_BONUS = 500;
     this.CAPITAL_BONUS = 200;
     this.CAPITAL_THRESHOLD_KM = 50;
     this.ROUND_DURATION = 30000; // 30 seconds
   }
 
-  calculateRoundScore({ isCorrect, timeElapsed, zoomProgress, distanceToCapital }) {
+  calculateRoundScore({ isCorrect, timeElapsed, hintProgress, distanceToCapital, usedPanel = false }) {
     if (!isCorrect) {
       return {
         timeBonus: 0,
-        zoomBonus: 0,
+        hintBonus: 0,
         capitalBonus: 0,
+        panelPenalty: 0,
         total: 0
       };
     }
 
     // Time bonus: 1000 max, linear decrease over 30s
-    const timeBonus = Math.max(
+    let timeBonus = Math.max(
       0,
       Math.round(this.MAX_TIME_BONUS * (1 - timeElapsed / this.ROUND_DURATION))
     );
 
-    // Zoom bonus: 500 max if answered early (less map revealed)
-    const zoomBonus = Math.max(
+    // Hint bonus: 500 max if answered with fewer hints shown
+    let hintBonus = Math.max(
       0,
-      Math.round(this.MAX_ZOOM_BONUS * (1 - zoomProgress))
+      Math.round(this.MAX_HINT_BONUS * (1 - hintProgress))
     );
 
     // Capital bonus: 200 if within 50km of capital
-    const capitalBonus = distanceToCapital <= this.CAPITAL_THRESHOLD_KM * 1000
+    // Not available when using panel (since it places marker at center)
+    const capitalBonus = (!usedPanel && distanceToCapital <= this.CAPITAL_THRESHOLD_KM * 1000)
       ? this.CAPITAL_BONUS
       : 0;
 
-    const total = timeBonus + zoomBonus + capitalBonus;
+    // Panel penalty: reduce time and hint bonus by 50% when using panel
+    let panelPenalty = 0;
+    if (usedPanel) {
+      panelPenalty = Math.round((timeBonus + hintBonus) * 0.5);
+      timeBonus = Math.round(timeBonus * 0.5);
+      hintBonus = Math.round(hintBonus * 0.5);
+    }
+
+    const total = timeBonus + hintBonus + capitalBonus;
 
     return {
       timeBonus,
-      zoomBonus,
+      hintBonus,
       capitalBonus,
+      panelPenalty,
       total
     };
   }

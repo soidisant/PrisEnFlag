@@ -1,5 +1,4 @@
-import { ClueMap } from '../maps/ClueMap.js';
-import { AnswerMap } from '../maps/AnswerMap.js';
+import { UnifiedMap } from '../maps/UnifiedMap.js';
 import { DataLoader } from '../data/DataLoader.js';
 import { ScoreManager } from './ScoreManager.js';
 import { Timer } from './Timer.js';
@@ -12,8 +11,7 @@ export class GameEngine {
     this.scoreManager = new ScoreManager();
     this.timer = new Timer(30000);
 
-    this.clueMap = null;
-    this.answerMap = null;
+    this.unifiedMap = null;
 
     this.currentCountry = null;
     this.currentRound = 0;
@@ -28,12 +26,12 @@ export class GameEngine {
   goHome() {
     this.isGameActive = false;
     this.timer.stop();
-    this.clueMap?.stopAnimation();
+    this.unifiedMap?.stopRound();
   }
 
   onLanguageChange(lang) {
-    if (this.answerMap) {
-      this.answerMap.setLanguage(lang);
+    if (this.unifiedMap) {
+      this.unifiedMap.setLanguage(lang);
     }
   }
 
@@ -52,26 +50,35 @@ export class GameEngine {
     this.selectedContinent = continent;
     this.ui.showScreen('game');
 
-    // Initialize maps if not already done
-    if (!this.clueMap) {
-      this.clueMap = new ClueMap('clue-map');
-      this.answerMap = new AnswerMap('answer-map');
+    // Initialize unified map if not already done
+    if (!this.unifiedMap) {
+      this.unifiedMap = new UnifiedMap('unified-map');
 
-      this.answerMap.onCountrySelected = (code, name, latlng) => {
+      this.unifiedMap.onCountrySelected = (code, name, latlng) => {
         // Get localized name if available
         const countryData = code ? this.dataLoader.getCountryByCode(code) : null;
         const localizedName = countryData
           ? languageManager.getCountryName(countryData.name)
           : name;
         this.ui.setSelectedCountry(localizedName);
+        this.ui.highlightSelectedCandidate(code);
+      };
+
+      this.unifiedMap.onCandidatesRevealed = (candidates) => {
+        this.ui.showCandidatesPanel(candidates, (code) => {
+          this.unifiedMap.selectCandidateByCode(code);
+        });
+      };
+
+      this.unifiedMap.onCandidateEliminated = (code) => {
+        this.ui.eliminateCandidate(code);
       };
     }
 
     // Load data if not already loaded
     try {
       const { geojson, countries } = await this.dataLoader.load();
-      this.answerMap.setGeoJSON(geojson);
-      this.clueMap.setGeoJSON(geojson, countries);
+      this.unifiedMap.setGeoJSON(geojson, countries);
     } catch (error) {
       console.error('Failed to load game data:', error);
       alert('Failed to load game data. Please refresh the page.');
@@ -86,10 +93,9 @@ export class GameEngine {
 
     this.ui.updateScore(0);
 
-    // Ensure maps are properly sized
+    // Ensure map is properly sized
     setTimeout(() => {
-      this.clueMap.invalidateSize();
-      this.answerMap.invalidateSize();
+      this.unifiedMap.invalidateSize();
       this.nextRound();
     }, 100);
   }
@@ -97,6 +103,7 @@ export class GameEngine {
   nextRound() {
     this.ui.hideResult();
     this.ui.hideCountryCard();
+    this.ui.hideCandidatesPanel();
 
     this.currentRound++;
 
@@ -121,14 +128,9 @@ export class GameEngine {
     this.ui.setFlag(this.currentCountry.flag);
     this.ui.setSelectedCountry(null);
 
-    // Reset maps and disable clue map interaction
-    this.clueMap.disableInteraction();
-    this.clueMap.reset();
-    this.answerMap.reset();
-
-    // Set target and start elimination animation
-    this.clueMap.setTarget(this.currentCountry.code, this.currentCountry.continent);
-    this.clueMap.startAnimation(30000);
+    // Set target and start round on unified map
+    this.unifiedMap.setTarget(this.currentCountry.code, this.currentCountry.continent);
+    this.unifiedMap.startRound();
 
     // Start timer
     this.timer.reset();
@@ -182,25 +184,28 @@ export class GameEngine {
   submitAnswer() {
     if (!this.isGameActive) return;
 
-    // Stop animations and timer
+    // Stop timer and round
     this.timer.stop();
-    this.clueMap.stopAnimation();
+    this.unifiedMap.stopRound();
+    this.ui.hideCandidatesPanel();
 
-    const { countryCode, latlng } = this.answerMap.getSelectedCountry();
+    const { countryCode, latlng, viaPanel } = this.unifiedMap.getSelectedCountry();
     const isCorrect = countryCode === this.currentCountry.code;
 
     // Calculate distance to capital
     let distanceToCapital = Infinity;
     if (latlng && this.currentCountry.capitalCoords) {
-      distanceToCapital = this.answerMap.getDistanceToCapital(this.currentCountry.capitalCoords);
+      distanceToCapital = this.unifiedMap.getDistanceToCapital(this.currentCountry.capitalCoords);
     }
 
-    // Calculate score
+    // Calculate score with hint progress instead of zoom progress
+    // Panel selection gives reduced score
     const score = this.scoreManager.calculateRoundScore({
       isCorrect,
       timeElapsed: this.timer.getElapsed(),
-      zoomProgress: this.clueMap.getCurrentProgress(),
-      distanceToCapital
+      hintProgress: this.unifiedMap.getHintProgress(),
+      distanceToCapital,
+      usedPanel: viaPanel
     });
 
     // Get localized country names
@@ -221,12 +226,11 @@ export class GameEngine {
     // Update UI
     this.ui.updateScore(this.scoreManager.getTotalScore());
 
-    // Show correct country on clue map and zoom in
-    this.clueMap.showTarget();
-    this.clueMap.focusOnTarget();
-    this.clueMap.enableInteraction();
+    // Show correct country and zoom in
+    this.unifiedMap.showTarget();
+    this.unifiedMap.focusOnTarget();
 
-    // Show country card with result on right panel
+    // Show country card with result
     const isLastRound = this.currentRound === this.totalRounds;
     this.ui.showCountryCard({
       flag: this.currentCountry.flag,
@@ -240,7 +244,7 @@ export class GameEngine {
   endGame() {
     this.isGameActive = false;
     this.timer.stop();
-    this.clueMap?.stopAnimation();
+    this.unifiedMap?.stopRound();
 
     this.ui.showEndScreen(
       this.scoreManager.getTotalScore(),
