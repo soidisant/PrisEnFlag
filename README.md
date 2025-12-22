@@ -1,7 +1,7 @@
 # Pris en Flag
 
 <p align="center">
-  <img src="logo.jpg" alt="Pris en Flag" width="200" style="border-radius: 50%;" />
+  <img src="PrisEnFlag.jpg" alt="Pris en Flag" width="200" />
 </p>
 
 <p align="center">
