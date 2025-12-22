@@ -37,6 +37,11 @@ document.getElementById('start-btn').addEventListener('click', () => {
   game.startGame(selectedContinent);
 });
 
+// Daily challenge button
+document.getElementById('daily-btn').addEventListener('click', () => {
+  game.startDailyGame();
+});
+
 // Submit answer button
 document.getElementById('submit-btn').addEventListener('click', () => {
   game.submitAnswer();

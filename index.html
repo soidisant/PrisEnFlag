@@ -77,6 +77,19 @@
             <p data-i18n="instruction3">The faster you answer, the more points you earn!</p>
           </div>
 
+          <!-- Daily Challenge -->
+          <div class="daily-mode-section">
+            <button id="daily-btn" class="btn btn-daily">
+              <span class="daily-icon">📅</span>
+              <span data-i18n="dailyChallenge">Daily Challenge</span>
+            </button>
+            <p class="daily-info" data-i18n="dailyInfo">Same puzzle for everyone, resets at 9AM Paris time</p>
+          </div>
+
+          <div class="mode-divider">
+            <span>or</span>
+          </div>
+
           <div class="mode-selection">
             <p class="mode-label" data-i18n="selectRegion">Select Region</p>
             <div class="continent-buttons">
@@ -265,7 +278,7 @@
           <span class="flag">🇳🇬</span>
         </div>
         <div class="end-content">
-          <h1 data-i18n="gameOver">Game Over!</h1>
+          <h1 id="game-over-title" data-i18n="gameOver">Game Over!</h1>
           <div class="final-score">
             <span class="label" data-i18n="finalScore">Final Score</span>:
             <span id="final-score">0</span>

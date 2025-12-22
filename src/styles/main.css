@@ -262,6 +262,68 @@ html, body {
   margin-bottom: 0;
 }
 
+/* Daily Challenge */
+.daily-mode-section {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.btn-daily {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-daily:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+}
+
+.btn-daily:active {
+  transform: translateY(0);
+}
+
+.daily-icon {
+  font-size: 1.3rem;
+}
+
+.daily-info {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.mode-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #64748b;
+}
+
+.mode-divider::before,
+.mode-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mode-divider span {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Mode Selection */
 .mode-selection {
   margin-bottom: 1.5rem;

@@ -54,7 +54,15 @@ export const translations = {
     // Country card
     capital: 'Capital',
     continent: 'Continent',
-    region: 'Region'
+    region: 'Region',
+
+    // Daily challenge
+    dailyChallenge: 'Daily Challenge',
+    dailyInfo: 'Same puzzle for everyone, resets at 9AM Paris time',
+    alreadyCompleted: "You already completed today's challenge!",
+    comeBackTomorrow: 'Come back tomorrow for a new challenge!',
+    yourScore: 'Your score',
+    dailyComplete: 'Daily Challenge Complete!'
   },
 
   fr: {
@@ -112,7 +120,15 @@ export const translations = {
     // Country card
     capital: 'Capitale',
     continent: 'Continent',
-    region: 'Région'
+    region: 'Région',
+
+    // Daily challenge
+    dailyChallenge: 'Défi Quotidien',
+    dailyInfo: 'Le même puzzle pour tous, renouvelé à 9h (heure de Paris)',
+    alreadyCompleted: 'Vous avez déjà complété le défi du jour !',
+    comeBackTomorrow: 'Revenez demain pour un nouveau défi !',
+    yourScore: 'Votre score',
+    dailyComplete: 'Défi Quotidien Terminé !'
   }
 };
 

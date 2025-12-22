@@ -3,6 +3,9 @@ import { DataLoader } from '../data/DataLoader.js';
 import { ScoreManager } from './ScoreManager.js';
 import { Timer } from './Timer.js';
 import { languageManager } from '../i18n/LanguageManager.js';
+import { DailyCountrySelector } from './DailyCountrySelector.js';
+import { getDailyChallengeDate } from '../utils/DailyChallenge.js';
+import { hasCompletedToday, getTodayResult, saveDailyResult } from '../utils/DailyStorage.js';
 
 export class GameEngine {
   constructor(ui) {
@@ -19,6 +22,11 @@ export class GameEngine {
     this.isGameActive = false;
     this.usedCountries = new Set();
     this.selectedContinent = 'all';
+
+    // Daily mode properties
+    this.isDailyMode = false;
+    this.dailyCountries = null;
+    this.dailyDate = null;
 
     this.setupTimer();
   }
@@ -106,6 +114,37 @@ export class GameEngine {
     }, 100);
   }
 
+  async startDailyGame() {
+    const dateString = getDailyChallengeDate();
+
+    // Check if already completed today
+    if (hasCompletedToday(dateString)) {
+      const result = getTodayResult(dateString);
+      this.ui.showDailyAlreadyCompleted(result, dateString);
+      return;
+    }
+
+    // Load data first if not loaded
+    try {
+      await this.dataLoader.load();
+    } catch (error) {
+      console.error('Failed to load game data:', error);
+      alert('Failed to load game data. Please refresh the page.');
+      return;
+    }
+
+    // Pre-select countries for daily challenge
+    const selector = new DailyCountrySelector(this.dataLoader.getCountryList());
+    const { date, countries } = selector.selectDailyCountries();
+
+    this.isDailyMode = true;
+    this.dailyCountries = countries;
+    this.dailyDate = date;
+
+    // Start game with 'all' continent (daily mode is always world)
+    await this.startGame('all');
+  }
+
   nextRound() {
     this.ui.hideResult();
     this.ui.hideCountryCard();
@@ -144,6 +183,11 @@ export class GameEngine {
   }
 
   getUniqueRandomCountry() {
+    // For daily mode, use pre-selected countries
+    if (this.isDailyMode && this.dailyCountries) {
+      return this.dailyCountries[this.currentRound - 1] || null;
+    }
+
     const countries = this.dataLoader.getCountryList();
 
     // Determine max difficulty based on current round
@@ -252,11 +296,27 @@ export class GameEngine {
     this.timer.stop();
     this.unifiedMap?.stopRound();
 
+    // Save daily result if in daily mode
+    if (this.isDailyMode && this.dailyDate) {
+      saveDailyResult(this.dailyDate, {
+        completed: true,
+        score: this.scoreManager.getTotalScore(),
+        correctCount: this.scoreManager.getCorrectCount(),
+        roundHistory: this.scoreManager.getRoundHistory()
+      });
+    }
+
     this.ui.showEndScreen(
       this.scoreManager.getTotalScore(),
       this.scoreManager.getCorrectCount(),
       this.totalRounds,
-      this.scoreManager.getRoundHistory()
+      this.scoreManager.getRoundHistory(),
+      this.isDailyMode
     );
+
+    // Reset daily mode state
+    this.isDailyMode = false;
+    this.dailyCountries = null;
+    this.dailyDate = null;
   }
 }

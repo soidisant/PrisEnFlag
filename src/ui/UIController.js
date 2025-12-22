@@ -191,12 +191,37 @@ export class UIController {
       : languageManager.t('nextRound');
   }
 
-  showEndScreen(totalScore, correctCount, totalRounds, roundHistory = []) {
+  showEndScreen(totalScore, correctCount, totalRounds, roundHistory = [], isDailyMode = false) {
     this.elements.finalScore.textContent = totalScore;
     this.elements.correctCount.textContent = correctCount;
 
+    // Update title for daily mode
+    const gameOverTitle = document.getElementById('game-over-title');
+    if (gameOverTitle) {
+      gameOverTitle.textContent = isDailyMode
+        ? languageManager.t('dailyComplete')
+        : languageManager.t('gameOver');
+    }
+
     // Render round recap
     this.renderRecap(roundHistory);
+
+    this.showScreen('end');
+  }
+
+  showDailyAlreadyCompleted(result, dateString) {
+    // Show the end screen with previous result
+    this.elements.finalScore.textContent = result.score;
+    this.elements.correctCount.textContent = result.correctCount;
+
+    // Update title to show already completed message
+    const gameOverTitle = document.getElementById('game-over-title');
+    if (gameOverTitle) {
+      gameOverTitle.textContent = languageManager.t('alreadyCompleted');
+    }
+
+    // Render round recap from saved history
+    this.renderRecap(result.roundHistory || []);
 
     this.showScreen('end');
   }
