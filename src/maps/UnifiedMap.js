@@ -143,6 +143,11 @@ export class UnifiedMap {
 
     this.countryLayers = {};
 
+    // Map special GeoJSON codes to our country codes
+    const codeMapping = {
+      'CN-TW': 'TW' // Taiwan
+    };
+
     this.countriesLayer = L.geoJSON(geojson, {
       style: {
         fillColor: COLORS.DEFAULT,
@@ -152,7 +157,11 @@ export class UnifiedMap {
         opacity: 0.3
       },
       onEachFeature: (feature, layer) => {
-        const code = feature.properties['ISO3166-1-Alpha-2'];
+        let code = feature.properties['ISO3166-1-Alpha-2'];
+        // Apply special mappings
+        if (codeMapping[code]) {
+          code = codeMapping[code];
+        }
         if (code && code !== '-99') {
           this.countryLayers[code] = layer;
           layer.countryCode = code;

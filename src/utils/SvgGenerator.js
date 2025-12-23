@@ -3,6 +3,11 @@
 
 const SVG_CACHE_KEY = 'pris-en-flag-svg-cache';
 
+// Map special GeoJSON codes to our country codes
+const CODE_MAPPING = {
+  'CN-TW': 'TW' // Taiwan
+};
+
 export class SvgGenerator {
   constructor() {
     this.cache = this.loadCache();
@@ -30,7 +35,11 @@ export class SvgGenerator {
     this.featureMap = {};
     if (geojson && geojson.features) {
       geojson.features.forEach(feature => {
-        const code = feature.properties['ISO3166-1-Alpha-2'];
+        let code = feature.properties['ISO3166-1-Alpha-2'];
+        // Apply special mappings
+        if (CODE_MAPPING[code]) {
+          code = CODE_MAPPING[code];
+        }
         if (code && code !== '-99') {
           this.featureMap[code] = feature;
         }
