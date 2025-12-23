@@ -62,7 +62,30 @@ export const translations = {
     alreadyCompleted: "You already completed today's challenge!",
     comeBackTomorrow: 'Come back tomorrow for a new challenge!',
     yourScore: 'Your score',
-    dailyComplete: 'Daily Challenge Complete!'
+    dailyComplete: 'Daily Challenge Complete!',
+
+    // Explore flags
+    exploreFlags: 'Explore Flags',
+    searchCountries: 'Search countries...',
+    all: 'All',
+    countriesCount: 'countries',
+
+    // Share
+    shareResults: 'Share Results',
+    copied: 'Copied to clipboard!',
+
+    // Loading
+    loading: 'Loading...',
+    loadingCountries: 'Loading countries...',
+    loadingMap: 'Loading map...',
+
+    // Challenge
+    createChallenge: 'Create a challenge for friends',
+    generate: 'Generate',
+    copy: 'Copy',
+    playChallenge: 'Play this Challenge',
+    challengeMode: 'Challenge',
+    linkCopied: 'Link copied!'
   },
 
   fr: {
@@ -128,7 +151,30 @@ export const translations = {
     alreadyCompleted: 'Vous avez déjà complété le défi du jour !',
     comeBackTomorrow: 'Revenez demain pour un nouveau défi !',
     yourScore: 'Votre score',
-    dailyComplete: 'Défi Quotidien Terminé !'
+    dailyComplete: 'Défi Quotidien Terminé !',
+
+    // Explore flags
+    exploreFlags: 'Explorer les Drapeaux',
+    searchCountries: 'Rechercher un pays...',
+    all: 'Tous',
+    countriesCount: 'pays',
+
+    // Share
+    shareResults: 'Partager',
+    copied: 'Copié dans le presse-papiers !',
+
+    // Loading
+    loading: 'Chargement...',
+    loadingCountries: 'Chargement des pays...',
+    loadingMap: 'Chargement de la carte...',
+
+    // Challenge
+    createChallenge: 'Créer un défi pour vos amis',
+    generate: 'Générer',
+    copy: 'Copier',
+    playChallenge: 'Jouer ce Défi',
+    challengeMode: 'Défi',
+    linkCopied: 'Lien copié !'
   }
 };
 

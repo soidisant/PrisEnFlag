@@ -595,13 +595,34 @@ export class UnifiedMap {
     const feature = layer.feature;
     const geometry = feature.geometry;
 
-    // Get all coordinates (handle both Polygon and MultiPolygon)
+    // Get coordinates - for MultiPolygon, use only the largest polygon (mainland)
     let allCoords = [];
     if (geometry.type === 'Polygon') {
       allCoords = [geometry.coordinates[0]]; // Outer ring only
     } else if (geometry.type === 'MultiPolygon') {
-      // Get outer ring of each polygon
-      allCoords = geometry.coordinates.map(poly => poly[0]);
+      // Find the largest polygon by bounding box area (to show mainland, not overseas territories)
+      let largestPoly = null;
+      let largestArea = 0;
+
+      geometry.coordinates.forEach(poly => {
+        const ring = poly[0];
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+        ring.forEach(([lon, lat]) => {
+          minX = Math.min(minX, lon);
+          maxX = Math.max(maxX, lon);
+          minY = Math.min(minY, lat);
+          maxY = Math.max(maxY, lat);
+        });
+        const area = (maxX - minX) * (maxY - minY);
+        if (area > largestArea) {
+          largestArea = area;
+          largestPoly = ring;
+        }
+      });
+
+      if (largestPoly) {
+        allCoords = [largestPoly];
+      }
     }
 
     if (allCoords.length === 0) return null;

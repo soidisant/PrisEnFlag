@@ -5,7 +5,8 @@ export class UIController {
     this.screens = {
       start: document.getElementById('start-screen'),
       game: document.getElementById('game-screen'),
-      end: document.getElementById('end-screen')
+      end: document.getElementById('end-screen'),
+      glossary: document.getElementById('glossary-screen')
     };
     this.resultOverlay = document.getElementById('result-overlay');
 
@@ -42,8 +43,19 @@ export class UIController {
       cardNextBtn: document.getElementById('card-next-btn'),
       // Candidates panel elements
       candidatesPanel: document.getElementById('candidates-panel'),
-      candidatesList: document.querySelector('.candidates-list')
+      candidatesList: document.querySelector('.candidates-list'),
+      // Glossary elements
+      glossarySearch: document.getElementById('glossary-search'),
+      glossaryList: document.getElementById('glossary-list'),
+      glossaryCount: document.getElementById('glossary-count'),
+      // Loading elements
+      loadingOverlay: document.getElementById('loading-overlay'),
+      loadingBar: document.getElementById('loading-bar'),
+      loadingStatus: document.getElementById('loading-status')
     };
+
+    // Store glossary data for filtering
+    this.glossaryCountries = [];
 
     // Apply initial translations and language selector state
     this.applyTranslations();
@@ -91,6 +103,12 @@ export class UIController {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       el.textContent = languageManager.t(key);
+    });
+
+    // Update all elements with data-i18n-placeholder attribute
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      el.placeholder = languageManager.t(key);
     });
 
     // Update language selector active state
@@ -257,5 +275,100 @@ export class UIController {
 
   disableSubmit() {
     this.elements.submitBtn.disabled = true;
+  }
+
+  renderGlossary(countries, getSvgFn) {
+    this.glossaryCountries = countries;
+    this.elements.glossaryList.innerHTML = '';
+
+    countries.forEach(country => {
+      const card = document.createElement('div');
+      card.className = 'glossary-card';
+      card.dataset.code = country.code;
+      card.dataset.continent = country.continent;
+
+      // Handle name as object {en, fr} or string
+      const nameEn = typeof country.name === 'object' ? country.name.en : country.name;
+      const nameFr = typeof country.name === 'object' ? country.name.fr : country.name;
+      card.dataset.name = nameEn.toLowerCase();
+      card.dataset.nameFr = nameFr.toLowerCase();
+
+      const svgHtml = getSvgFn ? getSvgFn(country.code) : '';
+      const displayName = languageManager.getCountryName(country.name);
+      const capitalLabel = languageManager.t('capital');
+      const continentLabel = languageManager.t('continent');
+      const regionLabel = languageManager.t('region');
+
+      card.innerHTML = `
+        <img src="${country.flag}" alt="${displayName}" class="glossary-flag" />
+        <div class="glossary-shape">${svgHtml}</div>
+        <div class="glossary-info">
+          <div class="glossary-name">${displayName}</div>
+          <div class="glossary-details">
+            <span class="glossary-detail">
+              <span class="glossary-detail-label">${capitalLabel}:</span> ${country.capital || '-'}
+            </span>
+            <span class="glossary-detail">
+              <span class="glossary-detail-label">${continentLabel}:</span> ${country.continent}
+            </span>
+            <span class="glossary-detail">
+              <span class="glossary-detail-label">${regionLabel}:</span> ${country.subregion || '-'}
+            </span>
+          </div>
+        </div>
+      `;
+
+      this.elements.glossaryList.appendChild(card);
+    });
+
+    this.updateGlossaryCount(countries.length, countries.length);
+  }
+
+  filterGlossary(continent, searchTerm) {
+    const cards = this.elements.glossaryList.querySelectorAll('.glossary-card');
+    const search = (searchTerm || '').toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardContinent = card.dataset.continent;
+      const cardName = card.dataset.name;
+      const cardNameFr = card.dataset.nameFr;
+
+      const continentMatch = continent === 'all' || cardContinent === continent;
+      const searchMatch = !search || cardName.includes(search) || cardNameFr.includes(search);
+
+      if (continentMatch && searchMatch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    this.updateGlossaryCount(visibleCount, this.glossaryCountries.length);
+  }
+
+  updateGlossaryCount(visible, total) {
+    const countText = visible === total
+      ? `${total} ${languageManager.t('countriesCount')}`
+      : `${visible} / ${total} ${languageManager.t('countriesCount')}`;
+    this.elements.glossaryCount.textContent = countText;
+  }
+
+  showLoading() {
+    this.elements.loadingOverlay.classList.remove('hidden');
+    this.elements.loadingBar.style.width = '0%';
+    this.elements.loadingStatus.textContent = '';
+  }
+
+  hideLoading() {
+    this.elements.loadingOverlay.classList.add('hidden');
+  }
+
+  updateLoadingProgress(percent, statusText = '') {
+    this.elements.loadingBar.style.width = `${percent}%`;
+    if (statusText) {
+      this.elements.loadingStatus.textContent = statusText;
+    }
   }
 }

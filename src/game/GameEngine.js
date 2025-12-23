@@ -6,6 +6,7 @@ import { languageManager } from '../i18n/LanguageManager.js';
 import { DailyCountrySelector } from './DailyCountrySelector.js';
 import { getDailyChallengeDate } from '../utils/DailyChallenge.js';
 import { hasCompletedToday, getTodayResult, saveDailyResult } from '../utils/DailyStorage.js';
+import { selectChallengeCountries } from '../utils/ChallengeManager.js';
 
 export class GameEngine {
   constructor(ui) {
@@ -27,6 +28,14 @@ export class GameEngine {
     this.isDailyMode = false;
     this.dailyCountries = null;
     this.dailyDate = null;
+
+    // Challenge mode properties
+    this.isChallengeMode = false;
+    this.challengeId = null;
+    this.challengeCountries = null;
+
+    // Store last game results for sharing
+    this.lastGameResults = null;
 
     this.setupTimer();
   }
@@ -91,9 +100,20 @@ export class GameEngine {
 
     // Load data if not already loaded
     try {
-      const { geojson, countries } = await this.dataLoader.load();
+      // Show loading UI only if data not yet loaded
+      if (!this.dataLoader.isLoaded()) {
+        this.ui.showLoading();
+      }
+
+      const { geojson, countries } = await this.dataLoader.load((percent, statusKey) => {
+        const statusText = statusKey ? languageManager.t(statusKey) : '';
+        this.ui.updateLoadingProgress(percent, statusText);
+      });
+
+      this.ui.hideLoading();
       this.unifiedMap.setGeoJSON(geojson, countries);
     } catch (error) {
+      this.ui.hideLoading();
       console.error('Failed to load game data:', error);
       alert('Failed to load game data. Please refresh the page.');
       return;
@@ -120,14 +140,36 @@ export class GameEngine {
     // Check if already completed today
     if (hasCompletedToday(dateString)) {
       const result = getTodayResult(dateString);
+
+      // Store results for sharing
+      this.lastGameResults = {
+        isDaily: true,
+        dailyDate: dateString,
+        score: result.score,
+        correctCount: result.correctCount,
+        totalRounds: this.totalRounds,
+        roundHistory: result.roundHistory || [],
+        continent: 'all'
+      };
+
       this.ui.showDailyAlreadyCompleted(result, dateString);
       return;
     }
 
     // Load data first if not loaded
     try {
-      await this.dataLoader.load();
+      if (!this.dataLoader.isLoaded()) {
+        this.ui.showLoading();
+      }
+
+      await this.dataLoader.load((percent, statusKey) => {
+        const statusText = statusKey ? languageManager.t(statusKey) : '';
+        this.ui.updateLoadingProgress(percent, statusText);
+      });
+
+      this.ui.hideLoading();
     } catch (error) {
+      this.ui.hideLoading();
       console.error('Failed to load game data:', error);
       alert('Failed to load game data. Please refresh the page.');
       return;
@@ -143,6 +185,42 @@ export class GameEngine {
 
     // Start game with 'all' continent (daily mode is always world)
     await this.startGame('all');
+  }
+
+  async startChallengeGame(challengeId, continent = 'all') {
+    // Load data first if not loaded
+    try {
+      if (!this.dataLoader.isLoaded()) {
+        this.ui.showLoading();
+      }
+
+      await this.dataLoader.load((percent, statusKey) => {
+        const statusText = statusKey ? languageManager.t(statusKey) : '';
+        this.ui.updateLoadingProgress(percent, statusText);
+      });
+
+      this.ui.hideLoading();
+    } catch (error) {
+      this.ui.hideLoading();
+      console.error('Failed to load game data:', error);
+      alert('Failed to load game data. Please refresh the page.');
+      return;
+    }
+
+    // Pre-select countries for challenge
+    const countries = selectChallengeCountries(
+      this.dataLoader.getCountryList(),
+      challengeId,
+      continent,
+      this.totalRounds
+    );
+
+    this.isChallengeMode = true;
+    this.challengeId = challengeId;
+    this.challengeCountries = countries;
+
+    // Start game with the specified continent
+    await this.startGame(continent);
   }
 
   nextRound() {
@@ -186,6 +264,11 @@ export class GameEngine {
     // For daily mode, use pre-selected countries
     if (this.isDailyMode && this.dailyCountries) {
       return this.dailyCountries[this.currentRound - 1] || null;
+    }
+
+    // For challenge mode, use pre-selected countries
+    if (this.isChallengeMode && this.challengeCountries) {
+      return this.challengeCountries[this.currentRound - 1] || null;
     }
 
     const countries = this.dataLoader.getCountryList();
@@ -296,6 +379,19 @@ export class GameEngine {
     this.timer.stop();
     this.unifiedMap?.stopRound();
 
+    // Store results for sharing before resetting
+    this.lastGameResults = {
+      isDaily: this.isDailyMode,
+      dailyDate: this.dailyDate,
+      isChallenge: this.isChallengeMode,
+      challengeId: this.challengeId,
+      score: this.scoreManager.getTotalScore(),
+      correctCount: this.scoreManager.getCorrectCount(),
+      totalRounds: this.totalRounds,
+      roundHistory: this.scoreManager.getRoundHistory(),
+      continent: this.selectedContinent
+    };
+
     // Save daily result if in daily mode
     if (this.isDailyMode && this.dailyDate) {
       saveDailyResult(this.dailyDate, {
@@ -318,5 +414,51 @@ export class GameEngine {
     this.isDailyMode = false;
     this.dailyCountries = null;
     this.dailyDate = null;
+
+    // Reset challenge mode state
+    this.isChallengeMode = false;
+    this.challengeId = null;
+    this.challengeCountries = null;
+  }
+
+  getShareText() {
+    if (!this.lastGameResults) return '';
+
+    const { isDaily, dailyDate, isChallenge, challengeId, score, correctCount, totalRounds, roundHistory, continent } = this.lastGameResults;
+
+    // Build result pattern (green = correct, red = wrong)
+    const pattern = roundHistory.map(r => r.isCorrect ? '🟩' : '🟥').join('');
+
+    // Build share text
+    let text = '🏁 Pris en Flag';
+
+    if (isDaily) {
+      text += ` - Daily Challenge\n📅 ${dailyDate}`;
+    } else if (isChallenge) {
+      text += ` - Challenge`;
+      if (continent !== 'all') {
+        text += ` (${continent})`;
+      }
+    } else if (continent !== 'all') {
+      text += `\n🌍 ${continent}`;
+    }
+
+    text += `\n📊 Score: ${score}`;
+    text += `\n✅ ${correctCount}/${totalRounds} correct`;
+    text += `\n${pattern}`;
+
+    // Include challenge link for challenge mode
+    if (isChallenge && challengeId) {
+      const params = new URLSearchParams();
+      params.set('challenge', challengeId);
+      if (continent !== 'all') {
+        params.set('region', continent);
+      }
+      text += `\n\nTry it: ${window.location.origin}${window.location.pathname}?${params.toString()}`;
+    } else {
+      text += `\n\nPlay at: ${window.location.origin}`;
+    }
+
+    return text;
   }
 }

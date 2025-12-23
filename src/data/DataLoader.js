@@ -2,21 +2,35 @@ export class DataLoader {
   constructor() {
     this.countries = null;
     this.geojson = null;
+    this.loaded = false;
   }
 
-  async load() {
+  async load(onProgress = null) {
+    // Return cached data if already loaded
+    if (this.loaded) {
+      return {
+        countries: this.countries,
+        geojson: this.geojson
+      };
+    }
+
     try {
-      const [countriesResponse, geojsonResponse] = await Promise.all([
-        fetch('/data/countries.json'),
-        fetch('/data/countries.geojson')
-      ]);
-
-      if (!countriesResponse.ok || !geojsonResponse.ok) {
-        throw new Error('Failed to load game data');
-      }
-
+      // Load countries data
+      if (onProgress) onProgress(10, 'loadingCountries');
+      const countriesResponse = await fetch('/data/countries.json');
+      if (!countriesResponse.ok) throw new Error('Failed to load countries');
       this.countries = await countriesResponse.json();
+
+      if (onProgress) onProgress(40, 'loadingMap');
+
+      // Load GeoJSON (larger file)
+      const geojsonResponse = await fetch('/data/countries.geojson');
+      if (!geojsonResponse.ok) throw new Error('Failed to load map');
       this.geojson = await geojsonResponse.json();
+
+      if (onProgress) onProgress(100, '');
+
+      this.loaded = true;
 
       return {
         countries: this.countries,
@@ -26,6 +40,10 @@ export class DataLoader {
       console.error('Error loading data:', error);
       throw error;
     }
+  }
+
+  isLoaded() {
+    return this.loaded;
   }
 
   getCountries() {
