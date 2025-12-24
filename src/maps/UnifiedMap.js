@@ -148,6 +148,11 @@ export class UnifiedMap {
       'CN-TW': 'TW' // Taiwan
     };
 
+    // Map unrecognized territories (code -99) by name to their parent country
+    const nameMapping = {
+      'Somaliland': 'SO' // Somaliland → Somalia
+    };
+
     this.countriesLayer = L.geoJSON(geojson, {
       style: {
         fillColor: COLORS.DEFAULT,
@@ -158,15 +163,26 @@ export class UnifiedMap {
       },
       onEachFeature: (feature, layer) => {
         let code = feature.properties['ISO3166-1-Alpha-2'];
-        // Apply special mappings
+        const name = feature.properties.name;
+
+        // Apply special code mappings
         if (codeMapping[code]) {
           code = codeMapping[code];
         }
+
+        // Handle unrecognized territories by name
+        if (code === '-99' && nameMapping[name]) {
+          code = nameMapping[name];
+        }
+
         if (code && code !== '-99') {
-          this.countryLayers[code] = layer;
+          // For territories mapped to parent, don't overwrite the parent's layer
+          if (!this.countryLayers[code]) {
+            this.countryLayers[code] = layer;
+            layer.feature = feature; // Store feature for SVG generation
+          }
           layer.countryCode = code;
-          layer.countryName = feature.properties.name;
-          layer.feature = feature; // Store feature for SVG generation
+          layer.countryName = name;
         }
       }
     }).addTo(this.map);

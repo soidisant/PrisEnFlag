@@ -8,6 +8,11 @@ const CODE_MAPPING = {
   'CN-TW': 'TW' // Taiwan
 };
 
+// Map unrecognized territories by name to their parent country
+const NAME_MAPPING = {
+  'Somaliland': 'SO' // Somaliland → Somalia
+};
+
 export class SvgGenerator {
   constructor() {
     this.cache = this.loadCache();
@@ -36,12 +41,23 @@ export class SvgGenerator {
     if (geojson && geojson.features) {
       geojson.features.forEach(feature => {
         let code = feature.properties['ISO3166-1-Alpha-2'];
-        // Apply special mappings
+        const name = feature.properties.name;
+
+        // Apply special code mappings
         if (CODE_MAPPING[code]) {
           code = CODE_MAPPING[code];
         }
+
+        // Handle unrecognized territories by name
+        if (code === '-99' && NAME_MAPPING[name]) {
+          code = NAME_MAPPING[name];
+        }
+
         if (code && code !== '-99') {
-          this.featureMap[code] = feature;
+          // Don't overwrite parent country's feature
+          if (!this.featureMap[code]) {
+            this.featureMap[code] = feature;
+          }
         }
       });
     }
